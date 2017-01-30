@@ -10758,6 +10758,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[0].chowkidar;
@@ -10781,12 +10791,6 @@ function PeopleCtrl($scope, $http) {
     $scope.vul = $scope.masterData[0].vulnerabilityDetails;
     $scope.gridWar = $scope.masterData[0].warrantedCriminals;
     $scope.cond = $scope.masterData[0].condition;
-    
-
-      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
-
-
-    // console.table($scope.grideCrime);
     });
 })
 .controller('dgCtrl2', function($scope, $http){
@@ -10808,6 +10812,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/delhiGate2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -10860,6 +10874,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[2].chowkidar;
@@ -10910,6 +10934,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/delhiGate4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -10962,6 +10996,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[4].chowkidar;
@@ -11012,6 +11056,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/delhiGate6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11064,6 +11118,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[6].chowkidar;
@@ -11114,6 +11178,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/delhiGate8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11167,6 +11241,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11220,6 +11303,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11273,6 +11365,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11326,6 +11427,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11379,6 +11489,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11432,6 +11551,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11485,6 +11613,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11538,6 +11675,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -11591,6 +11737,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/delhiGate17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/delhiGate17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/delhiGate17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/delhiGate.json').success(function(data){
     $scope.masterData = data;
@@ -28110,156 +28265,116 @@ function PeopleCtrl($scope, $http) {
 // End of sururpur Controllers here
 
 .controller('clCtrl', function($scope, $http){
-  $scope.items =[
-    {
-      "title": "Star Public School Rohat Road (Anup Nagar Fajalpur)",
-      "path": "#/menu/tab/tpDetail"
-    },
-    {
-      "title": "KK Academy Sarasvati Vihar Rohat Road",
-      "path": "#/menu/tab/tpDetail2"
-    },
-    {
-      "title": "Prathmil Vedhyal AurangShahpur Golabud",
-      "path": "#/menu/tab/tpDetail3"
-    },
-    {
-      "title": "Dr. BR Ambedker Balika Shiksha Sadan Aurangshpur Golabud",
-      "path": "#/menu/tab/tpDetail4"
-    },
-    {
-      "title": "SG Higher Secondey School Sekhpura",
-      "path": "#/menu/tab/tpDetail5"
-    },
-    {
-      "title": "Kalavati Jounier High School Bhola Road Meerut",
-      "path": "#/menu/tab/tpDetail6"
-    },
-    {
-      "title": "Milineum Public School Bagpath Road",
-      "path": "#/menu/tab/tpDetail7"
-    },
-    {
-      "title": "Prathmik Vedhyela Nagar Chatera Multan Nagar",
-      "path": "#/menu/tab/tpDetail8"
-    },
-    {
-      "title": "Shyedh Mamgal Pandey Inter College New Krishan Pura Bagpath Road",
-      "path": "#/menu/tab/tpDetail9"
-    },
-    {
-      "title": "Prathmik Vedhyal Chanmdra Lock Sabun Gaudam",
-      "path": "#/menu/tab/tpDetail10"
-    },
-    {
-      "title": "Santh Vivekananed Inter College Chandra Lock Sabun Gaudam",
-      "path": "#/menu/tab/tpDetail11"
-    },
-    {
-      "title": "Gautam Higher Secondery School Uttam Nagar",
-      "path": "#/menu/tab/tpDetail12"
-    },
-    {
-      "title": "Littel Wards Play School Raghukul Vihar Near Basant Kunj",
-      "path": "#/menu/tab/tpDetail13"
-    },
-    {
-      "title": "Pathmik Vedhyal Sundra Aka Putha",
-      "path": "#/menu/tab/tpDetail14"
-    },
-    {
-      "title": "Prathmik Vedhyal Maleyana",
-      "path": "#/menu/tab/tpDetail15"
-    },
-    {
-      "title": "Prathmik Vedhyela No.2 Holi Cholk Mleyana",
-      "path": "#/menu/tab/tpDetail16"
-    },
-    {
-      "title": "Dr. Ambedker Bhavan Prathmik Vedhyal Maleyana",
-      "path": "#/menu/tab/tpDetail17"
-    },
-    {
-      "title": "Dr. Ambedker Dharamshala Mohella Shakti Nagar Maleyana",
-      "path": "#/menu/tab/tpDetail18"
-    },
-    {
-      "title": "Shastri Public School Maleyana",
-      "path": "#/menu/tab/tpDetail19"
-    },
-    {
-      "title": "Jasvant Mills Higher Secondery School Maleyan",
-      "path": "#/menu/tab/tpDetail20"
-    },
-    {
-      "title": "Sharan Public School Bagpath Road Maleyana",
-      "path": "#/menu/tab/tpDetail21"
-    },
-    {
-      "title": "Vikas Khand Kareyal Meerut",
-      "path": "#/menu/tab/tpDetail22"
-    },
-    {
-      "title": "D.P Public School Dev Lock Coloney Delhi Road Meerut",
-      "path": "#/menu/tab/tpDetail23"
-    },
-    {
-      "title": "Naai Dharamshala Shiv Hari Mandir Coloney Meerut",
-      "path": "#/menu/tab/tpDetail24"
-    },
-    {
-      "title": "Dharamshala Shiv Hari Mandir Coloney Delhi Railway Line",
-      "path": "#/menu/tab/tpDetail25"
-    },
-    {
-      "title": "Chnadra Public School Delhi Railway Line",
-      "path": "#/menu/tab/tpDetail26"
-    },
-    {
-      "title": "Prathmik Vedhyala New Basti Lallapura",
-      "path": "#/menu/tab/tpDetail27"
-    },
-    {
-      "title": "Sidhart Dharamshal New Basti Lalapuram",
-      "path": "#/menu/tab/tpDetail28"
-    },
-    {
-      "title": "Nitika Public School New Basti Lalapura",
-      "path": "#/menu/tab/tpDetail29"
-    },
-    {
-      "title": "Sirram Deyal Academy New Basti Lalapura Main Road",
-      "path": "#/menu/tab/tpDetail30"
-    },
-    {
-      "title": "SBS Higher Secondery School Mohakumpur",
-      "path": "#/menu/tab/tpDetail31"
-    },
-    {
-      "title": "SBN Higher Secondery School Shivpuram Mohakumpur",
-      "path": "#/menu/tab/tpDetail32"
-    },
-    {
-      "title": "Sumitra Devi Primary School Mohakum Pur",
-      "path": "#/menu/tab/tpDetail33"
-    },
-    {
-      "title": "Prathmik Vedhyal Mohakumpur",
-      "path": "#/menu/tab/tpDetail34"
-    },
-    {
-      "title": "BK Inter College New Basti Lalapuram",
-      "path": "#/menu/tab/tpDetail35"
-    },
-    {
-      "title": "Gautam Inter College Uttamnagar",
-      "path": "#/menu/tab/tpDetail36"
-    },
-    {
-      "title": "Balbharti Nikaten Mahaver Ji Nagar",
-      "path": "#/menu/tab/tpDetail37"
-    }
-  ];
+    $scope.items = [
+      {
+        "title": "Sport Stadium",
+        "path": "#/menu/tab/clDetail"
+      },
+      {
+        "title": "K. S. Public School, Saket",
+        "path": "#/menu/tab/clDetail2"
+      },
+      {
+        "title": "Howard Plasted Girls Inter Colleg Near Stadium",
+        "path": "#/menu/tab/clDetail3"
+      },
+      {
+        "title": "MDA Office",
+        "path": "#/menu/tab/clDetail4"
+      },
+      {
+        "title": "Primari Pathsala Babu Lal Saket",
+        "path": "#/menu/tab/clDetail5"
+      },
+      {
+        "title": "I.T.I. College Prabhat Nagar",
+        "path": "#/menu/tab/clDetail6"
+      },
+      {
+        "title": "Ganaa Karaliya Pandav Nagar",
+        "path": "#/menu/tab/clDetail7"
+      },
+      {
+        "title": "Kanohar Lalgirls Inter College, Saket",
+        "path": "#/menu/tab/clDetail8"
+      },
+      {
+        "title": "Manideep Inter College Kila Road",
+        "path": "#/menu/tab/clDetail9"
+      },
+      {
+        "title": "Dharamsala Babula Kurmi Prabhat Nagar",
+        "path": "#/menu/tab/clDetail10"
+      },
+      {
+        "title": "N.A.S. Inter College",
+        "path": "#/menu/tab/clDetail11"
+      },
+      {
+        "title": "Praimari Pathsala Laxminagar",
+        "path": "#/menu/tab/clDetail12"
+      },
+      {
+        "title": "Narayni Dharamsala Hanuman Puri",
+        "path": "#/menu/tab/clDetail13"
+      },
+      {
+        "title": "Centre Bal Jyoti School Hanumanpuri",
+        "path": "#/menu/tab/clDetail14"
+      },
+      {
+        "title": "Dayaleshwar Public School Near Shiv Mander Mohanpuri",
+        "path": "#/menu/tab/clDetail15"
+      },
+      {
+        "title": "Bhimraw Ambedkar Inter Colleg Purava Shek Lal",
+        "path": "#/menu/tab/clDetail16"
+      },
+      {
+        "title": "Praimari Pathsala South Mohanpuri",
+        "path": "#/menu/tab/clDetail17"
+      },
+      {
+        "title": "Shiv Public School  Purani Mohan Puri",
+        "path": "#/menu/tab/clDetail18"
+      },
+      {
+        "title": "Pramari Kaniya Pathsala Mohanpuri",
+        "path": "#/menu/tab/clDetail19"
+      },
+      {
+        "title": "Nanak Chand Degree College Shivaji Road",
+        "path": "#/menu/tab/clDetail20"
+      },
+      {
+        "title": "Sakuntala Junior High School Sarswati Mandir, Suraj Kund",
+        "path": "#/menu/tab/clDetail21"
+      },
+      {
+        "title": "Pryimari Pathsala Rambagh Suraj Kund",
+        "path": "#/menu/tab/clDetail22"
+      },
+      {
+        "title": "Shishu Lok Arya Nagar Suraj Kund",
+        "path": "#/menu/tab/clDetail23"
+      },
+      {
+        "title": "Rain Basara Water Tank K Nicha Devi Nagar",
+        "path": "#/menu/tab/clDetail24"
+      },
+      {
+        "title": "Rajkiya Animal Hospital Suraj Kund",
+        "path": "#/menu/tab/clDetail25"
+      },
+      {
+        "title": "Simran Public School Mandir Wali Gali Purva",
+        "path": "#/menu/tab/clDetail26"
+      },
+      {
+        "title": "Office Adhi Sasi Abhiyanta Nalkup",
+        "path": "#/menu/tab/clDetail27"
+      }
+    ];
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
     $scope.gridRespected = {};
@@ -28280,6 +28395,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28332,6 +28456,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28384,6 +28517,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28436,6 +28578,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28488,6 +28639,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28540,6 +28700,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28593,6 +28762,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28646,6 +28824,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28699,6 +28886,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28752,6 +28948,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28805,6 +29010,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28858,6 +29072,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28911,6 +29134,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -28964,6 +29196,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29017,6 +29258,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29070,6 +29320,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29123,6 +29382,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/cvLines17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29177,6 +29445,15 @@ function PeopleCtrl($scope, $http) {
     $scope.icollPtPic = {};
 
 
+    $http.get('json/cvLines18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29231,6 +29508,15 @@ function PeopleCtrl($scope, $http) {
     $scope.icollPtPic = {};
 
 
+    $http.get('json/cvLines19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29284,7 +29570,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29338,7 +29632,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29392,7 +29694,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29446,7 +29756,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29500,7 +29818,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29554,7 +29880,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29608,7 +29942,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
@@ -29662,7 +30004,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/cvLines27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/cvLines27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/cvLines27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/civilLines.json').success(function(data){
     $scope.masterData = data;
