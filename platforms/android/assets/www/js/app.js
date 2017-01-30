@@ -18905,6 +18905,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -18957,6 +18966,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19009,6 +19027,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19061,6 +19088,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19113,6 +19149,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19165,6 +19210,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19218,6 +19272,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19271,6 +19334,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19324,6 +19396,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19377,6 +19458,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19430,6 +19520,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19483,6 +19582,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19536,6 +19644,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19589,6 +19706,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19642,6 +19768,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19695,6 +19830,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19748,6 +19892,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/brahmpuri17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19801,7 +19954,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19855,7 +20016,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19909,7 +20078,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -19963,7 +20140,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20017,7 +20202,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20071,7 +20264,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20125,7 +20326,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20179,7 +20388,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20233,7 +20450,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20287,7 +20512,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20341,7 +20574,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20395,7 +20636,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20449,7 +20698,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20503,7 +20760,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -20557,7 +20822,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/brahmpuri32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/brahmpuri32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/brahmpuri32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/brahmpuri.json').success(function(data){
 		$scope.masterData = data;
@@ -25974,6 +26247,7 @@ function PeopleCtrl($scope, $http) {
     });
 })
 // End of Bhavanpur Controllers here
+
 .controller('srCtrl', function($scope, $http){
   $scope.items =[
       {
