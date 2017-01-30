@@ -33120,7 +33120,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[0].chowkidar;
@@ -33172,6 +33180,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33224,6 +33241,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33276,6 +33302,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33328,6 +33363,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33380,6 +33424,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33433,6 +33486,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33486,6 +33548,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33539,6 +33610,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33592,6 +33672,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33645,6 +33734,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33698,6 +33796,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33751,6 +33858,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33804,6 +33920,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33857,6 +33982,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33910,6 +34044,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -33963,6 +34106,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34017,6 +34169,15 @@ function PeopleCtrl($scope, $http) {
     $scope.icollPtPic = {};
 
 
+    $http.get('json/lisadi18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34070,7 +34231,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34124,7 +34293,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34178,7 +34355,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34232,7 +34417,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34286,7 +34479,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34340,7 +34541,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34394,7 +34603,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34448,7 +34665,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34502,7 +34727,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34556,7 +34789,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34610,7 +34851,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34664,7 +34913,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34718,7 +34975,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34772,7 +35037,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34826,6 +35099,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34878,6 +35160,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34930,6 +35221,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -34982,6 +35282,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35034,6 +35343,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35087,6 +35405,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35140,6 +35467,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35193,6 +35529,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35246,6 +35591,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35299,6 +35653,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35352,6 +35715,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35405,6 +35777,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35458,6 +35839,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35511,6 +35901,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35564,6 +35963,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35617,6 +36025,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/lisadi48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -35670,7 +36087,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/lisadi49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/lisadi49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/lisadi47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/lisadiGate.json').success(function(data){
     $scope.masterData = data;
@@ -45297,7 +45722,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
 .controller('hsCtrl64', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -45352,7 +45776,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
 .controller('hsCtrl65', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -45407,7 +45830,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
 .controller('hsCtrl66', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -45462,7 +45884,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
 .controller('hsCtrl67', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -45517,7 +45938,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
 .controller('hsCtrl68', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -46390,11 +46810,7 @@ function PeopleCtrl($scope, $http) {
     $scope.vul = $scope.masterData[10].vulnerabilityDetails;
     $scope.gridWar = $scope.masterData[10].warrantedCriminals;
     $scope.cond = $scope.masterData[10].condition;
- // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
 
-      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
-
-    // console.table($scope.grideCrime);
     });
 })
 .controller('jnCtrl12', function($scope, $http){
@@ -50964,8 +51380,6 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
-
     $http.get('json/incholi31_1.txt').success(function(data){
       $scope.iPolPic = data;
     });
@@ -50973,7 +51387,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi31_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51031,7 +51445,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi32_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51088,7 +51502,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi33_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51145,7 +51559,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi34_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51202,7 +51616,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi35_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51259,7 +51673,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi36_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51316,7 +51730,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi37_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51373,7 +51787,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi38_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51430,7 +51844,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi39_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51487,7 +51901,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi40_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51544,7 +51958,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi41_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51601,7 +52015,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi42_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51658,7 +52072,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi43_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51715,7 +52129,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi44_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51772,7 +52186,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi45_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51829,7 +52243,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi46_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51886,7 +52300,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi47_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -51943,7 +52357,7 @@ function PeopleCtrl($scope, $http) {
       $scope.iroutePic = data;
     });
     $http.get('json/incholi48_3.txt').success(function(data){
-      $scope.iroutePic = data;
+      $scope.icollPtPic = data;
     });
 
     $http.get('json/incholi.json').success(function(data){
@@ -54205,6 +54619,7 @@ function PeopleCtrl($scope, $http) {
     });
 })
 //End of Nauchandi Controllers
+
 .controller('mwCtrl', function($scope, $http){
   $scope.items = [
     {
