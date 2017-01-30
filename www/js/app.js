@@ -9185,8 +9185,8 @@ function PeopleCtrl($scope, $http) {
     //             $scope.MyRecCollection = data;
     //             console.table(data);
     //     })
-
 })
+
 .controller('rrCtrl', function($scope, $http){
   $scope.items = [
     {
@@ -30780,6 +30780,7 @@ function PeopleCtrl($scope, $http) {
     });
 })
 //End of Lal Kurti Controllers here
+
 .controller('tpCtrl', function($scope, $http){
   $scope.items =[
     {
@@ -54835,6 +54836,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -54887,6 +54897,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -54939,6 +54958,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -54991,6 +55019,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55043,6 +55080,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55095,6 +55141,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55148,6 +55203,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55201,6 +55265,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55254,6 +55327,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55307,6 +55389,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55360,6 +55451,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55413,6 +55513,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55466,6 +55575,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55519,6 +55637,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55572,6 +55699,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55625,6 +55761,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55678,6 +55823,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55731,7 +55885,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55785,7 +55947,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55839,7 +56009,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55893,7 +56071,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -55947,7 +56133,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56001,6 +56195,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/mawana.json').success(function(data){
@@ -56055,7 +56258,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56109,7 +56320,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56163,7 +56382,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56217,7 +56444,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56271,7 +56506,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56325,7 +56568,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56379,7 +56630,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56433,7 +56692,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56487,7 +56754,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/mawana32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56541,6 +56816,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56593,6 +56877,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56645,6 +56938,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56697,6 +56999,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56749,6 +57060,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56802,6 +57122,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56855,6 +57184,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56908,6 +57246,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -56961,6 +57308,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57014,6 +57370,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57067,6 +57432,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57120,6 +57494,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57173,6 +57556,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57226,6 +57618,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57279,6 +57680,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -57332,6 +57742,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/mawana48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mawana48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mawana48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/mawana.json').success(function(data){
     $scope.masterData = data;
@@ -64071,9 +64490,6 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
-
-
-
 // End of Parikshitgarh Controllers
 
 .controller('sadarCtrl', function($scope, $http){
@@ -64502,7 +64918,6 @@ function PeopleCtrl($scope, $http) {
     });
 })
 .controller('sadarCtrl7', function($scope, $http){
-
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
     $scope.gridRespected = {};
@@ -64556,11 +64971,9 @@ function PeopleCtrl($scope, $http) {
     $scope.vul = $scope.masterData[6].vulnerabilityDetails;
     $scope.gridWar = $scope.masterData[6].warrantedCriminals;
     $scope.cond = $scope.masterData[6].condition;
-    
-  });
+    });
 })
 .controller('sadarCtrl8', function($scope, $http){
-
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
     $scope.gridRespected = {};
@@ -64615,7 +65028,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[7].warrantedCriminals;
     $scope.cond = $scope.masterData[7].condition;
     
-  });
+    });
 })
 .controller('sadarCtrl9', function($scope, $http){
 
@@ -64673,7 +65086,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[8].warrantedCriminals;
     $scope.cond = $scope.masterData[8].condition;
     
-  });
+    });
 })
 .controller('sadarCtrl10', function($scope, $http){
 
@@ -64731,7 +65144,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[9].warrantedCriminals;
     $scope.cond = $scope.masterData[9].condition;
     
-  });
+    });
 })
 .controller('sadarCtrl11', function($scope, $http){
 
@@ -64789,7 +65202,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[10].warrantedCriminals;
     $scope.cond = $scope.masterData[10].condition;
     
-  });
+    });
 })
 .controller('sadarCtrl12', function($scope, $http){
 
@@ -64847,7 +65260,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[11].warrantedCriminals;
     $scope.cond = $scope.masterData[11].condition;
     
-  });
+    });
 })
 .controller('sadarCtrl13', function($scope, $http){
 
@@ -64905,7 +65318,7 @@ function PeopleCtrl($scope, $http) {
     $scope.gridWar = $scope.masterData[12].warrantedCriminals;
     $scope.cond = $scope.masterData[12].condition;
     
-  });
+    });
 })
 // End of Sadar Bazar contrillers here
 
