@@ -1,0 +1,24 @@
+<ion-view view-title="DSM Meerut">
+      <ion-content ng-controller="ButtonsTabCtrl">
+<!-- <div class="Card" ng-controller="feedCtrl"> -->
+<div class="card">
+      <div class="row item item-divider card-bk2">
+        Told ya, Working :)
+      </div>
+                <img class="img1" src="img/wip.gif"></img>
+		<!-- <ion-item ng-repeat="item in feed" class="item item-icon-right" href={{item.path}}>
+
+			<strong>{{item.title}}</strong> - {{ item.synopsis}}
+		</ion-item> -->
+
+
+        </div>
+		<div class="card" ng-controller="tickerCtrl">
+		<marquee>
+			<span ng-repeat="item in iTicker">
+				<i class="icon ion-ios-pulse-strong"></i> <strong>{{item.prog}}</strong>{{item.newsFeed}}
+			</span>
+		</marquee>
+		</div>
+	  </ion-content>
+    </ion-view>

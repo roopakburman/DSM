@@ -1,0 +1,14 @@
+<ion-view view-title="List of Police Stations">
+<ion-content ng-controller="feedCtrl">
+<div class="card">
+      <div class="row item item-divider card-bk2">
+        Police Stations
+      </div>
+
+      <ion-item ng-repeat="item in iNew" class="item" href={{item.path}}>
+
+	<strong>{{item.title}}</strong>
+</ion-item>
+</div>
+   </ion-content>
+</ion-view>

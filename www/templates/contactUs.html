@@ -1,0 +1,44 @@
+<ion-view view-title="Like what you see?">
+  <ion-content class="padding" ng-controller="emailCtrl">
+    <div class="card " ng-app>
+      <div class="item item-divider card-bk2">
+        Contact Us
+      </div>
+      <div class="list">
+        <a class="item item-icon-left" href="#" ng-click="sendEmail()">
+          <i class="icon ion-email"></i>
+            Email Us
+        </a>
+        <a class="item item-icon-left item-icon-right" href="tel:+919717257131">
+          <i class="icon ion-chatbubble-working"></i>
+            Call Us
+          <i class="icon ion-ios-telephone blink"></i>
+        </a>
+
+        <a class="item item-icon-left" href="#" onclick="window.open('http://www.chimmera.com', '_blank', 'location=yes'); return false;">
+          <i class="icon ion-home"></i>
+            Visit Us
+            <span class="item-note">
+              Address
+            </span>
+        </a>
+      </div>
+    </div>
+<!--     <div class="card">
+      <table width="100%" class="table">
+       <thead>
+        <tr>
+         <th>Title</th><th>Path</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr ng-repeat="row in MyRecCollection">
+          <td>{{row.title}}</td>
+          <td>{{row.path}}</td>
+        </tr>
+       </tbody>
+      </table>
+
+    </div> -->
+  </ion-content>
+</ion-view>

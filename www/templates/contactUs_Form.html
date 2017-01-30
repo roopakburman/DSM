@@ -1,0 +1,29 @@
+<ion-view title="Contact AM">
+	<ion-content class="padding" overflow-scroll="true">
+		<div class="Card">
+			<label class="item item-input">
+			  <span class="input-label"><strong>Name</strong></span>
+			  <input type="text" ng-model="userName" class="fElements">
+			</label>
+			<label class="item item-input">
+			  <span class="input-label"><strong>Email</strong></span>
+			  <input type="email" ng-model="userEmail" class="fElements">
+			</label>
+			<label class="item item-input">
+			  <span class="input-label"><strong>Telephone</strong></span>
+			  <input type="tel" ng-model="userPhone" class="fElements">
+			</label>
+			<label class="item item-input">
+			  <span class="input-label"><strong>Pick a date to meet</strong></span>
+			  <input type="date" class="fElements">
+			</label>
+			<label class="item item-input">
+			  <span class="input-label"><strong>Your message</strong></span>
+			  <textarea rows="8" cols="50" placeholder="Your question" class="fElements"></textarea>
+			</label>
+			<button class="button button-full button-balanced" ng-click="contactJames()">Contact</button>
+
+		</div>
+
+	</ion-content>
+</ion-view>
