@@ -17,7 +17,7 @@
   },
   {
     "title": "Daurala",
-    "path": "#/menu/tab/wip"
+    "path": "#/menu/tab/daurala"
   },
   {
     "title": "Delhi Gate",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Kankerkhera",
-    "path": "#/menu/tab/wip"
+    "path": "#/menu/tab/kankarkhera"
   },
   {
     "title": "Kharkhoda",
@@ -69,11 +69,11 @@
   },
   {
     "title": "Medical",
-    "path": "#/menu/tab/wip"
+    "path": "#/menu/tab/medical"
   },
   {
     "title": "Mundali",
-    "path": "#/menu/tab/wip"
+    "path": "#/menu/tab/mundali"
   },
   {
     "title": "Nauchandi",
@@ -109,7 +109,7 @@
   },
   {
     "title": "Sardhana",
-    "path": "#/menu/tab/wip"
+    "path": "#/menu/tab/sardhana"
   },
   {
     "title": "Sarurpur",

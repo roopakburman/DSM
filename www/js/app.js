@@ -6,6 +6,11 @@ dsm.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
+    
+    if(navigator.splashscreen) {
+      navigator.splashscreen.hide();
+    }
+    
     if(window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
@@ -82,14 +87,6 @@ dsm.run(function($ionicPlatform, $rootScope) {
           }
         }
       })
-	.state('menu.tabs.medical', {
-      url: "/medical",
-      views: {
-        'slide-tab': {
-          templateUrl: "templates/medical.html"
-        }
-      }
-    })
 
 //<<-- Railway Road Routes Start -->
       
@@ -3803,7 +3800,836 @@ dsm.run(function($ionicPlatform, $rootScope) {
       }
     })
 //<<-- Sururpur Routes End -->
-
+//<<-- sardhana Routes Start -->
+    .state('menu.tabs.sardhana', {
+      url: "/sardhana",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingStation.html",
+          controller: "sdCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail', {
+      url: "/sdDetail",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail2', {
+      url: "/sdDetail2",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail3', {
+      url: "/sdDetail3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl3"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail4', {
+      url: "/sdDetail4",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl4"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail5', {
+      url: "/sdDetail5",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl5"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail6', {
+      url: "/sdDetail6",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl6"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail7', {
+      url: "/sdDetail7",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl7"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail8', {
+      url: "/sdDetail8",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl8"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail9', {
+      url: "/sdDetail9",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl9"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail10', {
+      url: "/sdDetail10",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl10"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail11', {
+      url: "/sdDetail11",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl11"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail12', {
+      url: "/sdDetail12",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl12"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail13', {
+      url: "/sdDetail13",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl13"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail14', {
+      url: "/sdDetail14",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl14"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail15', {
+      url: "/sdDetail15",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl15"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail16', {
+      url: "/sdDetail16",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl16"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail17', {
+      url: "/sdDetail17",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl17"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail18', {
+      url: "/sdDetail18",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl18"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail19', {
+      url: "/sdDetail19",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl19"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail20', {
+      url: "/sdDetail20",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl20"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail21', {
+      url: "/sdDetail21",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl21"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail22', {
+      url: "/sdDetail22",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl22"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail23', {
+      url: "/sdDetail23",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl23"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail24', {
+      url: "/sdDetail24",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl24"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail25', {
+      url: "/sdDetail25",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl25"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail26', {
+      url: "/sdDetail26",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl26"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail27', {
+      url: "/sdDetail27",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl27"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail28', {
+      url: "/sdDetail28",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl28"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail29', {
+      url: "/sdDetail29",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl29"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail30', {
+      url: "/sdDetail30",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl30"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail31', {
+      url: "/sdDetail31",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl31"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail32', {
+      url: "/sdDetail32",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl32"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail33', {
+      url: "/sdDetail33",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl33"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail34', {
+      url: "/sdDetail34",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl34"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail35', {
+      url: "/sdDetail35",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl35"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail36', {
+      url: "/sdDetail36",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl36"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail37', {
+      url: "/sdDetail37",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl37"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail38', {
+      url: "/sdDetail38",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl38"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail39', {
+      url: "/sdDetail39",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl39"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail40', {
+      url: "/sdDetail40",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl40"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail41', {
+      url: "/sdDetail41",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl41"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail42', {
+      url: "/sdDetail42",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl42"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail43', {
+      url: "/sdDetail43",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl43"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail44', {
+      url: "/sdDetail44",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl44"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail45', {
+      url: "/sdDetail45",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl45"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail46', {
+      url: "/sdDetail46",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl46"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail47', {
+      url: "/sdDetail47",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl47"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail48', {
+      url: "/sdDetail48",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl48"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail49', {
+      url: "/sdDetail49",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl49"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail50', {
+      url: "/sdDetail50",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl50"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail51', {
+      url: "/sdDetail51",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl51"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail52', {
+      url: "/sdDetail52",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl52"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail53', {
+      url: "/sdDetail53",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl53"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail54', {
+      url: "/sdDetail54",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl54"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail55', {
+      url: "/sdDetail55",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl55"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail56', {
+      url: "/sdDetail56",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl56"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail57', {
+      url: "/sdDetail57",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl57"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail58', { 
+      url: "/sdDetail58",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl58"
+        }
+      }
+    })
+    .state('menu.tabs.sdDetail59', {
+      url: "/sdDetail59",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl59"
+        }
+      }
+    })    .state('menu.tabs.sdDetail60', {
+      url: "/sdDetail60",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl60"
+        }
+      }
+    })    .state('menu.tabs.sdDetail61', {
+      url: "/sdDetail61",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl61"
+        }
+      }
+    })    .state('menu.tabs.sdDetail62', {
+      url: "/sdDetail62",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl62"
+        }
+      }
+    })    .state('menu.tabs.sdDetail63', {
+      url: "/sdDetail63",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl63"
+        }
+      }
+    })    .state('menu.tabs.sdDetail64', {
+      url: "/sdDetail64",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl64"
+        }
+      }
+    })    .state('menu.tabs.sdDetail65', {
+      url: "/sdDetail65",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl65"
+        }
+      }
+    })    .state('menu.tabs.sdDetail66', {
+      url: "/sdDetail66",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl66"
+        }
+      }
+    })    .state('menu.tabs.sdDetail67', {
+      url: "/sdDetail67",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl67"
+        }
+      }
+    })    .state('menu.tabs.sdDetail68', {
+      url: "/sdDetail68",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl68"
+        }
+      }
+    })    .state('menu.tabs.sdDetail69', {
+      url: "/sdDetail69",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl69"
+        }
+      }
+    })    .state('menu.tabs.sdDetail70', {
+      url: "/sdDetail70",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl70"
+        }
+      }
+    })    .state('menu.tabs.sdDetail71', {
+      url: "/sdDetail71",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl71"
+        }
+      }
+    })    .state('menu.tabs.sdDetail72', {
+      url: "/sdDetail72",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl72"
+        }
+      }
+    })    .state('menu.tabs.sdDetail73', {
+      url: "/sdDetail73",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl73"
+        }
+      }
+    })    .state('menu.tabs.sdDetail74', {
+      url: "/sdDetail74",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl74"
+        }
+      }
+    })    .state('menu.tabs.sdDetail75', {
+      url: "/sdDetail75",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl75"
+        }
+      }
+    })    .state('menu.tabs.sdDetail76', {
+      url: "/sdDetail76",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl76"
+        }
+      }
+    })    .state('menu.tabs.sdDetail77', {
+      url: "/sdDetail77",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl77"
+        }
+      }
+    })    .state('menu.tabs.sdDetail78', {
+      url: "/sdDetail78",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl78"
+        }
+      }
+    })    .state('menu.tabs.sdDetail79', {
+      url: "/sdDetail79",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl79"
+        }
+      }
+    })    .state('menu.tabs.sdDetail80', {
+      url: "/sdDetail80",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl80"
+        }
+      }
+    })    .state('menu.tabs.sdDetail81', {
+      url: "/sdDetail81",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl81"
+        }
+      }
+    })    .state('menu.tabs.sdDetail82', {
+      url: "/sdDetail82",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl82"
+        }
+      }
+    })    .state('menu.tabs.sdDetail83', {
+      url: "/sdDetail83",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl83"
+        }
+      }
+    })    .state('menu.tabs.sdDetail84', {
+      url: "/sdDetail84",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl84"
+        }
+      }
+    })    .state('menu.tabs.sdDetail85', {
+      url: "/sdDetail85",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl85"
+        }
+      }
+    })    .state('menu.tabs.sdDetail86', {
+      url: "/sdDetail86",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl86"
+        }
+      }
+    })    .state('menu.tabs.sdDetail87', {
+      url: "/sdDetail87",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl87"
+        }
+      }
+    })    .state('menu.tabs.sdDetail88', {
+      url: "/sdDetail88",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl88"
+        }
+      }
+    })    .state('menu.tabs.sdDetail89', {
+      url: "/sdDetail89",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl89"
+        }
+      }
+    })    .state('menu.tabs.sdDetail90', {
+      url: "/sdDetail90",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl90"
+        }
+      }
+    })    .state('menu.tabs.sdDetail91', {
+      url: "/sdDetail91",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl91"
+        }
+      }
+    })    .state('menu.tabs.sdDetail92', {
+      url: "/sdDetail92",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl92"
+        }
+      }
+    })    .state('menu.tabs.sdDetail93', {
+      url: "/sdDetail93",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl93"
+        }
+      }
+    })    .state('menu.tabs.sdDetail94', {
+      url: "/sdDetail94",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl94"
+        }
+      }
+    })    .state('menu.tabs.sdDetail95', {
+      url: "/sdDetail95",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "sdCtrl95"
+        }
+      }
+    })    
+//<<-- sardhana Routes End -->
 //<<-- Sadar Routes Start -->
     .state('menu.tabs.sadar', {
       url: "/sadar",
@@ -4368,6 +5194,487 @@ dsm.run(function($ionicPlatform, $rootScope) {
       }
     })
 //<<-- Kotwali Routes End --> 
+//<<-- Medical Routes Start -->
+    .state('menu.tabs.medical', {
+      url: "/medical",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingStation.html",
+          controller: "mdCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail', {
+      url: "/mdDetail",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail2', {
+      url: "/mdDetail2",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail3', {
+      url: "/mdDetail3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail4', {
+      url: "/mdDetail4",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl4"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail5', {
+      url: "/mdDetail5",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl5"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail6', {
+      url: "/mdDetail6",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl6"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail7', {
+      url: "/mdDetail7",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl7"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail8', {
+      url: "/mdDetail8",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl8"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail9', {
+      url: "/mdDetail9",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl9"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail10', {
+      url: "/mdDetail10",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl10"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail11', {
+      url: "/mdDetail11",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl11"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail12', {
+      url: "/mdDetail12",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl12"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail13', {
+      url: "/mdDetail13",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl13"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail14', {
+      url: "/mdDetail14",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl14"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail15', {
+      url: "/mdDetail15",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl15"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail16', {
+      url: "/mdDetail16",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl16"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail17', {
+      url: "/mdDetail17",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl17"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail18', {
+      url: "/mdDetail18",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl18"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail19', {
+      url: "/mdDetail19",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl19"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail20', {
+      url: "/mdDetail20",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl20"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail21', {
+      url: "/mdDetail21",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl21"
+        }
+      }
+    })
+    .state('menu.tabs.mdDetail22', {
+      url: "/mdDetail22",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "mdCtrl22"
+        }
+      }
+    })
+//<<-- Medical Routes End -->
+//<<-- Mundali Routes Start -->
+    .state('menu.tabs.mundali', {
+      url: "/mundali",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingStation.html",
+          controller: "muCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail', {
+      url: "/muDetail",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail2', {
+      url: "/muDetail2",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail3', {
+      url: "/muDetail3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail4', {
+      url: "/muDetail4",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl4"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail5', {
+      url: "/muDetail5",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl5"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail6', {
+      url: "/muDetail6",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl6"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail7', {
+      url: "/muDetail7",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl7"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail8', {
+      url: "/muDetail8",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl8"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail9', {
+      url: "/muDetail9",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl9"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail10', {
+      url: "/muDetail10",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl10"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail11', {
+      url: "/muDetail11",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl11"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail12', {
+      url: "/muDetail12",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl12"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail13', {
+      url: "/muDetail13",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl13"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail14', {
+      url: "/muDetail14",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl14"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail15', {
+      url: "/muDetail15",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl15"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail16', {
+      url: "/muDetail16",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl16"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail17', {
+      url: "/muDetail17",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl17"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail18', {
+      url: "/muDetail18",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl18"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail19', {
+      url: "/muDetail19",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl19"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail20', {
+      url: "/muDetail20",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl20"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail21', {
+      url: "/muDetail21",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl21"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail22', {
+      url: "/muDetail22",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl22"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail23', {
+      url: "/muDetail23",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl23"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail24', {
+      url: "/muDetail24",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl24"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail25', {
+      url: "/muDetail25",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl25"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail26', {
+      url: "/muDetail26",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl26"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail27', {
+      url: "/muDetail27",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl27"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail28', {
+      url: "/muDetail28",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl28"
+        }
+      }
+    })
+    .state('menu.tabs.muDetail29', {
+      url: "/muDetail29",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "muCtrl29"
+        }
+      }
+    })
+//<<-- Mundali Routes End -->
 //<<-- Brahmpuri Routes Start -->
     .state('menu.tabs.brahmpuri', {
       url: "/brahmpuri",
@@ -8811,152 +10118,1155 @@ dsm.run(function($ionicPlatform, $rootScope) {
       }
     })
 //<<-- Behsuma Routes End -->
-
-
-	.state('menu.tabs.myEvents3', {
-      url: "/myEvents3",
+//<<-- Kankerkhera Routes Start -->
+    .state('menu.tabs.kankarkhera', {
+      url: "/kankarkhera",
       views: {
         'slide-tab': {
-          templateUrl: "templates/myEvents3.html"
+          templateUrl: "templates/pollingStation.html",
+          controller: "kkhCtrl"
         }
       }
     })
-	.state('menu.tabs.myPastEvents', {
-      url: "/myPastEvents",
+    .state('menu.tabs.kkhDetail', {
+      url: "/kkhDetail",
       views: {
         'slide-tab': {
-          templateUrl: "templates/myPastEvents.html"
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl"
         }
       }
     })
-	.state('menu.tabs.myPastEvents2', {
-      url: "/myPastEvents2",
+    .state('menu.tabs.kkhDetail2', {
+      url: "/kkhDetail2",
       views: {
         'slide-tab': {
-          templateUrl: "templates/myPastEvents2.html"
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl2"
         }
       }
     })
-	.state('menu.tabs.myPastEvents3', {
-      url: "/myPastEvents3",
+    .state('menu.tabs.kkhDetail3', {
+      url: "/kkhDetail3",
       views: {
         'slide-tab': {
-          templateUrl: "templates/myPastEvents3.html"
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl3"
         }
       }
     })
-	.state('menu.tabs.myPastEvents4', {
-      url: "/myPastEvents4",
+    .state('menu.tabs.kkhDetail4', {
+      url: "/kkhDetail4",
       views: {
         'slide-tab': {
-          templateUrl: "templates/myPastEvents4.html"
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl4"
         }
       }
     })
-	.state('menu.tabs.podcast', {
-      url: "/podcast",
+    .state('menu.tabs.kkhDetail5', {
+      url: "/kkhDetail5",
       views: {
-        'podcast-tab': {
-          templateUrl: "templates/podcast.html",
-          controller: 'podcastCtrl'
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl5"
         }
       }
     })
-	.state('menu.tabs.search', {
-      url: "/search",
+    .state('menu.tabs.kkhDetail6', {
+      url: "/kkhDetail6",
       views: {
-        'search-tab': {
-          templateUrl: "templates/search.html",
-          controller: 'dataCtrl'
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl6"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail7', {
+      url: "/kkhDetail7",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl7"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail8', {
+      url: "/kkhDetail8",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl8"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail9', {
+      url: "/kkhDetail9",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl9"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail10', {
+      url: "/kkhDetail10",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl10"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail11', {
+      url: "/kkhDetail11",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl11"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail12', {
+      url: "/kkhDetail12",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl12"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail13', {
+      url: "/kkhDetail13",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl13"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail14', {
+      url: "/kkhDetail14",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl14"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail15', {
+      url: "/kkhDetail15",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl15"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail16', {
+      url: "/kkhDetail16",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl16"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail17', {
+      url: "/kkhDetail17",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl17"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail18', {
+      url: "/kkhDetail18",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl18"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail19', {
+      url: "/kkhDetail19",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl19"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail20', {
+      url: "/kkhDetail20",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl20"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail21', {
+      url: "/kkhDetail21",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl21"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail22', {
+      url: "/kkhDetail22",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl22"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail23', {
+      url: "/kkhDetail23",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl23"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail24', {
+      url: "/kkhDetail24",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl24"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail25', {
+      url: "/kkhDetail25",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl25"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail26', {
+      url: "/kkhDetail26",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl26"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail27', {
+      url: "/kkhDetail27",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl27"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail28', {
+      url: "/kkhDetail28",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl28"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail29', {
+      url: "/kkhDetail29",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl29"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail30', {
+      url: "/kkhDetail30",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl30"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail31', {
+      url: "/kkhDetail31",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl31"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail32', {
+      url: "/kkhDetail32",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl32"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail33', {
+      url: "/kkhDetail33",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl33"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail34', {
+      url: "/kkhDetail34",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl34"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail35', {
+      url: "/kkhDetail35",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl35"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail36', {
+      url: "/kkhDetail36",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl36"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail37', {
+      url: "/kkhDetail37",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl37"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail38', {
+      url: "/kkhDetail38",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl38"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail39', {
+      url: "/kkhDetail39",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl39"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail40', {
+      url: "/kkhDetail40",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl40"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail41', {
+      url: "/kkhDetail41",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl41"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail42', {
+      url: "/kkhDetail42",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl42"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail43', {
+      url: "/kkhDetail43",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl43"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail44', {
+      url: "/kkhDetail44",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl44"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail45', {
+      url: "/kkhDetail45",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl45"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail46', {
+      url: "/kkhDetail46",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl46"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail47', {
+      url: "/kkhDetail47",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl47"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail48', {
+      url: "/kkhDetail48",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl48"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail49', {
+      url: "/kkhDetail49",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl49"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail50', {
+      url: "/kkhDetail50",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl50"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail51', {
+      url: "/kkhDetail51",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl51"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail52', {
+      url: "/kkhDetail52",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl52"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail53', {
+      url: "/kkhDetail53",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl53"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail54', {
+      url: "/kkhDetail54",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl54"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail55', {
+      url: "/kkhDetail55",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl55"
+        }
+      }
+    })
+    .state('menu.tabs.kkhDetail56', {
+      url: "/kkhDetail56",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "kkhCtrl56"
+        }
+      }
+    })
+//<<-- Kankerkhera Routes End -->
+//<<-- Daurala Routes Start -->
+    .state('menu.tabs.daurala', {
+      url: "/daurala",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingStation.html",
+          controller: "drCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail', {
+      url: "/drDetail",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail2', {
+      url: "/drDetail2",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl2"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail3', {
+      url: "/drDetail3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl3"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail4', {
+      url: "/drDetail4",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl4"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail5', {
+      url: "/drDetail5",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl5"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail6', {
+      url: "/drDetail6",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl6"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail7', {
+      url: "/drDetail7",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl7"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail8', {
+      url: "/drDetail8",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl8"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail9', {
+      url: "/drDetail9",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl9"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail10', {
+      url: "/drDetail10",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl10"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail11', {
+      url: "/drDetail11",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl11"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail12', {
+      url: "/drDetail12",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl12"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail13', {
+      url: "/drDetail13",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl13"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail14', {
+      url: "/drDetail14",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl14"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail15', {
+      url: "/drDetail15",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl15"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail16', {
+      url: "/drDetail16",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl16"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail17', {
+      url: "/drDetail17",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl17"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail18', {
+      url: "/drDetail18",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl18"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail19', {
+      url: "/drDetail19",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl19"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail20', {
+      url: "/drDetail20",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl20"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail21', {
+      url: "/drDetail21",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl21"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail22', {
+      url: "/drDetail22",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl22"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail23', {
+      url: "/drDetail23",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl23"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail24', {
+      url: "/drDetail24",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl24"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail25', {
+      url: "/drDetail25",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl25"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail26', {
+      url: "/drDetail26",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl26"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail27', {
+      url: "/drDetail27",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl27"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail28', {
+      url: "/drDetail28",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl28"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail29', {
+      url: "/drDetail29",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl29"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail30', {
+      url: "/drDetail30",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl30"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail31', {
+      url: "/drDetail31",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl31"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail32', {
+      url: "/drDetail32",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl32"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail33', {
+      url: "/drDetail33",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl33"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail34', {
+      url: "/drDetail34",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl34"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail35', {
+      url: "/drDetail35",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl35"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail36', {
+      url: "/drDetail36",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl36"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail37', {
+      url: "/drDetail37",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl37"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail38', {
+      url: "/drDetail38",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl38"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail39', {
+      url: "/drDetail39",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl39"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail40', {
+      url: "/drDetail40",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl40"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail41', {
+      url: "/drDetail41",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl41"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail42', {
+      url: "/drDetail42",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl42"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail43', {
+      url: "/drDetail43",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl43"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail44', {
+      url: "/drDetail44",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl44"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail45', {
+      url: "/drDetail45",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl45"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail46', {
+      url: "/drDetail46",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl46"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail47', {
+      url: "/drDetail47",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl47"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail48', {
+      url: "/drDetail48",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl48"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail49', {
+      url: "/drDetail49",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl49"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail50', {
+      url: "/drDetail50",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl50"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail51', {
+      url: "/drDetail51",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl51"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail52', {
+      url: "/drDetail52",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl52"
+        }
+      }
+    })
+    .state('menu.tabs.drDetail53', {
+      url: "/drDetail53",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/pollingDetail.html",
+          controller: "drCtrl53"
+        }
+      }
+    })
+//<<-- Daurala Routes End -->
 
-        }
-      }
-    })
 
-	.state('menu.tabs.userProfileExtn', {
-      url: "/userProfileExtn",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/userProfileExtn.html",
-          controller: 'userProfileCtrl'
+.state('menu.tabs.myEvents3', {
+    url: "/myEvents3",
+    views: {
+      'slide-tab': {
+        templateUrl: "templates/myEvents3.html"
+      }
+    }
+  })
+.state('menu.tabs.myPastEvents', {
+    url: "/myPastEvents",
+    views: {
+      'slide-tab': {
+        templateUrl: "templates/myPastEvents.html"
+      }
+    }
+  })
+.state('menu.tabs.myPastEvents2', {
+    url: "/myPastEvents2",
+    views: {
+      'slide-tab': {
+        templateUrl: "templates/myPastEvents2.html"
+      }
+    }
+  })
+.state('menu.tabs.myPastEvents3', {
+    url: "/myPastEvents3",
+    views: {
+      'slide-tab': {
+        templateUrl: "templates/myPastEvents3.html"
+      }
+    }
+  })
+.state('menu.tabs.myPastEvents4', {
+    url: "/myPastEvents4",
+    views: {
+      'slide-tab': {
+        templateUrl: "templates/myPastEvents4.html"
+      }
+    }
+  })
+.state('menu.tabs.podcast', {
+    url: "/podcast",
+    views: {
+      'podcast-tab': {
+        templateUrl: "templates/podcast.html",
+        controller: 'podcastCtrl'
+      }
+    }
+  })
+.state('menu.tabs.search', {
+    url: "/search",
+    views: {
+      'search-tab': {
+        templateUrl: "templates/search.html",
+        controller: 'dataCtrl'
 
-        }
       }
-    })
-	.state('menu.tabs.contactUs1', {
-      url: "/contactUs",
-      views: {
-        'buttons-tab': {
-          templateUrl: "templates/contactUs.html",
-          controller: 'userProfileCtrl'
-        }
+    }
+  })
+
+.state('menu.tabs.userProfileExtn', {
+    url: "/userProfileExtn",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/userProfileExtn.html",
+        controller: 'userProfileCtrl'
+
       }
-    })
-	.state('menu.tabs.faView1', {
-      url: "/faView1",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView1.html"
-        }
+    }
+  })
+.state('menu.tabs.contactUs1', {
+    url: "/contactUs",
+    views: {
+      'buttons-tab': {
+        templateUrl: "templates/contactUs.html",
+        controller: 'userProfileCtrl'
       }
-    })
-	.state('menu.tabs.img1', {
-      url: "/img1",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView1img.html"
-        }
+    }
+  })
+.state('menu.tabs.faView1', {
+    url: "/faView1",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView1.html"
       }
-    })
-	.state('menu.tabs.faView2', {
-      url: "/faView2",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView2.html"
-        }
+    }
+  })
+.state('menu.tabs.img1', {
+    url: "/img1",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView1img.html"
       }
-    })
-	.state('menu.tabs.img2', {
-      url: "/img2",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView2img.html"
-        }
+    }
+  })
+.state('menu.tabs.faView2', {
+    url: "/faView2",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView2.html"
       }
-    })
-	.state('menu.tabs.faView3', {
-      url: "/faView3",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView3.html"
-        }
+    }
+  })
+.state('menu.tabs.img2', {
+    url: "/img2",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView2img.html"
       }
-    })
-	.state('menu.tabs.img3', {
-      url: "/img3",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/faView3img.html"
-        }
+    }
+  })
+.state('menu.tabs.faView3', {
+    url: "/faView3",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView3.html"
       }
-    })
-	.state('menu.tabs.testPush', {
-      url: "/testPush",
-      views: {
-        'userProfile-tab': {
-          templateUrl: "templates/testPush.html"
-        }
+    }
+  })
+.state('menu.tabs.img3', {
+    url: "/img3",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/faView3img.html"
       }
-    })
-    .state('menu.login', {
-      url: "/login",
-      views: {
-        'menuContent': {
-          templateUrl: "templates/login.html",
-		  controller: "loginCtrl"
-        }
+    }
+  })
+.state('menu.tabs.testPush', {
+    url: "/testPush",
+    views: {
+      'userProfile-tab': {
+        templateUrl: "templates/testPush.html"
       }
-    })
+    }
+  })
+  .state('menu.login', {
+    url: "/login",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/login.html",
+	  controller: "loginCtrl"
+      }
+    }
+  })
 
 	$urlRouterProvider.otherwise("/menu/login");
 
@@ -20864,6 +23174,1920 @@ function PeopleCtrl($scope, $http) {
     });
 })
 // End of Brahmpuri Controllers here
+
+.controller('muCtrl', function($scope, $http){
+  $scope.items = [
+      {
+        "title": "Prathamik Vidyalaya 01 Mundali",
+        "path": "#/menu/tab/muDetail"
+      },
+      {
+        "title": "Prathamik Vidyalaya 02 Mundali",
+        "path": "#/menu/tab/muDetail2"
+      },
+      {
+        "title": "Ucch Prathamik Vidyalaya 03 Mundali",
+        "path": "#/menu/tab/muDetail3"
+      },
+      {
+        "title": "Prathmik Vidyalaya Gram Aadh Meerut",
+        "path": "#/menu/tab/muDetail4"
+      },
+      {
+        "title": "Ucch Prathamik Vidyalaya Jisora Meerut",
+        "path": "#/menu/tab/muDetail5"
+      },
+      {
+        "title": "Jisora Prathamik Vidhyaly Jisora",
+        "path": "#/menu/tab/muDetail6"
+      },
+      {
+        "title": "Prathamik Vidyalaya Jisouri Meerut",
+        "path": "#/menu/tab/muDetail7"
+      },
+      {
+        "title": "Prathamik Vidyalaya Nanglamal Meerut",
+        "path": "#/menu/tab/muDetail8"
+      },
+      {
+        "title": "Ucch Prathamik Vidyalaya Nanglamal 02",
+        "path": "#/menu/tab/muDetail9"
+      },
+      {
+        "title": "Jawaharlal Nehru Smarak Inter College Rachhoti Meerut",
+        "path": "#/menu/tab/muDetail10"
+      },
+      {
+        "title": "Prathamik Vidhyalay Deriyo",
+        "path": "#/menu/tab/muDetail11"
+      },
+      {
+        "title": "B.M.M. Inter College Maukhas",
+        "path": "#/menu/tab/muDetail12"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kherki",
+        "path": "#/menu/tab/muDetail13"
+      },
+      {
+        "title": "Ucch Prathamik Vidhyalay Sameypur",
+        "path": "#/menu/tab/muDetail14"
+      },
+      {
+        "title": "Prathamik Vidhyalay Meghrajpur",
+        "path": "#/menu/tab/muDetail15"
+      },
+      {
+        "title": "Prathamik Vidhyalay Bhagwanpur Chittawan",
+        "path": "#/menu/tab/muDetail16"
+      },
+      {
+        "title": "Pandit Ramswaroop Durga Hige Secondary School Sisoli Mundali",
+        "path": "#/menu/tab/muDetail17"
+      },
+      {
+        "title": "S.S.B. Inter College Murlipur Meerut",
+        "path": "#/menu/tab/muDetail18"
+      },
+      {
+        "title": "Prathamik Vidhyalay Badhala Kaithwara Meerut",
+        "path": "#/menu/tab/muDetail19"
+      },
+      {
+        "title": "Prathamik Vidhyalay Nagla Kaboolpur Meerut",
+        "path": "#/menu/tab/muDetail20"
+      },
+      {
+        "title": "Prathamik Vidhyalay Alampur Buzurg Meerut",
+        "path": "#/menu/tab/muDetail21"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kudhala Meerut",
+        "path": "#/menu/tab/muDetail22"
+      },
+      {
+        "title": "Prathamik Vidhyalay Shafiabad Loti Meerut",
+        "path": "#/menu/tab/muDetail23"
+      },
+      {
+        "title": "Prathamik Vidhyalay Ataula Meerut",
+        "path": "#/menu/tab/muDetail24"
+      },
+      {
+        "title": "Prathamik Vidhyalay Allahabad Madaia Meerut",
+        "path": "#/menu/tab/muDetail25"
+      },
+      {
+        "title": "Prathamik Vidyalay 01 Ajrara Meerut",
+        "path": "#/menu/tab/muDetail26"
+      },
+      {
+        "title": "Ucch Prathamik Vidyalaya 02 Ajrara Meerut",
+        "path": "#/menu/tab/muDetail27"
+      },
+      {
+        "title": "Gram Panchayat Bhawan 03 Ajrara Meerut",
+        "path": "#/menu/tab/muDetail28"
+      },
+      {
+        "title": "Ucch Prarthamik Vidhyalay Gulzar Hussainiya  04 Ajrara",
+        "path": "#/menu/tab/muDetail29"
+      }
+    ];
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[0].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[0].councellor;
+    $scope.gridRespected = $scope.masterData[0].respectedPpl;
+    $scope.gridRetired = $scope.masterData[0].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[0].neighbourPolling;
+    $scope.gridArms = $scope.masterData[0].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[0].historySheeter;
+    $scope.stName = $scope.masterData[0].stationName;
+    $scope.lat = $scope.masterData[0].latitude;
+    $scope.lon = $scope.masterData[0].longitude;
+    $scope.pop = $scope.masterData[0].population;
+    $scope.vot = $scope.masterData[0].voters;
+    $scope.vill = $scope.masterData[0].villageMohalla;
+    $scope.gridCon = $scope.masterData[0].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[0].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[0].electionCrimes;
+    $scope.gridPoli = $scope.masterData[0].politician;
+    $scope.bUnder = $scope.masterData[0].boundDownUnder;
+    $scope.vul = $scope.masterData[0].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[0].warrantedCriminals;
+    $scope.cond = $scope.masterData[0].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl2', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[1].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[1].councellor;
+    $scope.gridRespected = $scope.masterData[1].respectedPpl;
+    $scope.gridRetired = $scope.masterData[1].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[1].neighbourPolling;
+    $scope.gridArms = $scope.masterData[1].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[1].historySheeter;
+    $scope.stName = $scope.masterData[1].stationName;
+    $scope.lat = $scope.masterData[1].latitude;
+    $scope.lon = $scope.masterData[1].longitude;
+    $scope.pop = $scope.masterData[1].population;
+    $scope.vot = $scope.masterData[1].voters;
+    $scope.vill = $scope.masterData[1].villageMohalla;
+    $scope.gridCon = $scope.masterData[1].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[1].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[1].electionCrimes;
+    $scope.gridPoli = $scope.masterData[1].politician;
+    $scope.bUnder = $scope.masterData[1].boundDownUnder;
+    $scope.vul = $scope.masterData[1].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[1].warrantedCriminals;
+    $scope.cond = $scope.masterData[1].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl3', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[2].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[2].councellor;
+    $scope.gridRespected = $scope.masterData[2].respectedPpl;
+    $scope.gridRetired = $scope.masterData[2].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[2].neighbourPolling;
+    $scope.gridArms = $scope.masterData[2].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[2].historySheeter;
+    $scope.stName = $scope.masterData[2].stationName;
+    $scope.lat = $scope.masterData[2].latitude;
+    $scope.lon = $scope.masterData[2].longitude;
+    $scope.pop = $scope.masterData[2].population;
+    $scope.vot = $scope.masterData[2].voters;
+    $scope.vill = $scope.masterData[2].villageMohalla;
+    $scope.gridCon = $scope.masterData[2].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[2].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[2].electionCrimes;
+    $scope.gridPoli = $scope.masterData[2].politician;
+    $scope.bUnder = $scope.masterData[2].boundDownUnder;
+    $scope.vul = $scope.masterData[2].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[2].warrantedCriminals;
+    $scope.cond = $scope.masterData[2].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl4', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[3].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[3].councellor;
+    $scope.gridRespected = $scope.masterData[3].respectedPpl;
+    $scope.gridRetired = $scope.masterData[3].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[3].neighbourPolling;
+    $scope.gridArms = $scope.masterData[3].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[3].historySheeter;
+    $scope.stName = $scope.masterData[3].stationName;
+    $scope.lat = $scope.masterData[3].latitude;
+    $scope.lon = $scope.masterData[3].longitude;
+    $scope.pop = $scope.masterData[3].population;
+    $scope.vot = $scope.masterData[3].voters;
+    $scope.vill = $scope.masterData[3].villageMohalla;
+    $scope.gridCon = $scope.masterData[3].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[3].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[3].electionCrimes;
+    $scope.gridPoli = $scope.masterData[3].politician;
+    $scope.bUnder = $scope.masterData[3].boundDownUnder;
+    $scope.vul = $scope.masterData[3].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[3].warrantedCriminals;
+    $scope.cond = $scope.masterData[3].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[3].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl5', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[4].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[4].councellor;
+    $scope.gridRespected = $scope.masterData[4].respectedPpl;
+    $scope.gridRetired = $scope.masterData[4].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[4].neighbourPolling;
+    $scope.gridArms = $scope.masterData[4].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[4].historySheeter;
+    $scope.stName = $scope.masterData[4].stationName;
+    $scope.lat = $scope.masterData[4].latitude;
+    $scope.lon = $scope.masterData[4].longitude;
+    $scope.pop = $scope.masterData[4].population;
+    $scope.vot = $scope.masterData[4].voters;
+    $scope.vill = $scope.masterData[4].villageMohalla;
+    $scope.gridCon = $scope.masterData[4].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[4].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[4].electionCrimes;
+    $scope.gridPoli = $scope.masterData[4].politician;
+    $scope.bUnder = $scope.masterData[4].boundDownUnder;
+    $scope.vul = $scope.masterData[4].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[4].warrantedCriminals;
+    $scope.cond = $scope.masterData[4].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl6', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[5].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[5].councellor;
+    $scope.gridRespected = $scope.masterData[5].respectedPpl;
+    $scope.gridRetired = $scope.masterData[5].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[5].neighbourPolling;
+    $scope.gridArms = $scope.masterData[5].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[5].historySheeter;
+    $scope.stName = $scope.masterData[5].stationName;
+    $scope.lat = $scope.masterData[5].latitude;
+    $scope.lon = $scope.masterData[5].longitude;
+    $scope.pop = $scope.masterData[5].population;
+    $scope.vot = $scope.masterData[5].voters;
+    $scope.vill = $scope.masterData[5].villageMohalla;
+    $scope.gridCon = $scope.masterData[5].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[5].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[5].electionCrimes;
+    $scope.gridPoli = $scope.masterData[5].politician;
+    $scope.bUnder = $scope.masterData[5].boundDownUnder;
+    $scope.vul = $scope.masterData[5].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[5].warrantedCriminals;
+    $scope.cond = $scope.masterData[5].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl7', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[6].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[6].councellor;
+    $scope.gridRespected = $scope.masterData[6].respectedPpl;
+    $scope.gridRetired = $scope.masterData[6].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[6].neighbourPolling;
+    $scope.gridArms = $scope.masterData[6].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[6].historySheeter;
+    $scope.stName = $scope.masterData[6].stationName;
+    $scope.lat = $scope.masterData[6].latitude;
+    $scope.lon = $scope.masterData[6].longitude;
+    $scope.pop = $scope.masterData[6].population;
+    $scope.vot = $scope.masterData[6].voters;
+    $scope.vill = $scope.masterData[6].villageMohalla;
+    $scope.gridCon = $scope.masterData[6].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[6].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[6].electionCrimes;
+    $scope.gridPoli = $scope.masterData[6].politician;
+    $scope.bUnder = $scope.masterData[6].boundDownUnder;
+    $scope.vul = $scope.masterData[6].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[6].warrantedCriminals;
+    $scope.cond = $scope.masterData[6].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl8', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[7].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[7].councellor;
+    $scope.gridRespected = $scope.masterData[7].respectedPpl;
+    $scope.gridRetired = $scope.masterData[7].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[7].neighbourPolling;
+    $scope.gridArms = $scope.masterData[7].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[7].historySheeter;
+    $scope.stName = $scope.masterData[7].stationName;
+    $scope.lat = $scope.masterData[7].latitude;
+    $scope.lon = $scope.masterData[7].longitude;
+    $scope.pop = $scope.masterData[7].population;
+    $scope.vot = $scope.masterData[7].voters;
+    $scope.vill = $scope.masterData[7].villageMohalla;
+    $scope.gridCon = $scope.masterData[7].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[7].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[7].electionCrimes;
+    $scope.gridPoli = $scope.masterData[7].politician;
+    $scope.bUnder = $scope.masterData[7].boundDownUnder;
+    $scope.vul = $scope.masterData[7].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[7].warrantedCriminals;
+    $scope.cond = $scope.masterData[7].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl9', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[8].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[8].councellor;
+    $scope.gridRespected = $scope.masterData[8].respectedPpl;
+    $scope.gridRetired = $scope.masterData[8].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[8].neighbourPolling;
+    $scope.gridArms = $scope.masterData[8].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[8].historySheeter;
+    $scope.stName = $scope.masterData[8].stationName;
+    $scope.lat = $scope.masterData[8].latitude;
+    $scope.lon = $scope.masterData[8].longitude;
+    $scope.pop = $scope.masterData[8].population;
+    $scope.vot = $scope.masterData[8].voters;
+    $scope.vill = $scope.masterData[8].villageMohalla;
+    $scope.gridCon = $scope.masterData[8].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[8].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[8].electionCrimes;
+    $scope.gridPoli = $scope.masterData[8].politician;
+    $scope.bUnder = $scope.masterData[8].boundDownUnder;
+    $scope.vul = $scope.masterData[8].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[8].warrantedCriminals;
+    $scope.cond = $scope.masterData[8].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl10', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[9].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[9].councellor;
+    $scope.gridRespected = $scope.masterData[9].respectedPpl;
+    $scope.gridRetired = $scope.masterData[9].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[9].neighbourPolling;
+    $scope.gridArms = $scope.masterData[9].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[9].historySheeter;
+    $scope.stName = $scope.masterData[9].stationName;
+    $scope.lat = $scope.masterData[9].latitude;
+    $scope.lon = $scope.masterData[9].longitude;
+    $scope.pop = $scope.masterData[9].population;
+    $scope.vot = $scope.masterData[9].voters;
+    $scope.vill = $scope.masterData[9].villageMohalla;
+    $scope.gridCon = $scope.masterData[9].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[9].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[9].electionCrimes;
+    $scope.gridPoli = $scope.masterData[9].politician;
+    $scope.bUnder = $scope.masterData[9].boundDownUnder;
+    $scope.vul = $scope.masterData[9].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[9].warrantedCriminals;
+    $scope.cond = $scope.masterData[9].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl11', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[10].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[10].councellor;
+    $scope.gridRespected = $scope.masterData[10].respectedPpl;
+    $scope.gridRetired = $scope.masterData[10].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[10].neighbourPolling;
+    $scope.gridArms = $scope.masterData[10].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[10].historySheeter;
+    $scope.stName = $scope.masterData[10].stationName;
+    $scope.lat = $scope.masterData[10].latitude;
+    $scope.lon = $scope.masterData[10].longitude;
+    $scope.pop = $scope.masterData[10].population;
+    $scope.vot = $scope.masterData[10].voters;
+    $scope.vill = $scope.masterData[10].villageMohalla;
+    $scope.gridCon = $scope.masterData[10].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[10].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[10].electionCrimes;
+    $scope.gridPoli = $scope.masterData[10].politician;
+    $scope.bUnder = $scope.masterData[10].boundDownUnder;
+    $scope.vul = $scope.masterData[10].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[10].warrantedCriminals;
+    $scope.cond = $scope.masterData[10].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl12', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[11].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[11].councellor;
+    $scope.gridRespected = $scope.masterData[11].respectedPpl;
+    $scope.gridRetired = $scope.masterData[11].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[11].neighbourPolling;
+    $scope.gridArms = $scope.masterData[11].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[11].historySheeter;
+    $scope.stName = $scope.masterData[11].stationName;
+    $scope.lat = $scope.masterData[11].latitude;
+    $scope.lon = $scope.masterData[11].longitude;
+    $scope.pop = $scope.masterData[11].population;
+    $scope.vot = $scope.masterData[11].voters;
+    $scope.vill = $scope.masterData[11].villageMohalla;
+    $scope.gridCon = $scope.masterData[11].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[11].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[11].electionCrimes;
+    $scope.gridPoli = $scope.masterData[11].politician;
+    $scope.bUnder = $scope.masterData[11].boundDownUnder;
+    $scope.vul = $scope.masterData[11].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[11].warrantedCriminals;
+    $scope.cond = $scope.masterData[11].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl13', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[12].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[12].councellor;
+    $scope.gridRespected = $scope.masterData[12].respectedPpl;
+    $scope.gridRetired = $scope.masterData[12].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[12].neighbourPolling;
+    $scope.gridArms = $scope.masterData[12].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[12].historySheeter;
+    $scope.stName = $scope.masterData[12].stationName;
+    $scope.lat = $scope.masterData[12].latitude;
+    $scope.lon = $scope.masterData[12].longitude;
+    $scope.pop = $scope.masterData[12].population;
+    $scope.vot = $scope.masterData[12].voters;
+    $scope.vill = $scope.masterData[12].villageMohalla;
+    $scope.gridCon = $scope.masterData[12].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[12].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[12].electionCrimes;
+    $scope.gridPoli = $scope.masterData[12].politician;
+    $scope.bUnder = $scope.masterData[12].boundDownUnder;
+    $scope.vul = $scope.masterData[12].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[12].warrantedCriminals;
+    $scope.cond = $scope.masterData[12].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl14', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[13].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[13].councellor;
+    $scope.gridRespected = $scope.masterData[13].respectedPpl;
+    $scope.gridRetired = $scope.masterData[13].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[13].neighbourPolling;
+    $scope.gridArms = $scope.masterData[13].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[13].historySheeter;
+    $scope.stName = $scope.masterData[13].stationName;
+    $scope.lat = $scope.masterData[13].latitude;
+    $scope.lon = $scope.masterData[13].longitude;
+    $scope.pop = $scope.masterData[13].population;
+    $scope.vot = $scope.masterData[13].voters;
+    $scope.vill = $scope.masterData[13].villageMohalla;
+    $scope.gridCon = $scope.masterData[13].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[13].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[13].electionCrimes;
+    $scope.gridPoli = $scope.masterData[13].politician;
+    $scope.bUnder = $scope.masterData[13].boundDownUnder;
+    $scope.vul = $scope.masterData[13].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[13].warrantedCriminals;
+    $scope.cond = $scope.masterData[13].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl15', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[14].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[14].councellor;
+    $scope.gridRespected = $scope.masterData[14].respectedPpl;
+    $scope.gridRetired = $scope.masterData[14].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[14].neighbourPolling;
+    $scope.gridArms = $scope.masterData[14].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[14].historySheeter;
+    $scope.stName = $scope.masterData[14].stationName;
+    $scope.lat = $scope.masterData[14].latitude;
+    $scope.lon = $scope.masterData[14].longitude;
+    $scope.pop = $scope.masterData[14].population;
+    $scope.vot = $scope.masterData[14].voters;
+    $scope.vill = $scope.masterData[14].villageMohalla;
+    $scope.gridCon = $scope.masterData[14].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[14].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[14].electionCrimes;
+    $scope.gridPoli = $scope.masterData[14].politician;
+    $scope.bUnder = $scope.masterData[14].boundDownUnder;
+    $scope.vul = $scope.masterData[14].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[14].warrantedCriminals;
+    $scope.cond = $scope.masterData[14].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl16', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[15].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[15].councellor;
+    $scope.gridRespected = $scope.masterData[15].respectedPpl;
+    $scope.gridRetired = $scope.masterData[15].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[15].neighbourPolling;
+    $scope.gridArms = $scope.masterData[15].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[15].historySheeter;
+    $scope.stName = $scope.masterData[15].stationName;
+    $scope.lat = $scope.masterData[15].latitude;
+    $scope.lon = $scope.masterData[15].longitude;
+    $scope.pop = $scope.masterData[15].population;
+    $scope.vot = $scope.masterData[15].voters;
+    $scope.vill = $scope.masterData[15].villageMohalla;
+    $scope.gridCon = $scope.masterData[15].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[15].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[15].electionCrimes;
+    $scope.gridPoli = $scope.masterData[15].politician;
+    $scope.bUnder = $scope.masterData[15].boundDownUnder;
+    $scope.vul = $scope.masterData[15].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[15].warrantedCriminals;
+    $scope.cond = $scope.masterData[15].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl17', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[16].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[16].councellor;
+    $scope.gridRespected = $scope.masterData[16].respectedPpl;
+    $scope.gridRetired = $scope.masterData[16].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[16].neighbourPolling;
+    $scope.gridArms = $scope.masterData[16].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[16].historySheeter;
+    $scope.stName = $scope.masterData[16].stationName;
+    $scope.lat = $scope.masterData[16].latitude;
+    $scope.lon = $scope.masterData[16].longitude;
+    $scope.pop = $scope.masterData[16].population;
+    $scope.vot = $scope.masterData[16].voters;
+    $scope.vill = $scope.masterData[16].villageMohalla;
+    $scope.gridCon = $scope.masterData[16].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[16].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[16].electionCrimes;
+    $scope.gridPoli = $scope.masterData[16].politician;
+    $scope.bUnder = $scope.masterData[16].boundDownUnder;
+    $scope.vul = $scope.masterData[16].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[16].warrantedCriminals;
+    $scope.cond = $scope.masterData[16].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl18', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[17].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[17].councellor;
+    $scope.gridRespected = $scope.masterData[17].respectedPpl;
+    $scope.gridRetired = $scope.masterData[17].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[17].neighbourPolling;
+    $scope.gridArms = $scope.masterData[17].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[17].historySheeter;
+    $scope.stName = $scope.masterData[17].stationName;
+    $scope.lat = $scope.masterData[17].latitude;
+    $scope.lon = $scope.masterData[17].longitude;
+    $scope.pop = $scope.masterData[17].population;
+    $scope.vot = $scope.masterData[17].voters;
+    $scope.vill = $scope.masterData[17].villageMohalla;
+    $scope.gridCon = $scope.masterData[17].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[17].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[17].electionCrimes;
+    $scope.gridPoli = $scope.masterData[17].politician;
+    $scope.bUnder = $scope.masterData[17].boundDownUnder;
+    $scope.vul = $scope.masterData[17].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[17].warrantedCriminals;
+    $scope.cond = $scope.masterData[17].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl19', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[18].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[18].councellor;
+    $scope.gridRespected = $scope.masterData[18].respectedPpl;
+    $scope.gridRetired = $scope.masterData[18].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[18].neighbourPolling;
+    $scope.gridArms = $scope.masterData[18].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[18].historySheeter;
+    $scope.stName = $scope.masterData[18].stationName;
+    $scope.lat = $scope.masterData[18].latitude;
+    $scope.lon = $scope.masterData[18].longitude;
+    $scope.pop = $scope.masterData[18].population;
+    $scope.vot = $scope.masterData[18].voters;
+    $scope.vill = $scope.masterData[18].villageMohalla;
+    $scope.gridCon = $scope.masterData[18].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[18].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[18].electionCrimes;
+    $scope.gridPoli = $scope.masterData[18].politician;
+    $scope.bUnder = $scope.masterData[18].boundDownUnder;
+    $scope.vul = $scope.masterData[18].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[18].warrantedCriminals;
+    $scope.cond = $scope.masterData[18].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl20', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[19].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[19].councellor;
+    $scope.gridRespected = $scope.masterData[19].respectedPpl;
+    $scope.gridRetired = $scope.masterData[19].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[19].neighbourPolling;
+    $scope.gridArms = $scope.masterData[19].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[19].historySheeter;
+    $scope.stName = $scope.masterData[19].stationName;
+    $scope.lat = $scope.masterData[19].latitude;
+    $scope.lon = $scope.masterData[19].longitude;
+    $scope.pop = $scope.masterData[19].population;
+    $scope.vot = $scope.masterData[19].voters;
+    $scope.vill = $scope.masterData[19].villageMohalla;
+    $scope.gridCon = $scope.masterData[19].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[19].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[19].electionCrimes;
+    $scope.gridPoli = $scope.masterData[19].politician;
+    $scope.bUnder = $scope.masterData[19].boundDownUnder;
+    $scope.vul = $scope.masterData[19].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[19].warrantedCriminals;
+    $scope.cond = $scope.masterData[19].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl21', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[20].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[20].councellor;
+    $scope.gridRespected = $scope.masterData[20].respectedPpl;
+    $scope.gridRetired = $scope.masterData[20].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[20].neighbourPolling;
+    $scope.gridArms = $scope.masterData[20].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[20].historySheeter;
+    $scope.stName = $scope.masterData[20].stationName;
+    $scope.lat = $scope.masterData[20].latitude;
+    $scope.lon = $scope.masterData[20].longitude;
+    $scope.pop = $scope.masterData[20].population;
+    $scope.vot = $scope.masterData[20].voters;
+    $scope.vill = $scope.masterData[20].villageMohalla;
+    $scope.gridCon = $scope.masterData[20].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[20].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[20].electionCrimes;
+    $scope.gridPoli = $scope.masterData[20].politician;
+    $scope.bUnder = $scope.masterData[20].boundDownUnder;
+    $scope.vul = $scope.masterData[20].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[20].warrantedCriminals;
+    $scope.cond = $scope.masterData[20].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl22', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[21].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[21].councellor;
+    $scope.gridRespected = $scope.masterData[21].respectedPpl;
+    $scope.gridRetired = $scope.masterData[21].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[21].neighbourPolling;
+    $scope.gridArms = $scope.masterData[21].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[21].historySheeter;
+    $scope.stName = $scope.masterData[21].stationName;
+    $scope.lat = $scope.masterData[21].latitude;
+    $scope.lon = $scope.masterData[21].longitude;
+    $scope.pop = $scope.masterData[21].population;
+    $scope.vot = $scope.masterData[21].voters;
+    $scope.vill = $scope.masterData[21].villageMohalla;
+    $scope.gridCon = $scope.masterData[21].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[21].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[21].electionCrimes;
+    $scope.gridPoli = $scope.masterData[21].politician;
+    $scope.bUnder = $scope.masterData[21].boundDownUnder;
+    $scope.vul = $scope.masterData[21].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[21].warrantedCriminals;
+    $scope.cond = $scope.masterData[21].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl23', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[22].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[22].councellor;
+    $scope.gridRespected = $scope.masterData[22].respectedPpl;
+    $scope.gridRetired = $scope.masterData[22].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[22].neighbourPolling;
+    $scope.gridArms = $scope.masterData[22].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[22].historySheeter;
+    $scope.stName = $scope.masterData[22].stationName;
+    $scope.lat = $scope.masterData[22].latitude;
+    $scope.lon = $scope.masterData[22].longitude;
+    $scope.pop = $scope.masterData[22].population;
+    $scope.vot = $scope.masterData[22].voters;
+    $scope.vill = $scope.masterData[22].villageMohalla;
+    $scope.gridCon = $scope.masterData[22].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[22].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[22].electionCrimes;
+    $scope.gridPoli = $scope.masterData[22].politician;
+    $scope.bUnder = $scope.masterData[22].boundDownUnder;
+    $scope.vul = $scope.masterData[22].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[22].warrantedCriminals;
+    $scope.cond = $scope.masterData[22].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl24', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[23].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[23].councellor;
+    $scope.gridRespected = $scope.masterData[23].respectedPpl;
+    $scope.gridRetired = $scope.masterData[23].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[23].neighbourPolling;
+    $scope.gridArms = $scope.masterData[23].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[23].historySheeter;
+    $scope.stName = $scope.masterData[23].stationName;
+    $scope.lat = $scope.masterData[23].latitude;
+    $scope.lon = $scope.masterData[23].longitude;
+    $scope.pop = $scope.masterData[23].population;
+    $scope.vot = $scope.masterData[23].voters;
+    $scope.vill = $scope.masterData[23].villageMohalla;
+    $scope.gridCon = $scope.masterData[23].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[23].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[23].electionCrimes;
+    $scope.gridPoli = $scope.masterData[23].politician;
+    $scope.bUnder = $scope.masterData[23].boundDownUnder;
+    $scope.vul = $scope.masterData[23].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[23].warrantedCriminals;
+    $scope.cond = $scope.masterData[23].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl25', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[24].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[24].councellor;
+    $scope.gridRespected = $scope.masterData[24].respectedPpl;
+    $scope.gridRetired = $scope.masterData[24].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[24].neighbourPolling;
+    $scope.gridArms = $scope.masterData[24].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[24].historySheeter;
+    $scope.stName = $scope.masterData[24].stationName;
+    $scope.lat = $scope.masterData[24].latitude;
+    $scope.lon = $scope.masterData[24].longitude;
+    $scope.pop = $scope.masterData[24].population;
+    $scope.vot = $scope.masterData[24].voters;
+    $scope.vill = $scope.masterData[24].villageMohalla;
+    $scope.gridCon = $scope.masterData[24].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[24].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[24].electionCrimes;
+    $scope.gridPoli = $scope.masterData[24].politician;
+    $scope.bUnder = $scope.masterData[24].boundDownUnder;
+    $scope.vul = $scope.masterData[24].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[24].warrantedCriminals;
+    $scope.cond = $scope.masterData[24].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl26', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[25].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[25].councellor;
+    $scope.gridRespected = $scope.masterData[25].respectedPpl;
+    $scope.gridRetired = $scope.masterData[25].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[25].neighbourPolling;
+    $scope.gridArms = $scope.masterData[25].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[25].historySheeter;
+    $scope.stName = $scope.masterData[25].stationName;
+    $scope.lat = $scope.masterData[25].latitude;
+    $scope.lon = $scope.masterData[25].longitude;
+    $scope.pop = $scope.masterData[25].population;
+    $scope.vot = $scope.masterData[25].voters;
+    $scope.vill = $scope.masterData[25].villageMohalla;
+    $scope.gridCon = $scope.masterData[25].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[25].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[25].electionCrimes;
+    $scope.gridPoli = $scope.masterData[25].politician;
+    $scope.bUnder = $scope.masterData[25].boundDownUnder;
+    $scope.vul = $scope.masterData[25].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[25].warrantedCriminals;
+    $scope.cond = $scope.masterData[25].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl27', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[26].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[26].councellor;
+    $scope.gridRespected = $scope.masterData[26].respectedPpl;
+    $scope.gridRetired = $scope.masterData[26].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[26].neighbourPolling;
+    $scope.gridArms = $scope.masterData[26].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[26].historySheeter;
+    $scope.stName = $scope.masterData[26].stationName;
+    $scope.lat = $scope.masterData[26].latitude;
+    $scope.lon = $scope.masterData[26].longitude;
+    $scope.pop = $scope.masterData[26].population;
+    $scope.vot = $scope.masterData[26].voters;
+    $scope.vill = $scope.masterData[26].villageMohalla;
+    $scope.gridCon = $scope.masterData[26].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[26].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[26].electionCrimes;
+    $scope.gridPoli = $scope.masterData[26].politician;
+    $scope.bUnder = $scope.masterData[26].boundDownUnder;
+    $scope.vul = $scope.masterData[26].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[26].warrantedCriminals;
+    $scope.cond = $scope.masterData[26].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl28', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[27].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[27].councellor;
+    $scope.gridRespected = $scope.masterData[27].respectedPpl;
+    $scope.gridRetired = $scope.masterData[27].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[27].neighbourPolling;
+    $scope.gridArms = $scope.masterData[27].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[27].historySheeter;
+    $scope.stName = $scope.masterData[27].stationName;
+    $scope.lat = $scope.masterData[27].latitude;
+    $scope.lon = $scope.masterData[27].longitude;
+    $scope.pop = $scope.masterData[27].population;
+    $scope.vot = $scope.masterData[27].voters;
+    $scope.vill = $scope.masterData[27].villageMohalla;
+    $scope.gridCon = $scope.masterData[27].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[27].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[27].electionCrimes;
+    $scope.gridPoli = $scope.masterData[27].politician;
+    $scope.bUnder = $scope.masterData[27].boundDownUnder;
+    $scope.vul = $scope.masterData[27].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[27].warrantedCriminals;
+    $scope.cond = $scope.masterData[27].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('muCtrl29', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/mundali29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/mundali29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/mundali29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/mundali.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[28].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[28].councellor;
+    $scope.gridRespected = $scope.masterData[28].respectedPpl;
+    $scope.gridRetired = $scope.masterData[28].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[28].neighbourPolling;
+    $scope.gridArms = $scope.masterData[28].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[28].historySheeter;
+    $scope.stName = $scope.masterData[28].stationName;
+    $scope.lat = $scope.masterData[28].latitude;
+    $scope.lon = $scope.masterData[28].longitude;
+    $scope.pop = $scope.masterData[28].population;
+    $scope.vot = $scope.masterData[28].voters;
+    $scope.vill = $scope.masterData[28].villageMohalla;
+    $scope.gridCon = $scope.masterData[28].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[28].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[28].electionCrimes;
+    $scope.gridPoli = $scope.masterData[28].politician;
+    $scope.bUnder = $scope.masterData[28].boundDownUnder;
+    $scope.vul = $scope.masterData[28].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[28].warrantedCriminals;
+    $scope.cond = $scope.masterData[28].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+
+//End of Mundali Controllers
 
 .controller('prCtrl', function($scope, $http){
   $scope.items = [
@@ -58409,6 +62633,1457 @@ function PeopleCtrl($scope, $http) {
 })
 // End of Mawana Controllers
 
+.controller('mdCtrl', function($scope, $http){
+  $scope.items = [
+      {
+        "title": "Vidhansabha Kithor Panchayatghar Bodh Vihar Kamaalpur",
+        "path": "#/menu/tab/mdDetail"
+      },
+      {
+        "title": "Vidhansabha Kithor Panchayatghar Bodh Vihar Kamaalpur",
+        "path": "#/menu/tab/mdDetail2"
+      },
+      {
+        "title": "Prathmik Vidyalay Aurangshah Pur Deggi",
+        "path": "#/menu/tab/mdDetail3"
+      },
+      {
+        "title": "S. H. Aacademy E.M. School Ajanta Colony",
+        "path": "#/menu/tab/mdDetail4"
+      },
+      {
+        "title": "Karyalaya Vishwa Vidyalaya Meerut",
+        "path": "#/menu/tab/mdDetail5"
+      },
+      {
+        "title": "Dr. Ambedkar Degree College",
+        "path": "#/menu/tab/mdDetail6"
+      },
+      {
+        "title": "Barat Ghar Shastri Nagar Meerut",
+        "path": "#/menu/tab/mdDetail7"
+      },
+      {
+        "title": "Barat Ghar Shastri Nagar Meerut",
+        "path": "#/menu/tab/mdDetail8"
+      },
+      {
+        "title": "Master School of Mgmt. Shastri Nagar",
+        "path": "#/menu/tab/mdDetail9"
+      },
+      {
+        "title": "Kalyankari Junior High School Shergadi",
+        "path": "#/menu/tab/mdDetail10"
+      },
+      {
+        "title": "Cumunity Hall Jagrari Vihar Sec- 03",
+        "path": "#/menu/tab/mdDetail11"
+      },
+      {
+        "title": "New Delhi Public School Jagriti Vihar Sec-03",
+        "path": "#/menu/tab/mdDetail12"
+      },
+      {
+        "title": "Kand Vikas Karyalaya Rajpura",
+        "path": "#/menu/tab/mdDetail13"
+      },
+      {
+        "title": "K. V.S. S. H. Sanik Public School Sec-8 Jagriti Vihar Meerut",
+        "path": "#/menu/tab/mdDetail14"
+      },
+      {
+        "title": "Samudaikya Bhavan KaliyaGari",
+        "path": "#/menu/tab/mdDetail15"
+      },
+      {
+        "title": "K.L. International School Jargriti Vihar",
+        "path": "#/menu/tab/mdDetail16"
+      },
+      {
+        "title": "Sidharth Vidyalaya Kaliyagarhi",
+        "path": "#/menu/tab/mdDetail17"
+      },
+      {
+        "title": "AIM Academy Damodar Colony",
+        "path": "#/menu/tab/mdDetail18"
+      },
+      {
+        "title": "Ucch Prathmik Vidyalaya SarayKazi",
+        "path": "#/menu/tab/mdDetail19"
+      },
+      {
+        "title": "Modern Public School Shastri Nagar L Block",
+        "path": "#/menu/tab/mdDetail20"
+      },
+      {
+        "title": "Ismile National Girls Inter College Shastri Nagar L Block",
+        "path": "#/menu/tab/mdDetail21"
+      },
+      {
+        "title": "Sant Vivakanand Inter College Shastri Nagar",
+        "path": "#/menu/tab/mdDetail22"
+      }
+    ];
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[0].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[0].councellor;
+    $scope.gridRespected = $scope.masterData[0].respectedPpl;
+    $scope.gridRetired = $scope.masterData[0].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[0].neighbourPolling;
+    $scope.gridArms = $scope.masterData[0].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[0].historySheeter;
+    $scope.stName = $scope.masterData[0].stationName;
+    $scope.lat = $scope.masterData[0].latitude;
+    $scope.lon = $scope.masterData[0].longitude;
+    $scope.pop = $scope.masterData[0].population;
+    $scope.vot = $scope.masterData[0].voters;
+    $scope.vill = $scope.masterData[0].villageMohalla;
+    $scope.gridCon = $scope.masterData[0].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[0].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[0].electionCrimes;
+    $scope.gridPoli = $scope.masterData[0].politician;
+    $scope.bUnder = $scope.masterData[0].boundDownUnder;
+    $scope.vul = $scope.masterData[0].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[0].warrantedCriminals;
+    $scope.cond = $scope.masterData[0].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl2', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[1].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[1].councellor;
+    $scope.gridRespected = $scope.masterData[1].respectedPpl;
+    $scope.gridRetired = $scope.masterData[1].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[1].neighbourPolling;
+    $scope.gridArms = $scope.masterData[1].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[1].historySheeter;
+    $scope.stName = $scope.masterData[1].stationName;
+    $scope.lat = $scope.masterData[1].latitude;
+    $scope.lon = $scope.masterData[1].longitude;
+    $scope.pop = $scope.masterData[1].population;
+    $scope.vot = $scope.masterData[1].voters;
+    $scope.vill = $scope.masterData[1].villageMohalla;
+    $scope.gridCon = $scope.masterData[1].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[1].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[1].electionCrimes;
+    $scope.gridPoli = $scope.masterData[1].politician;
+    $scope.bUnder = $scope.masterData[1].boundDownUnder;
+    $scope.vul = $scope.masterData[1].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[1].warrantedCriminals;
+    $scope.cond = $scope.masterData[1].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl3', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[2].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[2].councellor;
+    $scope.gridRespected = $scope.masterData[2].respectedPpl;
+    $scope.gridRetired = $scope.masterData[2].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[2].neighbourPolling;
+    $scope.gridArms = $scope.masterData[2].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[2].historySheeter;
+    $scope.stName = $scope.masterData[2].stationName;
+    $scope.lat = $scope.masterData[2].latitude;
+    $scope.lon = $scope.masterData[2].longitude;
+    $scope.pop = $scope.masterData[2].population;
+    $scope.vot = $scope.masterData[2].voters;
+    $scope.vill = $scope.masterData[2].villageMohalla;
+    $scope.gridCon = $scope.masterData[2].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[2].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[2].electionCrimes;
+    $scope.gridPoli = $scope.masterData[2].politician;
+    $scope.bUnder = $scope.masterData[2].boundDownUnder;
+    $scope.vul = $scope.masterData[2].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[2].warrantedCriminals;
+    $scope.cond = $scope.masterData[2].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl4', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[3].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[3].councellor;
+    $scope.gridRespected = $scope.masterData[3].respectedPpl;
+    $scope.gridRetired = $scope.masterData[3].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[3].neighbourPolling;
+    $scope.gridArms = $scope.masterData[3].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[3].historySheeter;
+    $scope.stName = $scope.masterData[3].stationName;
+    $scope.lat = $scope.masterData[3].latitude;
+    $scope.lon = $scope.masterData[3].longitude;
+    $scope.pop = $scope.masterData[3].population;
+    $scope.vot = $scope.masterData[3].voters;
+    $scope.vill = $scope.masterData[3].villageMohalla;
+    $scope.gridCon = $scope.masterData[3].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[3].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[3].electionCrimes;
+    $scope.gridPoli = $scope.masterData[3].politician;
+    $scope.bUnder = $scope.masterData[3].boundDownUnder;
+    $scope.vul = $scope.masterData[3].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[3].warrantedCriminals;
+    $scope.cond = $scope.masterData[3].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[3].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl5', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[4].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[4].councellor;
+    $scope.gridRespected = $scope.masterData[4].respectedPpl;
+    $scope.gridRetired = $scope.masterData[4].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[4].neighbourPolling;
+    $scope.gridArms = $scope.masterData[4].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[4].historySheeter;
+    $scope.stName = $scope.masterData[4].stationName;
+    $scope.lat = $scope.masterData[4].latitude;
+    $scope.lon = $scope.masterData[4].longitude;
+    $scope.pop = $scope.masterData[4].population;
+    $scope.vot = $scope.masterData[4].voters;
+    $scope.vill = $scope.masterData[4].villageMohalla;
+    $scope.gridCon = $scope.masterData[4].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[4].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[4].electionCrimes;
+    $scope.gridPoli = $scope.masterData[4].politician;
+    $scope.bUnder = $scope.masterData[4].boundDownUnder;
+    $scope.vul = $scope.masterData[4].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[4].warrantedCriminals;
+    $scope.cond = $scope.masterData[4].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl6', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[5].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[5].councellor;
+    $scope.gridRespected = $scope.masterData[5].respectedPpl;
+    $scope.gridRetired = $scope.masterData[5].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[5].neighbourPolling;
+    $scope.gridArms = $scope.masterData[5].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[5].historySheeter;
+    $scope.stName = $scope.masterData[5].stationName;
+    $scope.lat = $scope.masterData[5].latitude;
+    $scope.lon = $scope.masterData[5].longitude;
+    $scope.pop = $scope.masterData[5].population;
+    $scope.vot = $scope.masterData[5].voters;
+    $scope.vill = $scope.masterData[5].villageMohalla;
+    $scope.gridCon = $scope.masterData[5].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[5].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[5].electionCrimes;
+    $scope.gridPoli = $scope.masterData[5].politician;
+    $scope.bUnder = $scope.masterData[5].boundDownUnder;
+    $scope.vul = $scope.masterData[5].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[5].warrantedCriminals;
+    $scope.cond = $scope.masterData[5].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl7', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[6].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[6].councellor;
+    $scope.gridRespected = $scope.masterData[6].respectedPpl;
+    $scope.gridRetired = $scope.masterData[6].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[6].neighbourPolling;
+    $scope.gridArms = $scope.masterData[6].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[6].historySheeter;
+    $scope.stName = $scope.masterData[6].stationName;
+    $scope.lat = $scope.masterData[6].latitude;
+    $scope.lon = $scope.masterData[6].longitude;
+    $scope.pop = $scope.masterData[6].population;
+    $scope.vot = $scope.masterData[6].voters;
+    $scope.vill = $scope.masterData[6].villageMohalla;
+    $scope.gridCon = $scope.masterData[6].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[6].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[6].electionCrimes;
+    $scope.gridPoli = $scope.masterData[6].politician;
+    $scope.bUnder = $scope.masterData[6].boundDownUnder;
+    $scope.vul = $scope.masterData[6].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[6].warrantedCriminals;
+    $scope.cond = $scope.masterData[6].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl8', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[7].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[7].councellor;
+    $scope.gridRespected = $scope.masterData[7].respectedPpl;
+    $scope.gridRetired = $scope.masterData[7].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[7].neighbourPolling;
+    $scope.gridArms = $scope.masterData[7].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[7].historySheeter;
+    $scope.stName = $scope.masterData[7].stationName;
+    $scope.lat = $scope.masterData[7].latitude;
+    $scope.lon = $scope.masterData[7].longitude;
+    $scope.pop = $scope.masterData[7].population;
+    $scope.vot = $scope.masterData[7].voters;
+    $scope.vill = $scope.masterData[7].villageMohalla;
+    $scope.gridCon = $scope.masterData[7].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[7].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[7].electionCrimes;
+    $scope.gridPoli = $scope.masterData[7].politician;
+    $scope.bUnder = $scope.masterData[7].boundDownUnder;
+    $scope.vul = $scope.masterData[7].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[7].warrantedCriminals;
+    $scope.cond = $scope.masterData[7].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl9', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[8].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[8].councellor;
+    $scope.gridRespected = $scope.masterData[8].respectedPpl;
+    $scope.gridRetired = $scope.masterData[8].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[8].neighbourPolling;
+    $scope.gridArms = $scope.masterData[8].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[8].historySheeter;
+    $scope.stName = $scope.masterData[8].stationName;
+    $scope.lat = $scope.masterData[8].latitude;
+    $scope.lon = $scope.masterData[8].longitude;
+    $scope.pop = $scope.masterData[8].population;
+    $scope.vot = $scope.masterData[8].voters;
+    $scope.vill = $scope.masterData[8].villageMohalla;
+    $scope.gridCon = $scope.masterData[8].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[8].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[8].electionCrimes;
+    $scope.gridPoli = $scope.masterData[8].politician;
+    $scope.bUnder = $scope.masterData[8].boundDownUnder;
+    $scope.vul = $scope.masterData[8].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[8].warrantedCriminals;
+    $scope.cond = $scope.masterData[8].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl10', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[9].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[9].councellor;
+    $scope.gridRespected = $scope.masterData[9].respectedPpl;
+    $scope.gridRetired = $scope.masterData[9].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[9].neighbourPolling;
+    $scope.gridArms = $scope.masterData[9].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[9].historySheeter;
+    $scope.stName = $scope.masterData[9].stationName;
+    $scope.lat = $scope.masterData[9].latitude;
+    $scope.lon = $scope.masterData[9].longitude;
+    $scope.pop = $scope.masterData[9].population;
+    $scope.vot = $scope.masterData[9].voters;
+    $scope.vill = $scope.masterData[9].villageMohalla;
+    $scope.gridCon = $scope.masterData[9].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[9].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[9].electionCrimes;
+    $scope.gridPoli = $scope.masterData[9].politician;
+    $scope.bUnder = $scope.masterData[9].boundDownUnder;
+    $scope.vul = $scope.masterData[9].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[9].warrantedCriminals;
+    $scope.cond = $scope.masterData[9].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl11', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[10].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[10].councellor;
+    $scope.gridRespected = $scope.masterData[10].respectedPpl;
+    $scope.gridRetired = $scope.masterData[10].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[10].neighbourPolling;
+    $scope.gridArms = $scope.masterData[10].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[10].historySheeter;
+    $scope.stName = $scope.masterData[10].stationName;
+    $scope.lat = $scope.masterData[10].latitude;
+    $scope.lon = $scope.masterData[10].longitude;
+    $scope.pop = $scope.masterData[10].population;
+    $scope.vot = $scope.masterData[10].voters;
+    $scope.vill = $scope.masterData[10].villageMohalla;
+    $scope.gridCon = $scope.masterData[10].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[10].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[10].electionCrimes;
+    $scope.gridPoli = $scope.masterData[10].politician;
+    $scope.bUnder = $scope.masterData[10].boundDownUnder;
+    $scope.vul = $scope.masterData[10].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[10].warrantedCriminals;
+    $scope.cond = $scope.masterData[10].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl12', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[11].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[11].councellor;
+    $scope.gridRespected = $scope.masterData[11].respectedPpl;
+    $scope.gridRetired = $scope.masterData[11].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[11].neighbourPolling;
+    $scope.gridArms = $scope.masterData[11].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[11].historySheeter;
+    $scope.stName = $scope.masterData[11].stationName;
+    $scope.lat = $scope.masterData[11].latitude;
+    $scope.lon = $scope.masterData[11].longitude;
+    $scope.pop = $scope.masterData[11].population;
+    $scope.vot = $scope.masterData[11].voters;
+    $scope.vill = $scope.masterData[11].villageMohalla;
+    $scope.gridCon = $scope.masterData[11].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[11].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[11].electionCrimes;
+    $scope.gridPoli = $scope.masterData[11].politician;
+    $scope.bUnder = $scope.masterData[11].boundDownUnder;
+    $scope.vul = $scope.masterData[11].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[11].warrantedCriminals;
+    $scope.cond = $scope.masterData[11].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl13', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[12].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[12].councellor;
+    $scope.gridRespected = $scope.masterData[12].respectedPpl;
+    $scope.gridRetired = $scope.masterData[12].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[12].neighbourPolling;
+    $scope.gridArms = $scope.masterData[12].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[12].historySheeter;
+    $scope.stName = $scope.masterData[12].stationName;
+    $scope.lat = $scope.masterData[12].latitude;
+    $scope.lon = $scope.masterData[12].longitude;
+    $scope.pop = $scope.masterData[12].population;
+    $scope.vot = $scope.masterData[12].voters;
+    $scope.vill = $scope.masterData[12].villageMohalla;
+    $scope.gridCon = $scope.masterData[12].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[12].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[12].electionCrimes;
+    $scope.gridPoli = $scope.masterData[12].politician;
+    $scope.bUnder = $scope.masterData[12].boundDownUnder;
+    $scope.vul = $scope.masterData[12].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[12].warrantedCriminals;
+    $scope.cond = $scope.masterData[12].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl14', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[13].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[13].councellor;
+    $scope.gridRespected = $scope.masterData[13].respectedPpl;
+    $scope.gridRetired = $scope.masterData[13].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[13].neighbourPolling;
+    $scope.gridArms = $scope.masterData[13].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[13].historySheeter;
+    $scope.stName = $scope.masterData[13].stationName;
+    $scope.lat = $scope.masterData[13].latitude;
+    $scope.lon = $scope.masterData[13].longitude;
+    $scope.pop = $scope.masterData[13].population;
+    $scope.vot = $scope.masterData[13].voters;
+    $scope.vill = $scope.masterData[13].villageMohalla;
+    $scope.gridCon = $scope.masterData[13].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[13].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[13].electionCrimes;
+    $scope.gridPoli = $scope.masterData[13].politician;
+    $scope.bUnder = $scope.masterData[13].boundDownUnder;
+    $scope.vul = $scope.masterData[13].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[13].warrantedCriminals;
+    $scope.cond = $scope.masterData[13].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl15', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[14].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[14].councellor;
+    $scope.gridRespected = $scope.masterData[14].respectedPpl;
+    $scope.gridRetired = $scope.masterData[14].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[14].neighbourPolling;
+    $scope.gridArms = $scope.masterData[14].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[14].historySheeter;
+    $scope.stName = $scope.masterData[14].stationName;
+    $scope.lat = $scope.masterData[14].latitude;
+    $scope.lon = $scope.masterData[14].longitude;
+    $scope.pop = $scope.masterData[14].population;
+    $scope.vot = $scope.masterData[14].voters;
+    $scope.vill = $scope.masterData[14].villageMohalla;
+    $scope.gridCon = $scope.masterData[14].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[14].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[14].electionCrimes;
+    $scope.gridPoli = $scope.masterData[14].politician;
+    $scope.bUnder = $scope.masterData[14].boundDownUnder;
+    $scope.vul = $scope.masterData[14].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[14].warrantedCriminals;
+    $scope.cond = $scope.masterData[14].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl16', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[15].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[15].councellor;
+    $scope.gridRespected = $scope.masterData[15].respectedPpl;
+    $scope.gridRetired = $scope.masterData[15].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[15].neighbourPolling;
+    $scope.gridArms = $scope.masterData[15].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[15].historySheeter;
+    $scope.stName = $scope.masterData[15].stationName;
+    $scope.lat = $scope.masterData[15].latitude;
+    $scope.lon = $scope.masterData[15].longitude;
+    $scope.pop = $scope.masterData[15].population;
+    $scope.vot = $scope.masterData[15].voters;
+    $scope.vill = $scope.masterData[15].villageMohalla;
+    $scope.gridCon = $scope.masterData[15].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[15].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[15].electionCrimes;
+    $scope.gridPoli = $scope.masterData[15].politician;
+    $scope.bUnder = $scope.masterData[15].boundDownUnder;
+    $scope.vul = $scope.masterData[15].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[15].warrantedCriminals;
+    $scope.cond = $scope.masterData[15].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl17', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[16].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[16].councellor;
+    $scope.gridRespected = $scope.masterData[16].respectedPpl;
+    $scope.gridRetired = $scope.masterData[16].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[16].neighbourPolling;
+    $scope.gridArms = $scope.masterData[16].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[16].historySheeter;
+    $scope.stName = $scope.masterData[16].stationName;
+    $scope.lat = $scope.masterData[16].latitude;
+    $scope.lon = $scope.masterData[16].longitude;
+    $scope.pop = $scope.masterData[16].population;
+    $scope.vot = $scope.masterData[16].voters;
+    $scope.vill = $scope.masterData[16].villageMohalla;
+    $scope.gridCon = $scope.masterData[16].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[16].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[16].electionCrimes;
+    $scope.gridPoli = $scope.masterData[16].politician;
+    $scope.bUnder = $scope.masterData[16].boundDownUnder;
+    $scope.vul = $scope.masterData[16].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[16].warrantedCriminals;
+    $scope.cond = $scope.masterData[16].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl18', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[17].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[17].councellor;
+    $scope.gridRespected = $scope.masterData[17].respectedPpl;
+    $scope.gridRetired = $scope.masterData[17].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[17].neighbourPolling;
+    $scope.gridArms = $scope.masterData[17].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[17].historySheeter;
+    $scope.stName = $scope.masterData[17].stationName;
+    $scope.lat = $scope.masterData[17].latitude;
+    $scope.lon = $scope.masterData[17].longitude;
+    $scope.pop = $scope.masterData[17].population;
+    $scope.vot = $scope.masterData[17].voters;
+    $scope.vill = $scope.masterData[17].villageMohalla;
+    $scope.gridCon = $scope.masterData[17].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[17].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[17].electionCrimes;
+    $scope.gridPoli = $scope.masterData[17].politician;
+    $scope.bUnder = $scope.masterData[17].boundDownUnder;
+    $scope.vul = $scope.masterData[17].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[17].warrantedCriminals;
+    $scope.cond = $scope.masterData[17].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl19', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[18].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[18].councellor;
+    $scope.gridRespected = $scope.masterData[18].respectedPpl;
+    $scope.gridRetired = $scope.masterData[18].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[18].neighbourPolling;
+    $scope.gridArms = $scope.masterData[18].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[18].historySheeter;
+    $scope.stName = $scope.masterData[18].stationName;
+    $scope.lat = $scope.masterData[18].latitude;
+    $scope.lon = $scope.masterData[18].longitude;
+    $scope.pop = $scope.masterData[18].population;
+    $scope.vot = $scope.masterData[18].voters;
+    $scope.vill = $scope.masterData[18].villageMohalla;
+    $scope.gridCon = $scope.masterData[18].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[18].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[18].electionCrimes;
+    $scope.gridPoli = $scope.masterData[18].politician;
+    $scope.bUnder = $scope.masterData[18].boundDownUnder;
+    $scope.vul = $scope.masterData[18].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[18].warrantedCriminals;
+    $scope.cond = $scope.masterData[18].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl20', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[19].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[19].councellor;
+    $scope.gridRespected = $scope.masterData[19].respectedPpl;
+    $scope.gridRetired = $scope.masterData[19].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[19].neighbourPolling;
+    $scope.gridArms = $scope.masterData[19].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[19].historySheeter;
+    $scope.stName = $scope.masterData[19].stationName;
+    $scope.lat = $scope.masterData[19].latitude;
+    $scope.lon = $scope.masterData[19].longitude;
+    $scope.pop = $scope.masterData[19].population;
+    $scope.vot = $scope.masterData[19].voters;
+    $scope.vill = $scope.masterData[19].villageMohalla;
+    $scope.gridCon = $scope.masterData[19].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[19].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[19].electionCrimes;
+    $scope.gridPoli = $scope.masterData[19].politician;
+    $scope.bUnder = $scope.masterData[19].boundDownUnder;
+    $scope.vul = $scope.masterData[19].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[19].warrantedCriminals;
+    $scope.cond = $scope.masterData[19].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl21', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[20].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[20].councellor;
+    $scope.gridRespected = $scope.masterData[20].respectedPpl;
+    $scope.gridRetired = $scope.masterData[20].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[20].neighbourPolling;
+    $scope.gridArms = $scope.masterData[20].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[20].historySheeter;
+    $scope.stName = $scope.masterData[20].stationName;
+    $scope.lat = $scope.masterData[20].latitude;
+    $scope.lon = $scope.masterData[20].longitude;
+    $scope.pop = $scope.masterData[20].population;
+    $scope.vot = $scope.masterData[20].voters;
+    $scope.vill = $scope.masterData[20].villageMohalla;
+    $scope.gridCon = $scope.masterData[20].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[20].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[20].electionCrimes;
+    $scope.gridPoli = $scope.masterData[20].politician;
+    $scope.bUnder = $scope.masterData[20].boundDownUnder;
+    $scope.vul = $scope.masterData[20].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[20].warrantedCriminals;
+    $scope.cond = $scope.masterData[20].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('mdCtrl22', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/medical22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/medical22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/medical22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/medical.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[21].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[21].councellor;
+    $scope.gridRespected = $scope.masterData[21].respectedPpl;
+    $scope.gridRetired = $scope.masterData[21].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[21].neighbourPolling;
+    $scope.gridArms = $scope.masterData[21].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[21].historySheeter;
+    $scope.stName = $scope.masterData[21].stationName;
+    $scope.lat = $scope.masterData[21].latitude;
+    $scope.lon = $scope.masterData[21].longitude;
+    $scope.pop = $scope.masterData[21].population;
+    $scope.vot = $scope.masterData[21].voters;
+    $scope.vill = $scope.masterData[21].villageMohalla;
+    $scope.gridCon = $scope.masterData[21].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[21].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[21].electionCrimes;
+    $scope.gridPoli = $scope.masterData[21].politician;
+    $scope.bUnder = $scope.masterData[21].boundDownUnder;
+    $scope.vul = $scope.masterData[21].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[21].warrantedCriminals;
+    $scope.cond = $scope.masterData[21].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+//End of Medical Controllers
+
 .controller('kkCtrl', function($scope, $http){
   $scope.items = [
      {
@@ -61789,6 +67464,13502 @@ function PeopleCtrl($scope, $http) {
     });
 })
 // End of Kharkhoda Controllers
+
+.controller('kkhCtrl', function($scope, $http){
+  $scope.items = [
+      {
+        "title": "Bhartia Sisu Kander Model School Govind Puri",
+        "path": "#/menu/tab/kkhDetail"
+      },
+      {
+        "title": "D.A.V. Inter College Kankarkhera",
+        "path": "#/menu/tab/kkhDetail2"
+      },
+      {
+        "title": "Snt. Mical Public School, Tanki Traha, Govind Puri ,Kankarkhera",
+        "path": "#/menu/tab/kkhDetail3"
+      },
+      {
+        "title": "Lord Budha Public School Kankarkhera",
+        "path": "#/menu/tab/kkhDetail4"
+      },
+      {
+        "title": "Ashoka Sce. Secondary School Ambedcor Road Kankarkhera",
+        "path": "#/menu/tab/kkhDetail5"
+      },
+      {
+        "title": "Prena Model High School Kram Pur Ngla Tashi",
+        "path": "#/menu/tab/kkhDetail6"
+      },
+      {
+        "title": "Ratan Deep Junior High School, Kasam Pur",
+        "path": "#/menu/tab/kkhDetail7"
+      },
+      {
+        "title": "Basic Prathamik Vidhayala ,Lala Mohamad Pur",
+        "path": "#/menu/tab/kkhDetail8"
+      },
+      {
+        "title": "Basic Prathamik Vidhayala ,Lala Mohamad Pur",
+        "path": "#/menu/tab/kkhDetail9"
+      },
+      {
+        "title": "Prathamik Kaniya Pathsala Dabka",
+        "path": "#/menu/tab/kkhDetail10"
+      },
+      {
+        "title": "Gayan Sagar High Secondary Shool,Murli Pur Gulab",
+        "path": "#/menu/tab/kkhDetail11"
+      },
+      {
+        "title": "Prathmik Vidhayala Lakhaya",
+        "path": "#/menu/tab/kkhDetail12"
+      },
+      {
+        "title": "Gopal Junior High Sobhapur",
+        "path": "#/menu/tab/kkhDetail13"
+      },
+      {
+        "title": "Prathimik Vidhayala Sobhapur",
+        "path": "#/menu/tab/kkhDetail14"
+      },
+      {
+        "title": "Prathamik Vidhayala Nager Chatra Sudpur Aka Pathanpura",
+        "path": "#/menu/tab/kkhDetail15"
+      },
+      {
+        "title": "Prthamik Vidhayala Negar Chatra Khodali",
+        "path": "#/menu/tab/kkhDetail16"
+      },
+      {
+        "title": "Junior High School Kodali",
+        "path": "#/menu/tab/kkhDetail17"
+      },
+      {
+        "title": "Godwin Public School Rotha Road",
+        "path": "#/menu/tab/kkhDetail18"
+      },
+      {
+        "title": "Ardersh Inter Collegr New Colony Anup Nager Fajal Pur",
+        "path": "#/menu/tab/kkhDetail19"
+      },
+      {
+        "title": "Prathmik Vidhayala Fajal Pur",
+        "path": "#/menu/tab/kkhDetail20"
+      },
+      {
+        "title": "Little Flower School Anup nNagar Fagal Pur",
+        "path": "#/menu/tab/kkhDetail21"
+      },
+      {
+        "title": "Mahaveer Nager Tej Vihar Banumiyakhatik Purasurya Cilony Fajal Pur",
+        "path": "#/menu/tab/kkhDetail22"
+      },
+      {
+        "title": "D.r. Ambedkar Bhavan Anup Ngar Fajal Pur",
+        "path": "#/menu/tab/kkhDetail23"
+      },
+      {
+        "title": "D.r. Ambedkar Second Anup Ngar Fajal Pur",
+        "path": "#/menu/tab/kkhDetail24"
+      },
+      {
+        "title": "St. Peeter Public School Fajal Pur",
+        "path": "#/menu/tab/kkhDetail25"
+      },
+      {
+        "title": "Sahid Bhagat Singh Public School, New Basti Fajal Pur",
+        "path": "#/menu/tab/kkhDetail26"
+      },
+      {
+        "title": "Goswami Public Junior High School Anupnagar Fajalpur",
+        "path": "#/menu/tab/kkhDetail27"
+      },
+      {
+        "title": "Vedhya Junour High School Kankerkheda",
+        "path": "#/menu/tab/kkhDetail28"
+      },
+      {
+        "title": "Uccha Prathmik Vidhyala Junghati",
+        "path": "#/menu/tab/kkhDetail29"
+      },
+      {
+        "title": "Primary Vidhyalaya Govind Puri Ghasoli",
+        "path": "#/menu/tab/kkhDetail30"
+      },
+      {
+        "title": "Primary Vidhyalaya Dilavera",
+        "path": "#/menu/tab/kkhDetail31"
+      },
+      {
+        "title": "Primary Vidhyalaya Sindhavli",
+        "path": "#/menu/tab/kkhDetail32"
+      },
+      {
+        "title": "Primary Vidhyalaya Bhutjawera",
+        "path": "#/menu/tab/kkhDetail33"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyalaya Jawere",
+        "path": "#/menu/tab/kkhDetail34"
+      },
+      {
+        "title": "Primary Vidhyalaya Pavli Khurd",
+        "path": "#/menu/tab/kkhDetail35"
+      },
+      {
+        "title": "Uccah Prathmik Vidhyalaya Pavli Khurd",
+        "path": "#/menu/tab/kkhDetail36"
+      },
+      {
+        "title": "Primary Vidhyalaya Pavli Khas",
+        "path": "#/menu/tab/kkhDetail37"
+      },
+      {
+        "title": "A.JA. Punchyat Ghar Pavli Khas",
+        "path": "#/menu/tab/kkhDetail38"
+      },
+      {
+        "title": "Pr.V. Kabul Puri Pavli Khas",
+        "path": "#/menu/tab/kkhDetail39"
+      },
+      {
+        "title": "Primary Vidhyalaya Jattoli",
+        "path": "#/menu/tab/kkhDetail40"
+      },
+      {
+        "title": "Nagar Nigum Kareyala Sharadhapuri",
+        "path": "#/menu/tab/kkhDetail41"
+      },
+      {
+        "title": "Holifate Inter Colledge Sharadhapuri",
+        "path": "#/menu/tab/kkhDetail42"
+      },
+      {
+        "title": "Takshila Public School Sector-2 Sharadhapuri",
+        "path": "#/menu/tab/kkhDetail43"
+      },
+      {
+        "title": "Asoka C. O. School Nagalatasi",
+        "path": "#/menu/tab/kkhDetail44"
+      },
+      {
+        "title": "Primary Vidhyalaya Naglatashi",
+        "path": "#/menu/tab/kkhDetail45"
+      },
+      {
+        "title": "Ledy Aserfi International Public School Defence Colonry",
+        "path": "#/menu/tab/kkhDetail46"
+      },
+      {
+        "title": "Sarsvati Shishu Mandir Inter Colledge Sardhan Road",
+        "path": "#/menu/tab/kkhDetail47"
+      },
+      {
+        "title": "Krishna Public School Shimlockpuri",
+        "path": "#/menu/tab/kkhDetail48"
+      },
+      {
+        "title": "Gyandeep Public School Shivlock Puri",
+        "path": "#/menu/tab/kkhDetail49"
+      },
+      {
+        "title": "Kisankaneya High School Shivlockpuri",
+        "path": "#/menu/tab/kkhDetail50"
+      },
+      {
+        "title": "Kisan Inter Colledge Kankerkhera",
+        "path": "#/menu/tab/kkhDetail51"
+      },
+      {
+        "title": "Gurunank Girls Inter Colledge",
+        "path": "#/menu/tab/kkhDetail52"
+      },
+      {
+        "title": "Isnatam Dharam Inter Colledge Kankerkheda",
+        "path": "#/menu/tab/kkhDetail53"
+      },
+      {
+        "title": "Primary Patshala No.2 Jhinjorkar",
+        "path": "#/menu/tab/kkhDetail54"
+      },
+      {
+        "title": "Primary Patshala No.1 Jhinjorkar",
+        "path": "#/menu/tab/kkhDetail55"
+      },
+      {
+        "title": "Primary Vidhyalaya No.1 Jungethi",
+        "path": "#/menu/tab/kkhDetail56"
+      }
+    ];
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[0].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[0].councellor;
+    $scope.gridRespected = $scope.masterData[0].respectedPpl;
+    $scope.gridRetired = $scope.masterData[0].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[0].neighbourPolling;
+    $scope.gridArms = $scope.masterData[0].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[0].historySheeter;
+    $scope.stName = $scope.masterData[0].stationName;
+    $scope.lat = $scope.masterData[0].latitude;
+    $scope.lon = $scope.masterData[0].longitude;
+    $scope.pop = $scope.masterData[0].population;
+    $scope.vot = $scope.masterData[0].voters;
+    $scope.vill = $scope.masterData[0].villageMohalla;
+    $scope.gridCon = $scope.masterData[0].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[0].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[0].electionCrimes;
+    $scope.gridPoli = $scope.masterData[0].politician;
+    $scope.bUnder = $scope.masterData[0].boundDownUnder;
+    $scope.vul = $scope.masterData[0].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[0].warrantedCriminals;
+    $scope.cond = $scope.masterData[0].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl2', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[1].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[1].councellor;
+    $scope.gridRespected = $scope.masterData[1].respectedPpl;
+    $scope.gridRetired = $scope.masterData[1].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[1].neighbourPolling;
+    $scope.gridArms = $scope.masterData[1].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[1].historySheeter;
+    $scope.stName = $scope.masterData[1].stationName;
+    $scope.lat = $scope.masterData[1].latitude;
+    $scope.lon = $scope.masterData[1].longitude;
+    $scope.pop = $scope.masterData[1].population;
+    $scope.vot = $scope.masterData[1].voters;
+    $scope.vill = $scope.masterData[1].villageMohalla;
+    $scope.gridCon = $scope.masterData[1].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[1].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[1].electionCrimes;
+    $scope.gridPoli = $scope.masterData[1].politician;
+    $scope.bUnder = $scope.masterData[1].boundDownUnder;
+    $scope.vul = $scope.masterData[1].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[1].warrantedCriminals;
+    $scope.cond = $scope.masterData[1].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl3', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[2].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[2].councellor;
+    $scope.gridRespected = $scope.masterData[2].respectedPpl;
+    $scope.gridRetired = $scope.masterData[2].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[2].neighbourPolling;
+    $scope.gridArms = $scope.masterData[2].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[2].historySheeter;
+    $scope.stName = $scope.masterData[2].stationName;
+    $scope.lat = $scope.masterData[2].latitude;
+    $scope.lon = $scope.masterData[2].longitude;
+    $scope.pop = $scope.masterData[2].population;
+    $scope.vot = $scope.masterData[2].voters;
+    $scope.vill = $scope.masterData[2].villageMohalla;
+    $scope.gridCon = $scope.masterData[2].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[2].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[2].electionCrimes;
+    $scope.gridPoli = $scope.masterData[2].politician;
+    $scope.bUnder = $scope.masterData[2].boundDownUnder;
+    $scope.vul = $scope.masterData[2].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[2].warrantedCriminals;
+    $scope.cond = $scope.masterData[2].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl4', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[3].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[3].councellor;
+    $scope.gridRespected = $scope.masterData[3].respectedPpl;
+    $scope.gridRetired = $scope.masterData[3].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[3].neighbourPolling;
+    $scope.gridArms = $scope.masterData[3].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[3].historySheeter;
+    $scope.stName = $scope.masterData[3].stationName;
+    $scope.lat = $scope.masterData[3].latitude;
+    $scope.lon = $scope.masterData[3].longitude;
+    $scope.pop = $scope.masterData[3].population;
+    $scope.vot = $scope.masterData[3].voters;
+    $scope.vill = $scope.masterData[3].villageMohalla;
+    $scope.gridCon = $scope.masterData[3].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[3].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[3].electionCrimes;
+    $scope.gridPoli = $scope.masterData[3].politician;
+    $scope.bUnder = $scope.masterData[3].boundDownUnder;
+    $scope.vul = $scope.masterData[3].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[3].warrantedCriminals;
+    $scope.cond = $scope.masterData[3].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[3].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl5', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[4].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[4].councellor;
+    $scope.gridRespected = $scope.masterData[4].respectedPpl;
+    $scope.gridRetired = $scope.masterData[4].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[4].neighbourPolling;
+    $scope.gridArms = $scope.masterData[4].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[4].historySheeter;
+    $scope.stName = $scope.masterData[4].stationName;
+    $scope.lat = $scope.masterData[4].latitude;
+    $scope.lon = $scope.masterData[4].longitude;
+    $scope.pop = $scope.masterData[4].population;
+    $scope.vot = $scope.masterData[4].voters;
+    $scope.vill = $scope.masterData[4].villageMohalla;
+    $scope.gridCon = $scope.masterData[4].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[4].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[4].electionCrimes;
+    $scope.gridPoli = $scope.masterData[4].politician;
+    $scope.bUnder = $scope.masterData[4].boundDownUnder;
+    $scope.vul = $scope.masterData[4].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[4].warrantedCriminals;
+    $scope.cond = $scope.masterData[4].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl6', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[5].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[5].councellor;
+    $scope.gridRespected = $scope.masterData[5].respectedPpl;
+    $scope.gridRetired = $scope.masterData[5].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[5].neighbourPolling;
+    $scope.gridArms = $scope.masterData[5].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[5].historySheeter;
+    $scope.stName = $scope.masterData[5].stationName;
+    $scope.lat = $scope.masterData[5].latitude;
+    $scope.lon = $scope.masterData[5].longitude;
+    $scope.pop = $scope.masterData[5].population;
+    $scope.vot = $scope.masterData[5].voters;
+    $scope.vill = $scope.masterData[5].villageMohalla;
+    $scope.gridCon = $scope.masterData[5].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[5].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[5].electionCrimes;
+    $scope.gridPoli = $scope.masterData[5].politician;
+    $scope.bUnder = $scope.masterData[5].boundDownUnder;
+    $scope.vul = $scope.masterData[5].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[5].warrantedCriminals;
+    $scope.cond = $scope.masterData[5].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl7', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[6].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[6].councellor;
+    $scope.gridRespected = $scope.masterData[6].respectedPpl;
+    $scope.gridRetired = $scope.masterData[6].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[6].neighbourPolling;
+    $scope.gridArms = $scope.masterData[6].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[6].historySheeter;
+    $scope.stName = $scope.masterData[6].stationName;
+    $scope.lat = $scope.masterData[6].latitude;
+    $scope.lon = $scope.masterData[6].longitude;
+    $scope.pop = $scope.masterData[6].population;
+    $scope.vot = $scope.masterData[6].voters;
+    $scope.vill = $scope.masterData[6].villageMohalla;
+    $scope.gridCon = $scope.masterData[6].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[6].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[6].electionCrimes;
+    $scope.gridPoli = $scope.masterData[6].politician;
+    $scope.bUnder = $scope.masterData[6].boundDownUnder;
+    $scope.vul = $scope.masterData[6].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[6].warrantedCriminals;
+    $scope.cond = $scope.masterData[6].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl8', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[7].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[7].councellor;
+    $scope.gridRespected = $scope.masterData[7].respectedPpl;
+    $scope.gridRetired = $scope.masterData[7].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[7].neighbourPolling;
+    $scope.gridArms = $scope.masterData[7].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[7].historySheeter;
+    $scope.stName = $scope.masterData[7].stationName;
+    $scope.lat = $scope.masterData[7].latitude;
+    $scope.lon = $scope.masterData[7].longitude;
+    $scope.pop = $scope.masterData[7].population;
+    $scope.vot = $scope.masterData[7].voters;
+    $scope.vill = $scope.masterData[7].villageMohalla;
+    $scope.gridCon = $scope.masterData[7].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[7].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[7].electionCrimes;
+    $scope.gridPoli = $scope.masterData[7].politician;
+    $scope.bUnder = $scope.masterData[7].boundDownUnder;
+    $scope.vul = $scope.masterData[7].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[7].warrantedCriminals;
+    $scope.cond = $scope.masterData[7].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl9', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[8].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[8].councellor;
+    $scope.gridRespected = $scope.masterData[8].respectedPpl;
+    $scope.gridRetired = $scope.masterData[8].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[8].neighbourPolling;
+    $scope.gridArms = $scope.masterData[8].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[8].historySheeter;
+    $scope.stName = $scope.masterData[8].stationName;
+    $scope.lat = $scope.masterData[8].latitude;
+    $scope.lon = $scope.masterData[8].longitude;
+    $scope.pop = $scope.masterData[8].population;
+    $scope.vot = $scope.masterData[8].voters;
+    $scope.vill = $scope.masterData[8].villageMohalla;
+    $scope.gridCon = $scope.masterData[8].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[8].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[8].electionCrimes;
+    $scope.gridPoli = $scope.masterData[8].politician;
+    $scope.bUnder = $scope.masterData[8].boundDownUnder;
+    $scope.vul = $scope.masterData[8].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[8].warrantedCriminals;
+    $scope.cond = $scope.masterData[8].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl10', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[9].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[9].councellor;
+    $scope.gridRespected = $scope.masterData[9].respectedPpl;
+    $scope.gridRetired = $scope.masterData[9].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[9].neighbourPolling;
+    $scope.gridArms = $scope.masterData[9].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[9].historySheeter;
+    $scope.stName = $scope.masterData[9].stationName;
+    $scope.lat = $scope.masterData[9].latitude;
+    $scope.lon = $scope.masterData[9].longitude;
+    $scope.pop = $scope.masterData[9].population;
+    $scope.vot = $scope.masterData[9].voters;
+    $scope.vill = $scope.masterData[9].villageMohalla;
+    $scope.gridCon = $scope.masterData[9].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[9].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[9].electionCrimes;
+    $scope.gridPoli = $scope.masterData[9].politician;
+    $scope.bUnder = $scope.masterData[9].boundDownUnder;
+    $scope.vul = $scope.masterData[9].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[9].warrantedCriminals;
+    $scope.cond = $scope.masterData[9].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl11', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[10].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[10].councellor;
+    $scope.gridRespected = $scope.masterData[10].respectedPpl;
+    $scope.gridRetired = $scope.masterData[10].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[10].neighbourPolling;
+    $scope.gridArms = $scope.masterData[10].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[10].historySheeter;
+    $scope.stName = $scope.masterData[10].stationName;
+    $scope.lat = $scope.masterData[10].latitude;
+    $scope.lon = $scope.masterData[10].longitude;
+    $scope.pop = $scope.masterData[10].population;
+    $scope.vot = $scope.masterData[10].voters;
+    $scope.vill = $scope.masterData[10].villageMohalla;
+    $scope.gridCon = $scope.masterData[10].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[10].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[10].electionCrimes;
+    $scope.gridPoli = $scope.masterData[10].politician;
+    $scope.bUnder = $scope.masterData[10].boundDownUnder;
+    $scope.vul = $scope.masterData[10].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[10].warrantedCriminals;
+    $scope.cond = $scope.masterData[10].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl12', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[11].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[11].councellor;
+    $scope.gridRespected = $scope.masterData[11].respectedPpl;
+    $scope.gridRetired = $scope.masterData[11].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[11].neighbourPolling;
+    $scope.gridArms = $scope.masterData[11].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[11].historySheeter;
+    $scope.stName = $scope.masterData[11].stationName;
+    $scope.lat = $scope.masterData[11].latitude;
+    $scope.lon = $scope.masterData[11].longitude;
+    $scope.pop = $scope.masterData[11].population;
+    $scope.vot = $scope.masterData[11].voters;
+    $scope.vill = $scope.masterData[11].villageMohalla;
+    $scope.gridCon = $scope.masterData[11].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[11].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[11].electionCrimes;
+    $scope.gridPoli = $scope.masterData[11].politician;
+    $scope.bUnder = $scope.masterData[11].boundDownUnder;
+    $scope.vul = $scope.masterData[11].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[11].warrantedCriminals;
+    $scope.cond = $scope.masterData[11].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl13', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[12].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[12].councellor;
+    $scope.gridRespected = $scope.masterData[12].respectedPpl;
+    $scope.gridRetired = $scope.masterData[12].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[12].neighbourPolling;
+    $scope.gridArms = $scope.masterData[12].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[12].historySheeter;
+    $scope.stName = $scope.masterData[12].stationName;
+    $scope.lat = $scope.masterData[12].latitude;
+    $scope.lon = $scope.masterData[12].longitude;
+    $scope.pop = $scope.masterData[12].population;
+    $scope.vot = $scope.masterData[12].voters;
+    $scope.vill = $scope.masterData[12].villageMohalla;
+    $scope.gridCon = $scope.masterData[12].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[12].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[12].electionCrimes;
+    $scope.gridPoli = $scope.masterData[12].politician;
+    $scope.bUnder = $scope.masterData[12].boundDownUnder;
+    $scope.vul = $scope.masterData[12].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[12].warrantedCriminals;
+    $scope.cond = $scope.masterData[12].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl14', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[13].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[13].councellor;
+    $scope.gridRespected = $scope.masterData[13].respectedPpl;
+    $scope.gridRetired = $scope.masterData[13].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[13].neighbourPolling;
+    $scope.gridArms = $scope.masterData[13].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[13].historySheeter;
+    $scope.stName = $scope.masterData[13].stationName;
+    $scope.lat = $scope.masterData[13].latitude;
+    $scope.lon = $scope.masterData[13].longitude;
+    $scope.pop = $scope.masterData[13].population;
+    $scope.vot = $scope.masterData[13].voters;
+    $scope.vill = $scope.masterData[13].villageMohalla;
+    $scope.gridCon = $scope.masterData[13].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[13].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[13].electionCrimes;
+    $scope.gridPoli = $scope.masterData[13].politician;
+    $scope.bUnder = $scope.masterData[13].boundDownUnder;
+    $scope.vul = $scope.masterData[13].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[13].warrantedCriminals;
+    $scope.cond = $scope.masterData[13].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl15', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[14].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[14].councellor;
+    $scope.gridRespected = $scope.masterData[14].respectedPpl;
+    $scope.gridRetired = $scope.masterData[14].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[14].neighbourPolling;
+    $scope.gridArms = $scope.masterData[14].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[14].historySheeter;
+    $scope.stName = $scope.masterData[14].stationName;
+    $scope.lat = $scope.masterData[14].latitude;
+    $scope.lon = $scope.masterData[14].longitude;
+    $scope.pop = $scope.masterData[14].population;
+    $scope.vot = $scope.masterData[14].voters;
+    $scope.vill = $scope.masterData[14].villageMohalla;
+    $scope.gridCon = $scope.masterData[14].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[14].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[14].electionCrimes;
+    $scope.gridPoli = $scope.masterData[14].politician;
+    $scope.bUnder = $scope.masterData[14].boundDownUnder;
+    $scope.vul = $scope.masterData[14].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[14].warrantedCriminals;
+    $scope.cond = $scope.masterData[14].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl16', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[15].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[15].councellor;
+    $scope.gridRespected = $scope.masterData[15].respectedPpl;
+    $scope.gridRetired = $scope.masterData[15].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[15].neighbourPolling;
+    $scope.gridArms = $scope.masterData[15].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[15].historySheeter;
+    $scope.stName = $scope.masterData[15].stationName;
+    $scope.lat = $scope.masterData[15].latitude;
+    $scope.lon = $scope.masterData[15].longitude;
+    $scope.pop = $scope.masterData[15].population;
+    $scope.vot = $scope.masterData[15].voters;
+    $scope.vill = $scope.masterData[15].villageMohalla;
+    $scope.gridCon = $scope.masterData[15].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[15].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[15].electionCrimes;
+    $scope.gridPoli = $scope.masterData[15].politician;
+    $scope.bUnder = $scope.masterData[15].boundDownUnder;
+    $scope.vul = $scope.masterData[15].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[15].warrantedCriminals;
+    $scope.cond = $scope.masterData[15].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl17', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[16].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[16].councellor;
+    $scope.gridRespected = $scope.masterData[16].respectedPpl;
+    $scope.gridRetired = $scope.masterData[16].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[16].neighbourPolling;
+    $scope.gridArms = $scope.masterData[16].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[16].historySheeter;
+    $scope.stName = $scope.masterData[16].stationName;
+    $scope.lat = $scope.masterData[16].latitude;
+    $scope.lon = $scope.masterData[16].longitude;
+    $scope.pop = $scope.masterData[16].population;
+    $scope.vot = $scope.masterData[16].voters;
+    $scope.vill = $scope.masterData[16].villageMohalla;
+    $scope.gridCon = $scope.masterData[16].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[16].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[16].electionCrimes;
+    $scope.gridPoli = $scope.masterData[16].politician;
+    $scope.bUnder = $scope.masterData[16].boundDownUnder;
+    $scope.vul = $scope.masterData[16].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[16].warrantedCriminals;
+    $scope.cond = $scope.masterData[16].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl18', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[17].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[17].councellor;
+    $scope.gridRespected = $scope.masterData[17].respectedPpl;
+    $scope.gridRetired = $scope.masterData[17].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[17].neighbourPolling;
+    $scope.gridArms = $scope.masterData[17].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[17].historySheeter;
+    $scope.stName = $scope.masterData[17].stationName;
+    $scope.lat = $scope.masterData[17].latitude;
+    $scope.lon = $scope.masterData[17].longitude;
+    $scope.pop = $scope.masterData[17].population;
+    $scope.vot = $scope.masterData[17].voters;
+    $scope.vill = $scope.masterData[17].villageMohalla;
+    $scope.gridCon = $scope.masterData[17].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[17].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[17].electionCrimes;
+    $scope.gridPoli = $scope.masterData[17].politician;
+    $scope.bUnder = $scope.masterData[17].boundDownUnder;
+    $scope.vul = $scope.masterData[17].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[17].warrantedCriminals;
+    $scope.cond = $scope.masterData[17].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl19', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[18].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[18].councellor;
+    $scope.gridRespected = $scope.masterData[18].respectedPpl;
+    $scope.gridRetired = $scope.masterData[18].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[18].neighbourPolling;
+    $scope.gridArms = $scope.masterData[18].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[18].historySheeter;
+    $scope.stName = $scope.masterData[18].stationName;
+    $scope.lat = $scope.masterData[18].latitude;
+    $scope.lon = $scope.masterData[18].longitude;
+    $scope.pop = $scope.masterData[18].population;
+    $scope.vot = $scope.masterData[18].voters;
+    $scope.vill = $scope.masterData[18].villageMohalla;
+    $scope.gridCon = $scope.masterData[18].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[18].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[18].electionCrimes;
+    $scope.gridPoli = $scope.masterData[18].politician;
+    $scope.bUnder = $scope.masterData[18].boundDownUnder;
+    $scope.vul = $scope.masterData[18].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[18].warrantedCriminals;
+    $scope.cond = $scope.masterData[18].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl20', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[19].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[19].councellor;
+    $scope.gridRespected = $scope.masterData[19].respectedPpl;
+    $scope.gridRetired = $scope.masterData[19].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[19].neighbourPolling;
+    $scope.gridArms = $scope.masterData[19].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[19].historySheeter;
+    $scope.stName = $scope.masterData[19].stationName;
+    $scope.lat = $scope.masterData[19].latitude;
+    $scope.lon = $scope.masterData[19].longitude;
+    $scope.pop = $scope.masterData[19].population;
+    $scope.vot = $scope.masterData[19].voters;
+    $scope.vill = $scope.masterData[19].villageMohalla;
+    $scope.gridCon = $scope.masterData[19].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[19].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[19].electionCrimes;
+    $scope.gridPoli = $scope.masterData[19].politician;
+    $scope.bUnder = $scope.masterData[19].boundDownUnder;
+    $scope.vul = $scope.masterData[19].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[19].warrantedCriminals;
+    $scope.cond = $scope.masterData[19].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl21', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[20].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[20].councellor;
+    $scope.gridRespected = $scope.masterData[20].respectedPpl;
+    $scope.gridRetired = $scope.masterData[20].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[20].neighbourPolling;
+    $scope.gridArms = $scope.masterData[20].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[20].historySheeter;
+    $scope.stName = $scope.masterData[20].stationName;
+    $scope.lat = $scope.masterData[20].latitude;
+    $scope.lon = $scope.masterData[20].longitude;
+    $scope.pop = $scope.masterData[20].population;
+    $scope.vot = $scope.masterData[20].voters;
+    $scope.vill = $scope.masterData[20].villageMohalla;
+    $scope.gridCon = $scope.masterData[20].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[20].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[20].electionCrimes;
+    $scope.gridPoli = $scope.masterData[20].politician;
+    $scope.bUnder = $scope.masterData[20].boundDownUnder;
+    $scope.vul = $scope.masterData[20].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[20].warrantedCriminals;
+    $scope.cond = $scope.masterData[20].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl22', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[21].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[21].councellor;
+    $scope.gridRespected = $scope.masterData[21].respectedPpl;
+    $scope.gridRetired = $scope.masterData[21].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[21].neighbourPolling;
+    $scope.gridArms = $scope.masterData[21].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[21].historySheeter;
+    $scope.stName = $scope.masterData[21].stationName;
+    $scope.lat = $scope.masterData[21].latitude;
+    $scope.lon = $scope.masterData[21].longitude;
+    $scope.pop = $scope.masterData[21].population;
+    $scope.vot = $scope.masterData[21].voters;
+    $scope.vill = $scope.masterData[21].villageMohalla;
+    $scope.gridCon = $scope.masterData[21].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[21].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[21].electionCrimes;
+    $scope.gridPoli = $scope.masterData[21].politician;
+    $scope.bUnder = $scope.masterData[21].boundDownUnder;
+    $scope.vul = $scope.masterData[21].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[21].warrantedCriminals;
+    $scope.cond = $scope.masterData[21].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl23', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[22].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[22].councellor;
+    $scope.gridRespected = $scope.masterData[22].respectedPpl;
+    $scope.gridRetired = $scope.masterData[22].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[22].neighbourPolling;
+    $scope.gridArms = $scope.masterData[22].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[22].historySheeter;
+    $scope.stName = $scope.masterData[22].stationName;
+    $scope.lat = $scope.masterData[22].latitude;
+    $scope.lon = $scope.masterData[22].longitude;
+    $scope.pop = $scope.masterData[22].population;
+    $scope.vot = $scope.masterData[22].voters;
+    $scope.vill = $scope.masterData[22].villageMohalla;
+    $scope.gridCon = $scope.masterData[22].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[22].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[22].electionCrimes;
+    $scope.gridPoli = $scope.masterData[22].politician;
+    $scope.bUnder = $scope.masterData[22].boundDownUnder;
+    $scope.vul = $scope.masterData[22].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[22].warrantedCriminals;
+    $scope.cond = $scope.masterData[22].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl24', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[23].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[23].councellor;
+    $scope.gridRespected = $scope.masterData[23].respectedPpl;
+    $scope.gridRetired = $scope.masterData[23].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[23].neighbourPolling;
+    $scope.gridArms = $scope.masterData[23].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[23].historySheeter;
+    $scope.stName = $scope.masterData[23].stationName;
+    $scope.lat = $scope.masterData[23].latitude;
+    $scope.lon = $scope.masterData[23].longitude;
+    $scope.pop = $scope.masterData[23].population;
+    $scope.vot = $scope.masterData[23].voters;
+    $scope.vill = $scope.masterData[23].villageMohalla;
+    $scope.gridCon = $scope.masterData[23].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[23].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[23].electionCrimes;
+    $scope.gridPoli = $scope.masterData[23].politician;
+    $scope.bUnder = $scope.masterData[23].boundDownUnder;
+    $scope.vul = $scope.masterData[23].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[23].warrantedCriminals;
+    $scope.cond = $scope.masterData[23].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl25', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[24].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[24].councellor;
+    $scope.gridRespected = $scope.masterData[24].respectedPpl;
+    $scope.gridRetired = $scope.masterData[24].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[24].neighbourPolling;
+    $scope.gridArms = $scope.masterData[24].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[24].historySheeter;
+    $scope.stName = $scope.masterData[24].stationName;
+    $scope.lat = $scope.masterData[24].latitude;
+    $scope.lon = $scope.masterData[24].longitude;
+    $scope.pop = $scope.masterData[24].population;
+    $scope.vot = $scope.masterData[24].voters;
+    $scope.vill = $scope.masterData[24].villageMohalla;
+    $scope.gridCon = $scope.masterData[24].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[24].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[24].electionCrimes;
+    $scope.gridPoli = $scope.masterData[24].politician;
+    $scope.bUnder = $scope.masterData[24].boundDownUnder;
+    $scope.vul = $scope.masterData[24].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[24].warrantedCriminals;
+    $scope.cond = $scope.masterData[24].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl26', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[25].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[25].councellor;
+    $scope.gridRespected = $scope.masterData[25].respectedPpl;
+    $scope.gridRetired = $scope.masterData[25].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[25].neighbourPolling;
+    $scope.gridArms = $scope.masterData[25].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[25].historySheeter;
+    $scope.stName = $scope.masterData[25].stationName;
+    $scope.lat = $scope.masterData[25].latitude;
+    $scope.lon = $scope.masterData[25].longitude;
+    $scope.pop = $scope.masterData[25].population;
+    $scope.vot = $scope.masterData[25].voters;
+    $scope.vill = $scope.masterData[25].villageMohalla;
+    $scope.gridCon = $scope.masterData[25].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[25].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[25].electionCrimes;
+    $scope.gridPoli = $scope.masterData[25].politician;
+    $scope.bUnder = $scope.masterData[25].boundDownUnder;
+    $scope.vul = $scope.masterData[25].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[25].warrantedCriminals;
+    $scope.cond = $scope.masterData[25].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl27', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[26].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[26].councellor;
+    $scope.gridRespected = $scope.masterData[26].respectedPpl;
+    $scope.gridRetired = $scope.masterData[26].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[26].neighbourPolling;
+    $scope.gridArms = $scope.masterData[26].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[26].historySheeter;
+    $scope.stName = $scope.masterData[26].stationName;
+    $scope.lat = $scope.masterData[26].latitude;
+    $scope.lon = $scope.masterData[26].longitude;
+    $scope.pop = $scope.masterData[26].population;
+    $scope.vot = $scope.masterData[26].voters;
+    $scope.vill = $scope.masterData[26].villageMohalla;
+    $scope.gridCon = $scope.masterData[26].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[26].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[26].electionCrimes;
+    $scope.gridPoli = $scope.masterData[26].politician;
+    $scope.bUnder = $scope.masterData[26].boundDownUnder;
+    $scope.vul = $scope.masterData[26].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[26].warrantedCriminals;
+    $scope.cond = $scope.masterData[26].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl28', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[27].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[27].councellor;
+    $scope.gridRespected = $scope.masterData[27].respectedPpl;
+    $scope.gridRetired = $scope.masterData[27].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[27].neighbourPolling;
+    $scope.gridArms = $scope.masterData[27].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[27].historySheeter;
+    $scope.stName = $scope.masterData[27].stationName;
+    $scope.lat = $scope.masterData[27].latitude;
+    $scope.lon = $scope.masterData[27].longitude;
+    $scope.pop = $scope.masterData[27].population;
+    $scope.vot = $scope.masterData[27].voters;
+    $scope.vill = $scope.masterData[27].villageMohalla;
+    $scope.gridCon = $scope.masterData[27].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[27].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[27].electionCrimes;
+    $scope.gridPoli = $scope.masterData[27].politician;
+    $scope.bUnder = $scope.masterData[27].boundDownUnder;
+    $scope.vul = $scope.masterData[27].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[27].warrantedCriminals;
+    $scope.cond = $scope.masterData[27].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl29', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[28].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[28].councellor;
+    $scope.gridRespected = $scope.masterData[28].respectedPpl;
+    $scope.gridRetired = $scope.masterData[28].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[28].neighbourPolling;
+    $scope.gridArms = $scope.masterData[28].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[28].historySheeter;
+    $scope.stName = $scope.masterData[28].stationName;
+    $scope.lat = $scope.masterData[28].latitude;
+    $scope.lon = $scope.masterData[28].longitude;
+    $scope.pop = $scope.masterData[28].population;
+    $scope.vot = $scope.masterData[28].voters;
+    $scope.vill = $scope.masterData[28].villageMohalla;
+    $scope.gridCon = $scope.masterData[28].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[28].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[28].electionCrimes;
+    $scope.gridPoli = $scope.masterData[28].politician;
+    $scope.bUnder = $scope.masterData[28].boundDownUnder;
+    $scope.vul = $scope.masterData[28].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[28].warrantedCriminals;
+    $scope.cond = $scope.masterData[28].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl30', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[29].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[29].councellor;
+    $scope.gridRespected = $scope.masterData[29].respectedPpl;
+    $scope.gridRetired = $scope.masterData[29].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[29].neighbourPolling;
+    $scope.gridArms = $scope.masterData[29].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[29].historySheeter;
+    $scope.stName = $scope.masterData[29].stationName;
+    $scope.lat = $scope.masterData[29].latitude;
+    $scope.lon = $scope.masterData[29].longitude;
+    $scope.pop = $scope.masterData[29].population;
+    $scope.vot = $scope.masterData[29].voters;
+    $scope.vill = $scope.masterData[29].villageMohalla;
+    $scope.gridCon = $scope.masterData[29].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[29].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[29].electionCrimes;
+    $scope.gridPoli = $scope.masterData[29].politician;
+    $scope.bUnder = $scope.masterData[29].boundDownUnder;
+    $scope.vul = $scope.masterData[29].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[29].warrantedCriminals;
+    $scope.cond = $scope.masterData[29].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl31', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[30].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[30].councellor;
+    $scope.gridRespected = $scope.masterData[30].respectedPpl;
+    $scope.gridRetired = $scope.masterData[30].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[30].neighbourPolling;
+    $scope.gridArms = $scope.masterData[30].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[30].historySheeter;
+    $scope.stName = $scope.masterData[30].stationName;
+    $scope.lat = $scope.masterData[30].latitude;
+    $scope.lon = $scope.masterData[30].longitude;
+    $scope.pop = $scope.masterData[30].population;
+    $scope.vot = $scope.masterData[30].voters;
+    $scope.vill = $scope.masterData[30].villageMohalla;
+    $scope.gridCon = $scope.masterData[30].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[30].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[30].electionCrimes;
+    $scope.gridPoli = $scope.masterData[30].politician;
+    $scope.bUnder = $scope.masterData[30].boundDownUnder;
+    $scope.vul = $scope.masterData[30].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[30].warrantedCriminals;
+    $scope.cond = $scope.masterData[30].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl32', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[31].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[31].councellor;
+    $scope.gridRespected = $scope.masterData[31].respectedPpl;
+    $scope.gridRetired = $scope.masterData[31].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[31].neighbourPolling;
+    $scope.gridArms = $scope.masterData[31].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[31].historySheeter;
+    $scope.stName = $scope.masterData[31].stationName;
+    $scope.lat = $scope.masterData[31].latitude;
+    $scope.lon = $scope.masterData[31].longitude;
+    $scope.pop = $scope.masterData[31].population;
+    $scope.vot = $scope.masterData[31].voters;
+    $scope.vill = $scope.masterData[31].villageMohalla;
+    $scope.gridCon = $scope.masterData[31].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[31].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[31].electionCrimes;
+    $scope.gridPoli = $scope.masterData[31].politician;
+    $scope.bUnder = $scope.masterData[31].boundDownUnder;
+    $scope.vul = $scope.masterData[31].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[31].warrantedCriminals;
+    $scope.cond = $scope.masterData[31].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl33', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[32].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[32].councellor;
+    $scope.gridRespected = $scope.masterData[32].respectedPpl;
+    $scope.gridRetired = $scope.masterData[32].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[32].neighbourPolling;
+    $scope.gridArms = $scope.masterData[32].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[32].historySheeter;
+    $scope.stName = $scope.masterData[32].stationName;
+    $scope.lat = $scope.masterData[32].latitude;
+    $scope.lon = $scope.masterData[32].longitude;
+    $scope.pop = $scope.masterData[32].population;
+    $scope.vot = $scope.masterData[32].voters;
+    $scope.vill = $scope.masterData[32].villageMohalla;
+    $scope.gridCon = $scope.masterData[32].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[32].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[32].electionCrimes;
+    $scope.gridPoli = $scope.masterData[32].politician;
+    $scope.bUnder = $scope.masterData[32].boundDownUnder;
+    $scope.vul = $scope.masterData[32].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[32].warrantedCriminals;
+    $scope.cond = $scope.masterData[32].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl34', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[33].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[33].councellor;
+    $scope.gridRespected = $scope.masterData[33].respectedPpl;
+    $scope.gridRetired = $scope.masterData[33].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[33].neighbourPolling;
+    $scope.gridArms = $scope.masterData[33].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[33].historySheeter;
+    $scope.stName = $scope.masterData[33].stationName;
+    $scope.lat = $scope.masterData[33].latitude;
+    $scope.lon = $scope.masterData[33].longitude;
+    $scope.pop = $scope.masterData[33].population;
+    $scope.vot = $scope.masterData[33].voters;
+    $scope.vill = $scope.masterData[33].villageMohalla;
+    $scope.gridCon = $scope.masterData[33].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[33].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[33].electionCrimes;
+    $scope.gridPoli = $scope.masterData[33].politician;
+    $scope.bUnder = $scope.masterData[33].boundDownUnder;
+    $scope.vul = $scope.masterData[33].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[33].warrantedCriminals;
+    $scope.cond = $scope.masterData[33].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl35', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[34].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[34].councellor;
+    $scope.gridRespected = $scope.masterData[34].respectedPpl;
+    $scope.gridRetired = $scope.masterData[34].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[34].neighbourPolling;
+    $scope.gridArms = $scope.masterData[34].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[34].historySheeter;
+    $scope.stName = $scope.masterData[34].stationName;
+    $scope.lat = $scope.masterData[34].latitude;
+    $scope.lon = $scope.masterData[34].longitude;
+    $scope.pop = $scope.masterData[34].population;
+    $scope.vot = $scope.masterData[34].voters;
+    $scope.vill = $scope.masterData[34].villageMohalla;
+    $scope.gridCon = $scope.masterData[34].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[34].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[34].electionCrimes;
+    $scope.gridPoli = $scope.masterData[34].politician;
+    $scope.bUnder = $scope.masterData[34].boundDownUnder;
+    $scope.vul = $scope.masterData[34].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[34].warrantedCriminals;
+    $scope.cond = $scope.masterData[34].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[34].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl36', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[35].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[35].councellor;
+    $scope.gridRespected = $scope.masterData[35].respectedPpl;
+    $scope.gridRetired = $scope.masterData[35].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[35].neighbourPolling;
+    $scope.gridArms = $scope.masterData[35].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[35].historySheeter;
+    $scope.stName = $scope.masterData[35].stationName;
+    $scope.lat = $scope.masterData[35].latitude;
+    $scope.lon = $scope.masterData[35].longitude;
+    $scope.pop = $scope.masterData[35].population;
+    $scope.vot = $scope.masterData[35].voters;
+    $scope.vill = $scope.masterData[35].villageMohalla;
+    $scope.gridCon = $scope.masterData[35].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[35].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[35].electionCrimes;
+    $scope.gridPoli = $scope.masterData[35].politician;
+    $scope.bUnder = $scope.masterData[35].boundDownUnder;
+    $scope.vul = $scope.masterData[35].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[35].warrantedCriminals;
+    $scope.cond = $scope.masterData[35].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[35].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl37', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[36].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[36].councellor;
+    $scope.gridRespected = $scope.masterData[36].respectedPpl;
+    $scope.gridRetired = $scope.masterData[36].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[36].neighbourPolling;
+    $scope.gridArms = $scope.masterData[36].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[36].historySheeter;
+    $scope.stName = $scope.masterData[36].stationName;
+    $scope.lat = $scope.masterData[36].latitude;
+    $scope.lon = $scope.masterData[36].longitude;
+    $scope.pop = $scope.masterData[36].population;
+    $scope.vot = $scope.masterData[36].voters;
+    $scope.vill = $scope.masterData[36].villageMohalla;
+    $scope.gridCon = $scope.masterData[36].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[36].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[36].electionCrimes;
+    $scope.gridPoli = $scope.masterData[36].politician;
+    $scope.bUnder = $scope.masterData[36].boundDownUnder;
+    $scope.vul = $scope.masterData[36].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[36].warrantedCriminals;
+    $scope.cond = $scope.masterData[36].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl38', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[37].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[37].councellor;
+    $scope.gridRespected = $scope.masterData[37].respectedPpl;
+    $scope.gridRetired = $scope.masterData[37].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[37].neighbourPolling;
+    $scope.gridArms = $scope.masterData[37].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[37].historySheeter;
+    $scope.stName = $scope.masterData[37].stationName;
+    $scope.lat = $scope.masterData[37].latitude;
+    $scope.lon = $scope.masterData[37].longitude;
+    $scope.pop = $scope.masterData[37].population;
+    $scope.vot = $scope.masterData[37].voters;
+    $scope.vill = $scope.masterData[37].villageMohalla;
+    $scope.gridCon = $scope.masterData[37].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[37].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[37].electionCrimes;
+    $scope.gridPoli = $scope.masterData[37].politician;
+    $scope.bUnder = $scope.masterData[37].boundDownUnder;
+    $scope.vul = $scope.masterData[37].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[37].warrantedCriminals;
+    $scope.cond = $scope.masterData[37].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl39', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[38].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[38].councellor;
+    $scope.gridRespected = $scope.masterData[38].respectedPpl;
+    $scope.gridRetired = $scope.masterData[38].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[38].neighbourPolling;
+    $scope.gridArms = $scope.masterData[38].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[38].historySheeter;
+    $scope.stName = $scope.masterData[38].stationName;
+    $scope.lat = $scope.masterData[38].latitude;
+    $scope.lon = $scope.masterData[38].longitude;
+    $scope.pop = $scope.masterData[38].population;
+    $scope.vot = $scope.masterData[38].voters;
+    $scope.vill = $scope.masterData[38].villageMohalla;
+    $scope.gridCon = $scope.masterData[38].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[38].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[38].electionCrimes;
+    $scope.gridPoli = $scope.masterData[38].politician;
+    $scope.bUnder = $scope.masterData[38].boundDownUnder;
+    $scope.vul = $scope.masterData[38].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[38].warrantedCriminals;
+    $scope.cond = $scope.masterData[38].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl40', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[39].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[39].councellor;
+    $scope.gridRespected = $scope.masterData[39].respectedPpl;
+    $scope.gridRetired = $scope.masterData[39].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[39].neighbourPolling;
+    $scope.gridArms = $scope.masterData[39].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[39].historySheeter;
+    $scope.stName = $scope.masterData[39].stationName;
+    $scope.lat = $scope.masterData[39].latitude;
+    $scope.lon = $scope.masterData[39].longitude;
+    $scope.pop = $scope.masterData[39].population;
+    $scope.vot = $scope.masterData[39].voters;
+    $scope.vill = $scope.masterData[39].villageMohalla;
+    $scope.gridCon = $scope.masterData[39].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[39].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[39].electionCrimes;
+    $scope.gridPoli = $scope.masterData[39].politician;
+    $scope.bUnder = $scope.masterData[39].boundDownUnder;
+    $scope.vul = $scope.masterData[39].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[39].warrantedCriminals;
+    $scope.cond = $scope.masterData[39].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl41', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[40].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[40].councellor;
+    $scope.gridRespected = $scope.masterData[40].respectedPpl;
+    $scope.gridRetired = $scope.masterData[40].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[40].neighbourPolling;
+    $scope.gridArms = $scope.masterData[40].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[40].historySheeter;
+    $scope.stName = $scope.masterData[40].stationName;
+    $scope.lat = $scope.masterData[40].latitude;
+    $scope.lon = $scope.masterData[40].longitude;
+    $scope.pop = $scope.masterData[40].population;
+    $scope.vot = $scope.masterData[40].voters;
+    $scope.vill = $scope.masterData[40].villageMohalla;
+    $scope.gridCon = $scope.masterData[40].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[40].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[40].electionCrimes;
+    $scope.gridPoli = $scope.masterData[40].politician;
+    $scope.bUnder = $scope.masterData[40].boundDownUnder;
+    $scope.vul = $scope.masterData[40].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[40].warrantedCriminals;
+    $scope.cond = $scope.masterData[40].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl42', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[41].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[41].councellor;
+    $scope.gridRespected = $scope.masterData[41].respectedPpl;
+    $scope.gridRetired = $scope.masterData[41].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[41].neighbourPolling;
+    $scope.gridArms = $scope.masterData[41].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[41].historySheeter;
+    $scope.stName = $scope.masterData[41].stationName;
+    $scope.lat = $scope.masterData[41].latitude;
+    $scope.lon = $scope.masterData[41].longitude;
+    $scope.pop = $scope.masterData[41].population;
+    $scope.vot = $scope.masterData[41].voters;
+    $scope.vill = $scope.masterData[41].villageMohalla;
+    $scope.gridCon = $scope.masterData[41].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[41].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[41].electionCrimes;
+    $scope.gridPoli = $scope.masterData[41].politician;
+    $scope.bUnder = $scope.masterData[41].boundDownUnder;
+    $scope.vul = $scope.masterData[41].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[41].warrantedCriminals;
+    $scope.cond = $scope.masterData[41].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl43', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[42].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[42].councellor;
+    $scope.gridRespected = $scope.masterData[42].respectedPpl;
+    $scope.gridRetired = $scope.masterData[42].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[42].neighbourPolling;
+    $scope.gridArms = $scope.masterData[42].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[42].historySheeter;
+    $scope.stName = $scope.masterData[42].stationName;
+    $scope.lat = $scope.masterData[42].latitude;
+    $scope.lon = $scope.masterData[42].longitude;
+    $scope.pop = $scope.masterData[42].population;
+    $scope.vot = $scope.masterData[42].voters;
+    $scope.vill = $scope.masterData[42].villageMohalla;
+    $scope.gridCon = $scope.masterData[42].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[42].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[42].electionCrimes;
+    $scope.gridPoli = $scope.masterData[42].politician;
+    $scope.bUnder = $scope.masterData[42].boundDownUnder;
+    $scope.vul = $scope.masterData[42].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[42].warrantedCriminals;
+    $scope.cond = $scope.masterData[42].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl44', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[43].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[43].councellor;
+    $scope.gridRespected = $scope.masterData[43].respectedPpl;
+    $scope.gridRetired = $scope.masterData[43].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[43].neighbourPolling;
+    $scope.gridArms = $scope.masterData[43].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[43].historySheeter;
+    $scope.stName = $scope.masterData[43].stationName;
+    $scope.lat = $scope.masterData[43].latitude;
+    $scope.lon = $scope.masterData[43].longitude;
+    $scope.pop = $scope.masterData[43].population;
+    $scope.vot = $scope.masterData[43].voters;
+    $scope.vill = $scope.masterData[43].villageMohalla;
+    $scope.gridCon = $scope.masterData[43].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[43].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[43].electionCrimes;
+    $scope.gridPoli = $scope.masterData[43].politician;
+    $scope.bUnder = $scope.masterData[43].boundDownUnder;
+    $scope.vul = $scope.masterData[43].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[43].warrantedCriminals;
+    $scope.cond = $scope.masterData[43].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl45', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[44].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[44].councellor;
+    $scope.gridRespected = $scope.masterData[44].respectedPpl;
+    $scope.gridRetired = $scope.masterData[44].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[44].neighbourPolling;
+    $scope.gridArms = $scope.masterData[44].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[44].historySheeter;
+    $scope.stName = $scope.masterData[44].stationName;
+    $scope.lat = $scope.masterData[44].latitude;
+    $scope.lon = $scope.masterData[44].longitude;
+    $scope.pop = $scope.masterData[44].population;
+    $scope.vot = $scope.masterData[44].voters;
+    $scope.vill = $scope.masterData[44].villageMohalla;
+    $scope.gridCon = $scope.masterData[44].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[44].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[44].electionCrimes;
+    $scope.gridPoli = $scope.masterData[44].politician;
+    $scope.bUnder = $scope.masterData[44].boundDownUnder;
+    $scope.vul = $scope.masterData[44].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[44].warrantedCriminals;
+    $scope.cond = $scope.masterData[44].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl46', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[45].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[45].councellor;
+    $scope.gridRespected = $scope.masterData[45].respectedPpl;
+    $scope.gridRetired = $scope.masterData[45].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[45].neighbourPolling;
+    $scope.gridArms = $scope.masterData[45].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[45].historySheeter;
+    $scope.stName = $scope.masterData[45].stationName;
+    $scope.lat = $scope.masterData[45].latitude;
+    $scope.lon = $scope.masterData[45].longitude;
+    $scope.pop = $scope.masterData[45].population;
+    $scope.vot = $scope.masterData[45].voters;
+    $scope.vill = $scope.masterData[45].villageMohalla;
+    $scope.gridCon = $scope.masterData[45].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[45].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[45].electionCrimes;
+    $scope.gridPoli = $scope.masterData[45].politician;
+    $scope.bUnder = $scope.masterData[45].boundDownUnder;
+    $scope.vul = $scope.masterData[45].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[45].warrantedCriminals;
+    $scope.cond = $scope.masterData[45].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl47', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[46].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[46].councellor;
+    $scope.gridRespected = $scope.masterData[46].respectedPpl;
+    $scope.gridRetired = $scope.masterData[46].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[46].neighbourPolling;
+    $scope.gridArms = $scope.masterData[46].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[46].historySheeter;
+    $scope.stName = $scope.masterData[46].stationName;
+    $scope.lat = $scope.masterData[46].latitude;
+    $scope.lon = $scope.masterData[46].longitude;
+    $scope.pop = $scope.masterData[46].population;
+    $scope.vot = $scope.masterData[46].voters;
+    $scope.vill = $scope.masterData[46].villageMohalla;
+    $scope.gridCon = $scope.masterData[46].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[46].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[46].electionCrimes;
+    $scope.gridPoli = $scope.masterData[46].politician;
+    $scope.bUnder = $scope.masterData[46].boundDownUnder;
+    $scope.vul = $scope.masterData[46].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[46].warrantedCriminals;
+    $scope.cond = $scope.masterData[46].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl48', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[47].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[47].councellor;
+    $scope.gridRespected = $scope.masterData[47].respectedPpl;
+    $scope.gridRetired = $scope.masterData[47].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[47].neighbourPolling;
+    $scope.gridArms = $scope.masterData[47].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[47].historySheeter;
+    $scope.stName = $scope.masterData[47].stationName;
+    $scope.lat = $scope.masterData[47].latitude;
+    $scope.lon = $scope.masterData[47].longitude;
+    $scope.pop = $scope.masterData[47].population;
+    $scope.vot = $scope.masterData[47].voters;
+    $scope.vill = $scope.masterData[47].villageMohalla;
+    $scope.gridCon = $scope.masterData[47].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[47].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[47].electionCrimes;
+    $scope.gridPoli = $scope.masterData[47].politician;
+    $scope.bUnder = $scope.masterData[47].boundDownUnder;
+    $scope.vul = $scope.masterData[47].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[47].warrantedCriminals;
+    $scope.cond = $scope.masterData[47].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl49', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[48].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[48].councellor;
+    $scope.gridRespected = $scope.masterData[48].respectedPpl;
+    $scope.gridRetired = $scope.masterData[48].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[48].neighbourPolling;
+    $scope.gridArms = $scope.masterData[48].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[48].historySheeter;
+    $scope.stName = $scope.masterData[48].stationName;
+    $scope.lat = $scope.masterData[48].latitude;
+    $scope.lon = $scope.masterData[48].longitude;
+    $scope.pop = $scope.masterData[48].population;
+    $scope.vot = $scope.masterData[48].voters;
+    $scope.vill = $scope.masterData[48].villageMohalla;
+    $scope.gridCon = $scope.masterData[48].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[48].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[48].electionCrimes;
+    $scope.gridPoli = $scope.masterData[48].politician;
+    $scope.bUnder = $scope.masterData[48].boundDownUnder;
+    $scope.vul = $scope.masterData[48].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[48].warrantedCriminals;
+    $scope.cond = $scope.masterData[48].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl50', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[49].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[49].councellor;
+    $scope.gridRespected = $scope.masterData[49].respectedPpl;
+    $scope.gridRetired = $scope.masterData[49].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[49].neighbourPolling;
+    $scope.gridArms = $scope.masterData[49].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[49].historySheeter;
+    $scope.stName = $scope.masterData[49].stationName;
+    $scope.lat = $scope.masterData[49].latitude;
+    $scope.lon = $scope.masterData[49].longitude;
+    $scope.pop = $scope.masterData[49].population;
+    $scope.vot = $scope.masterData[49].voters;
+    $scope.vill = $scope.masterData[49].villageMohalla;
+    $scope.gridCon = $scope.masterData[49].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[49].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[49].electionCrimes;
+    $scope.gridPoli = $scope.masterData[49].politician;
+    $scope.bUnder = $scope.masterData[49].boundDownUnder;
+    $scope.vul = $scope.masterData[49].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[49].warrantedCriminals;
+    $scope.cond = $scope.masterData[49].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl51', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[50].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[50].councellor;
+    $scope.gridRespected = $scope.masterData[50].respectedPpl;
+    $scope.gridRetired = $scope.masterData[50].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[50].neighbourPolling;
+    $scope.gridArms = $scope.masterData[50].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[50].historySheeter;
+    $scope.stName = $scope.masterData[50].stationName;
+    $scope.lat = $scope.masterData[50].latitude;
+    $scope.lon = $scope.masterData[50].longitude;
+    $scope.pop = $scope.masterData[50].population;
+    $scope.vot = $scope.masterData[50].voters;
+    $scope.vill = $scope.masterData[50].villageMohalla;
+    $scope.gridCon = $scope.masterData[50].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[50].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[50].electionCrimes;
+    $scope.gridPoli = $scope.masterData[50].politician;
+    $scope.bUnder = $scope.masterData[50].boundDownUnder;
+    $scope.vul = $scope.masterData[50].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[50].warrantedCriminals;
+    $scope.cond = $scope.masterData[50].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl52', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[51].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[51].councellor;
+    $scope.gridRespected = $scope.masterData[51].respectedPpl;
+    $scope.gridRetired = $scope.masterData[51].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[51].neighbourPolling;
+    $scope.gridArms = $scope.masterData[51].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[51].historySheeter;
+    $scope.stName = $scope.masterData[51].stationName;
+    $scope.lat = $scope.masterData[51].latitude;
+    $scope.lon = $scope.masterData[51].longitude;
+    $scope.pop = $scope.masterData[51].population;
+    $scope.vot = $scope.masterData[51].voters;
+    $scope.vill = $scope.masterData[51].villageMohalla;
+    $scope.gridCon = $scope.masterData[51].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[51].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[51].electionCrimes;
+    $scope.gridPoli = $scope.masterData[51].politician;
+    $scope.bUnder = $scope.masterData[51].boundDownUnder;
+    $scope.vul = $scope.masterData[51].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[51].warrantedCriminals;
+    $scope.cond = $scope.masterData[51].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl53', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[52].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[52].councellor;
+    $scope.gridRespected = $scope.masterData[52].respectedPpl;
+    $scope.gridRetired = $scope.masterData[52].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[52].neighbourPolling;
+    $scope.gridArms = $scope.masterData[52].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[52].historySheeter;
+    $scope.stName = $scope.masterData[52].stationName;
+    $scope.lat = $scope.masterData[52].latitude;
+    $scope.lon = $scope.masterData[52].longitude;
+    $scope.pop = $scope.masterData[52].population;
+    $scope.vot = $scope.masterData[52].voters;
+    $scope.vill = $scope.masterData[52].villageMohalla;
+    $scope.gridCon = $scope.masterData[52].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[52].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[52].electionCrimes;
+    $scope.gridPoli = $scope.masterData[52].politician;
+    $scope.bUnder = $scope.masterData[52].boundDownUnder;
+    $scope.vul = $scope.masterData[52].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[52].warrantedCriminals;
+    $scope.cond = $scope.masterData[52].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl54', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera54_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera54_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera54_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[53].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[53].councellor;
+    $scope.gridRespected = $scope.masterData[53].respectedPpl;
+    $scope.gridRetired = $scope.masterData[53].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[53].neighbourPolling;
+    $scope.gridArms = $scope.masterData[53].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[53].historySheeter;
+    $scope.stName = $scope.masterData[53].stationName;
+    $scope.lat = $scope.masterData[53].latitude;
+    $scope.lon = $scope.masterData[53].longitude;
+    $scope.pop = $scope.masterData[53].population;
+    $scope.vot = $scope.masterData[53].voters;
+    $scope.vill = $scope.masterData[53].villageMohalla;
+    $scope.gridCon = $scope.masterData[53].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[53].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[53].electionCrimes;
+    $scope.gridPoli = $scope.masterData[53].politician;
+    $scope.bUnder = $scope.masterData[53].boundDownUnder;
+    $scope.vul = $scope.masterData[53].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[53].warrantedCriminals;
+    $scope.cond = $scope.masterData[53].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl55', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera55_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera55_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera55_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[54].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[54].councellor;
+    $scope.gridRespected = $scope.masterData[54].respectedPpl;
+    $scope.gridRetired = $scope.masterData[54].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[54].neighbourPolling;
+    $scope.gridArms = $scope.masterData[54].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[54].historySheeter;
+    $scope.stName = $scope.masterData[54].stationName;
+    $scope.lat = $scope.masterData[54].latitude;
+    $scope.lon = $scope.masterData[54].longitude;
+    $scope.pop = $scope.masterData[54].population;
+    $scope.vot = $scope.masterData[54].voters;
+    $scope.vill = $scope.masterData[54].villageMohalla;
+    $scope.gridCon = $scope.masterData[54].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[54].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[54].electionCrimes;
+    $scope.gridPoli = $scope.masterData[54].politician;
+    $scope.bUnder = $scope.masterData[54].boundDownUnder;
+    $scope.vul = $scope.masterData[54].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[54].warrantedCriminals;
+    $scope.cond = $scope.masterData[54].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('kkhCtrl56', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/kankarkhera56_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/kankarkhera56_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/kankarkhera56_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/kankarkhera.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[55].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[55].councellor;
+    $scope.gridRespected = $scope.masterData[55].respectedPpl;
+    $scope.gridRetired = $scope.masterData[55].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[55].neighbourPolling;
+    $scope.gridArms = $scope.masterData[55].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[55].historySheeter;
+    $scope.stName = $scope.masterData[55].stationName;
+    $scope.lat = $scope.masterData[55].latitude;
+    $scope.lon = $scope.masterData[55].longitude;
+    $scope.pop = $scope.masterData[55].population;
+    $scope.vot = $scope.masterData[55].voters;
+    $scope.vill = $scope.masterData[55].villageMohalla;
+    $scope.gridCon = $scope.masterData[55].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[55].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[55].electionCrimes;
+    $scope.gridPoli = $scope.masterData[55].politician;
+    $scope.bUnder = $scope.masterData[55].boundDownUnder;
+    $scope.vul = $scope.masterData[55].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[55].warrantedCriminals;
+    $scope.cond = $scope.masterData[55].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+// End of kankarkhera Controllers
+
+.controller('sdCtrl', function($scope, $http){
+  $scope.items = [
+      {
+        "title": "Prathmik Vidhyaliya Rajpur Moman",
+        "path": "#/menu/tab/sdDetail"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Alamgir Faridpur",
+        "path": "#/menu/tab/sdDetail2"
+      },
+      {
+        "title": "Purana Prathmik Vidhyaliya Nahali",
+        "path": "#/menu/tab/sdDetail3"
+      },
+      {
+        "title": "Janta Inter College Kheda",
+        "path": "#/menu/tab/sdDetail4"
+      },
+      {
+        "title": "Prathmik Vidhyaliya kheda",
+        "path": "#/menu/tab/sdDetail5"
+      },
+      {
+        "title": "Jawahar inter college Aurang Nagar Radhna",
+        "path": "#/menu/tab/sdDetail6"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya  Aurang Nagar Radhna",
+        "path": "#/menu/tab/sdDetail7"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Akalpura ( Majra )  Aurang Nagar Radhna",
+        "path": "#/menu/tab/sdDetail8"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Jalalpur Akhepur",
+        "path": "#/menu/tab/sdDetail9"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Jalalpur Akhepur",
+        "path": "#/menu/tab/sdDetail10"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Bhamori",
+        "path": "#/menu/tab/sdDetail11"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Bhamori",
+        "path": "#/menu/tab/sdDetail12"
+      },
+      {
+        "title": "Prathmik Vidhyaliya No.2  Mahadev",
+        "path": "#/menu/tab/sdDetail13"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Chhabariya",
+        "path": "#/menu/tab/sdDetail14"
+      },
+      {
+        "title": "Prathmik Vidhyaiya Chandna",
+        "path": "#/menu/tab/sdDetail15"
+      },
+      {
+        "title": "Prathmik Vidhyaiya Julhada",
+        "path": "#/menu/tab/sdDetail16"
+      },
+      {
+        "title": "Achariya Nami Sagar Jain Inter college Sardhana",
+        "path": "#/menu/tab/sdDetail17"
+      },
+      {
+        "title": "Chander Shekar high secondary school Sardhana",
+        "path": "#/menu/tab/sdDetail18"
+      },
+      {
+        "title": "K.K. Public School Sardhana",
+        "path": "#/menu/tab/sdDetail19"
+      },
+      {
+        "title": "Mandi Kariyaliya Khakaruban mirdgan Sardhana",
+        "path": "#/menu/tab/sdDetail20"
+      },
+      {
+        "title": "Khand Vikash Kariyalya BhudaBabu Sardhana",
+        "path": "#/menu/tab/sdDetail21"
+      },
+      {
+        "title": "Kariyaliya palika parishad mhomad pirjatgan shardana",
+        "path": "#/menu/tab/sdDetail22"
+      },
+      {
+        "title": "Gandhi Smarak prathmik vidhyaliya gandhi nagar",
+        "path": "#/menu/tab/sdDetail23"
+      },
+      {
+        "title": "St. joshep Degere college Dharampura Sardhana",
+        "path": "#/menu/tab/sdDetail24"
+      },
+      {
+        "title": "St. joshep inter college Dharampura Sardhana",
+        "path": "#/menu/tab/sdDetail25"
+      },
+      {
+        "title": "St. Frances Prathmik Vidhyaliya Bhatwada Sardhana",
+        "path": "#/menu/tab/sdDetail26"
+      },
+      {
+        "title": "DharamSala A. J. Bhatwada Sardhana",
+        "path": "#/menu/tab/sdDetail27"
+      },
+      {
+        "title": " Lokpriya inter college Sardhana",
+        "path": "#/menu/tab/sdDetail28"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Manpuri (Majra) Sardhana",
+        "path": "#/menu/tab/sdDetail29"
+      },
+      {
+        "title": "S. D. Girls Inter College Sardhana",
+        "path": "#/menu/tab/sdDetail30"
+      },
+      {
+        "title": "St.Charles Inter College Kilakhewan Sardhana",
+        "path": "#/menu/tab/sdDetail31"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Choti Mandhiyai",
+        "path": "#/menu/tab/sdDetail32"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Badi Mandhiyai",
+        "path": "#/menu/tab/sdDetail33"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Jafarnagar begmabad",
+        "path": "#/menu/tab/sdDetail34"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Teaharki",
+        "path": "#/menu/tab/sdDetail35"
+      },
+      {
+        "title": "Prathmik Vidhyaliya Milakh Majra therkhi",
+        "path": "#/menu/tab/sdDetail36"
+      },
+      {
+        "title": "Ucch Prathmik vidhyaliya Atmadhnagar Alipur",
+        "path": "#/menu/tab/sdDetail37"
+      },
+      {
+        "title": "Prathmik vidhyaliya Atmadhnagar Alipur",
+        "path": "#/menu/tab/sdDetail38"
+      },
+      {
+        "title": "Purv Madhyamik Vidhyaliya Madarpura",
+        "path": "#/menu/tab/sdDetail39"
+      },
+      {
+        "title": "Ucch Prathmik Vidyalaya Meharmati Mina",
+        "path": "#/menu/tab/sdDetail40"
+      },
+      {
+        "title": "Prathmik Vidhyalaya Ahmedabad Majra",
+        "path": "#/menu/tab/sdDetail41"
+      },
+      {
+        "title": "Prathmik Vidhayala Nagla Oder",
+        "path": "#/menu/tab/sdDetail42"
+      },
+      {
+        "title": "Anusuchit SC Chopal Khirwa Jalalpur",
+        "path": "#/menu/tab/sdDetail43"
+      },
+      {
+        "title": "Navodiya Vidyalaya Nagla Oder, Nawab Gadi",
+        "path": "#/menu/tab/sdDetail44"
+      },
+      {
+        "title": "Prathmik Vidyalaya Jhitkari",
+        "path": "#/menu/tab/sdDetail45"
+      },
+      {
+        "title": "Prathmik Vidyalaya Khwajpur Khushavli",
+        "path": "#/menu/tab/sdDetail46"
+      },
+      {
+        "title": "Uchh Prathmik Vidyalaya Khawajapur Khushavli",
+        "path": "#/menu/tab/sdDetail47"
+      },
+      {
+        "title": "Prathmik Vidyalaya Daulatpur",
+        "path": "#/menu/tab/sdDetail48"
+      },
+      {
+        "title": "Prathmik Vidyalaya Jwala Garh",
+        "path": "#/menu/tab/sdDetail49"
+      },
+      {
+        "title": "Prathmik Vidhayala Kunanjan",
+        "path": "#/menu/tab/sdDetail50"
+      },
+      {
+        "title": "Naveen  Panchayat Ghar Salawa",
+        "path": "#/menu/tab/sdDetail51"
+      },
+      {
+        "title": "Prathmik Vidhyala No.1 Salawa",
+        "path": "#/menu/tab/sdDetail52"
+      },
+      {
+        "title": "Salawa Inter College Salawa",
+        "path": "#/menu/tab/sdDetail53"
+      },
+      {
+        "title": "Prathmik Vidhyala No.2 Salawa",
+        "path": "#/menu/tab/sdDetail54"
+      },
+      {
+        "title": "Janta Adarsh Inter College Kapsar",
+        "path": "#/menu/tab/sdDetail55"
+      },
+      {
+        "title": "Uchh Prathmik Vidhyala Kapsar",
+        "path": "#/menu/tab/sdDetail56"
+      },
+      {
+        "title": "Uchh Prathmik Vidhyala Aterna",
+        "path": "#/menu/tab/sdDetail57"
+      },
+      {
+        "title": "Prathmik Vidhyala Mohd. Pur Akbharpur Chakbandi Abad",
+        "path": "#/menu/tab/sdDetail58"
+      },
+      {
+        "title": "Prathmik Vidhyala Pohalli",
+        "path": "#/menu/tab/sdDetail59"
+      },
+      {
+        "title": "Uchh Prathmik Vidhyala Pithlokar",
+        "path": "#/menu/tab/sdDetail60"
+      },
+      {
+        "title": "Prathmik Vidhyala Pithlokar",
+        "path": "#/menu/tab/sdDetail61"
+      },
+      {
+        "title": "Prathmik Vidhyala Old Kalandi",
+        "path": "#/menu/tab/sdDetail62"
+      },
+      {
+        "title": "New Prathmik Vidhyala Kalandi",
+        "path": "#/menu/tab/sdDetail63"
+      },
+      {
+        "title": "Uchh Prathmik Vidhyala Pohalli",
+        "path": "#/menu/tab/sdDetail64"
+      },
+      {
+        "title": "Uchh Prathmik Vidhyala Kaland",
+        "path": "#/menu/tab/sdDetail65"
+      },
+      {
+        "title": "Prathmik Vidhyala Kaland",
+        "path": "#/menu/tab/sdDetail66"
+      },
+      {
+        "title": "Primary School Baparsi",
+        "path": "#/menu/tab/sdDetail67"
+      },
+      {
+        "title": "Prathmik Vidhyala Mulhera",
+        "path": "#/menu/tab/sdDetail68"
+      },
+      {
+        "title": "Sant Keshav Das Inter College Mulhera",
+        "path": "#/menu/tab/sdDetail69"
+      },
+      {
+        "title": "Prathmik Vidhyala No.1 Chhur",
+        "path": "#/menu/tab/sdDetail70"
+      },
+      {
+        "title": "Prathmik Vidhyala No.2 Chhur",
+        "path": "#/menu/tab/sdDetail71"
+      },
+      {
+        "title": "Prathmik Vidhyala No.3 Chhur",
+        "path": "#/menu/tab/sdDetail72"
+      },
+      {
+        "title": "Gandhi Inter College Churr",
+        "path": "#/menu/tab/sdDetail73"
+      },
+      {
+        "title": "Prathmik Vidhayala Nahali",
+        "path": "#/menu/tab/sdDetail74"
+      },
+      {
+        "title": "Prathmik Vidhayala Pali",
+        "path": "#/menu/tab/sdDetail75"
+      },
+      {
+        "title": "Janta Jagrit Inter College IKari",
+        "path": "#/menu/tab/sdDetail76"
+      },
+      {
+        "title": "Prathmik Vidhayala Ikari",
+        "path": "#/menu/tab/sdDetail77"
+      },
+      {
+        "title": "Prathmik Vidhayala Badruddin Nagar Nanu",
+        "path": "#/menu/tab/sdDetail78"
+      },
+      {
+        "title": "uchh Prathmik Vidhayala Badruddin Nagar Nanu",
+        "path": "#/menu/tab/sdDetail79"
+      },
+      {
+        "title": "Prathmik Vidhayala Bhubak Pur",
+        "path": "#/menu/tab/sdDetail80"
+      },
+      {
+        "title": "Prathmik Vidhayala Meharmati Ganeshpur",
+        "path": "#/menu/tab/sdDetail81"
+      },
+      {
+        "title": "Prathmik Vidhayala BahadurPur",
+        "path": "#/menu/tab/sdDetail82"
+      },
+      {
+        "title": "Prathmik Vidhayala Khirwa JalalPur",
+        "path": "#/menu/tab/sdDetail83"
+      },
+      {
+        "title": "Prathmik Vidhayala Zafrabaad DurWeshPur",
+        "path": "#/menu/tab/sdDetail84"
+      },
+      {
+        "title": "AnuSuchit SC Panchayat Ghar Khirwa Jalalpur",
+        "path": "#/menu/tab/sdDetail85"
+      },
+      {
+        "title": "Gandhi Inter College Churr",
+        "path": "#/menu/tab/sdDetail86"
+      },
+      {
+        "title": "Ucch Prathmik Vidyalaya Khirwa Nauabad",
+        "path": "#/menu/tab/sdDetail87"
+      },
+      {
+        "title": "Prathmik Vidyalaya Davathwa",
+        "path": "#/menu/tab/sdDetail88"
+      },
+      {
+        "title": "Bheemrav Ambetikar Bhavan Davathwa 02",
+        "path": "#/menu/tab/sdDetail89"
+      },
+      {
+        "title": "Gandhi Smark Inter College Davathwa 03",
+        "path": "#/menu/tab/sdDetail90"
+      },
+      {
+        "title": "Prathmik Vidyalaya Ratan Garhi",
+        "path": "#/menu/tab/sdDetail91"
+      },
+      {
+        "title": "Prathmik Vidyalaya Dawathwa Garhi",
+        "path": "#/menu/tab/sdDetail92"
+      },
+      {
+        "title": "Prathamic Vidhyalay Ratauli",
+        "path": "#/menu/tab/sdDetail93"
+      },
+      {
+        "title": "Amar Jyoti Ucch Prathamic Vidhyalaya Bhalsauna",
+        "path": "#/menu/tab/sdDetail94"
+      },
+      {
+        "title": "Prathamic Vidhyala Navada Majara Kalandi",
+        "path": "#/menu/tab/sdDetail95"
+      }
+    ];
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[0].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[0].councellor;
+    $scope.gridRespected = $scope.masterData[0].respectedPpl;
+    $scope.gridRetired = $scope.masterData[0].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[0].neighbourPolling;
+    $scope.gridArms = $scope.masterData[0].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[0].historySheeter;
+    $scope.stName = $scope.masterData[0].stationName;
+    $scope.lat = $scope.masterData[0].latitude;
+    $scope.lon = $scope.masterData[0].longitude;
+    $scope.pop = $scope.masterData[0].population;
+    $scope.vot = $scope.masterData[0].voters;
+    $scope.vill = $scope.masterData[0].villageMohalla;
+    $scope.gridCon = $scope.masterData[0].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[0].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[0].electionCrimes;
+    $scope.gridPoli = $scope.masterData[0].politician;
+    $scope.bUnder = $scope.masterData[0].boundDownUnder;
+    $scope.vul = $scope.masterData[0].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[0].warrantedCriminals;
+    $scope.cond = $scope.masterData[0].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl2', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[1].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[1].councellor;
+    $scope.gridRespected = $scope.masterData[1].respectedPpl;
+    $scope.gridRetired = $scope.masterData[1].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[1].neighbourPolling;
+    $scope.gridArms = $scope.masterData[1].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[1].historySheeter;
+    $scope.stName = $scope.masterData[1].stationName;
+    $scope.lat = $scope.masterData[1].latitude;
+    $scope.lon = $scope.masterData[1].longitude;
+    $scope.pop = $scope.masterData[1].population;
+    $scope.vot = $scope.masterData[1].voters;
+    $scope.vill = $scope.masterData[1].villageMohalla;
+    $scope.gridCon = $scope.masterData[1].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[1].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[1].electionCrimes;
+    $scope.gridPoli = $scope.masterData[1].politician;
+    $scope.bUnder = $scope.masterData[1].boundDownUnder;
+    $scope.vul = $scope.masterData[1].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[1].warrantedCriminals;
+    $scope.cond = $scope.masterData[1].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl3', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[2].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[2].councellor;
+    $scope.gridRespected = $scope.masterData[2].respectedPpl;
+    $scope.gridRetired = $scope.masterData[2].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[2].neighbourPolling;
+    $scope.gridArms = $scope.masterData[2].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[2].historySheeter;
+    $scope.stName = $scope.masterData[2].stationName;
+    $scope.lat = $scope.masterData[2].latitude;
+    $scope.lon = $scope.masterData[2].longitude;
+    $scope.pop = $scope.masterData[2].population;
+    $scope.vot = $scope.masterData[2].voters;
+    $scope.vill = $scope.masterData[2].villageMohalla;
+    $scope.gridCon = $scope.masterData[2].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[2].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[2].electionCrimes;
+    $scope.gridPoli = $scope.masterData[2].politician;
+    $scope.bUnder = $scope.masterData[2].boundDownUnder;
+    $scope.vul = $scope.masterData[2].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[2].warrantedCriminals;
+    $scope.cond = $scope.masterData[2].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl4', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[3].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[3].councellor;
+    $scope.gridRespected = $scope.masterData[3].respectedPpl;
+    $scope.gridRetired = $scope.masterData[3].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[3].neighbourPolling;
+    $scope.gridArms = $scope.masterData[3].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[3].historySheeter;
+    $scope.stName = $scope.masterData[3].stationName;
+    $scope.lat = $scope.masterData[3].latitude;
+    $scope.lon = $scope.masterData[3].longitude;
+    $scope.pop = $scope.masterData[3].population;
+    $scope.vot = $scope.masterData[3].voters;
+    $scope.vill = $scope.masterData[3].villageMohalla;
+    $scope.gridCon = $scope.masterData[3].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[3].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[3].electionCrimes;
+    $scope.gridPoli = $scope.masterData[3].politician;
+    $scope.bUnder = $scope.masterData[3].boundDownUnder;
+    $scope.vul = $scope.masterData[3].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[3].warrantedCriminals;
+    $scope.cond = $scope.masterData[3].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[3].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl5', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[4].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[4].councellor;
+    $scope.gridRespected = $scope.masterData[4].respectedPpl;
+    $scope.gridRetired = $scope.masterData[4].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[4].neighbourPolling;
+    $scope.gridArms = $scope.masterData[4].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[4].historySheeter;
+    $scope.stName = $scope.masterData[4].stationName;
+    $scope.lat = $scope.masterData[4].latitude;
+    $scope.lon = $scope.masterData[4].longitude;
+    $scope.pop = $scope.masterData[4].population;
+    $scope.vot = $scope.masterData[4].voters;
+    $scope.vill = $scope.masterData[4].villageMohalla;
+    $scope.gridCon = $scope.masterData[4].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[4].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[4].electionCrimes;
+    $scope.gridPoli = $scope.masterData[4].politician;
+    $scope.bUnder = $scope.masterData[4].boundDownUnder;
+    $scope.vul = $scope.masterData[4].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[4].warrantedCriminals;
+    $scope.cond = $scope.masterData[4].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl6', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[5].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[5].councellor;
+    $scope.gridRespected = $scope.masterData[5].respectedPpl;
+    $scope.gridRetired = $scope.masterData[5].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[5].neighbourPolling;
+    $scope.gridArms = $scope.masterData[5].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[5].historySheeter;
+    $scope.stName = $scope.masterData[5].stationName;
+    $scope.lat = $scope.masterData[5].latitude;
+    $scope.lon = $scope.masterData[5].longitude;
+    $scope.pop = $scope.masterData[5].population;
+    $scope.vot = $scope.masterData[5].voters;
+    $scope.vill = $scope.masterData[5].villageMohalla;
+    $scope.gridCon = $scope.masterData[5].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[5].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[5].electionCrimes;
+    $scope.gridPoli = $scope.masterData[5].politician;
+    $scope.bUnder = $scope.masterData[5].boundDownUnder;
+    $scope.vul = $scope.masterData[5].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[5].warrantedCriminals;
+    $scope.cond = $scope.masterData[5].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl7', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[6].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[6].councellor;
+    $scope.gridRespected = $scope.masterData[6].respectedPpl;
+    $scope.gridRetired = $scope.masterData[6].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[6].neighbourPolling;
+    $scope.gridArms = $scope.masterData[6].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[6].historySheeter;
+    $scope.stName = $scope.masterData[6].stationName;
+    $scope.lat = $scope.masterData[6].latitude;
+    $scope.lon = $scope.masterData[6].longitude;
+    $scope.pop = $scope.masterData[6].population;
+    $scope.vot = $scope.masterData[6].voters;
+    $scope.vill = $scope.masterData[6].villageMohalla;
+    $scope.gridCon = $scope.masterData[6].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[6].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[6].electionCrimes;
+    $scope.gridPoli = $scope.masterData[6].politician;
+    $scope.bUnder = $scope.masterData[6].boundDownUnder;
+    $scope.vul = $scope.masterData[6].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[6].warrantedCriminals;
+    $scope.cond = $scope.masterData[6].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl8', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[7].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[7].councellor;
+    $scope.gridRespected = $scope.masterData[7].respectedPpl;
+    $scope.gridRetired = $scope.masterData[7].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[7].neighbourPolling;
+    $scope.gridArms = $scope.masterData[7].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[7].historySheeter;
+    $scope.stName = $scope.masterData[7].stationName;
+    $scope.lat = $scope.masterData[7].latitude;
+    $scope.lon = $scope.masterData[7].longitude;
+    $scope.pop = $scope.masterData[7].population;
+    $scope.vot = $scope.masterData[7].voters;
+    $scope.vill = $scope.masterData[7].villageMohalla;
+    $scope.gridCon = $scope.masterData[7].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[7].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[7].electionCrimes;
+    $scope.gridPoli = $scope.masterData[7].politician;
+    $scope.bUnder = $scope.masterData[7].boundDownUnder;
+    $scope.vul = $scope.masterData[7].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[7].warrantedCriminals;
+    $scope.cond = $scope.masterData[7].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl9', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[8].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[8].councellor;
+    $scope.gridRespected = $scope.masterData[8].respectedPpl;
+    $scope.gridRetired = $scope.masterData[8].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[8].neighbourPolling;
+    $scope.gridArms = $scope.masterData[8].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[8].historySheeter;
+    $scope.stName = $scope.masterData[8].stationName;
+    $scope.lat = $scope.masterData[8].latitude;
+    $scope.lon = $scope.masterData[8].longitude;
+    $scope.pop = $scope.masterData[8].population;
+    $scope.vot = $scope.masterData[8].voters;
+    $scope.vill = $scope.masterData[8].villageMohalla;
+    $scope.gridCon = $scope.masterData[8].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[8].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[8].electionCrimes;
+    $scope.gridPoli = $scope.masterData[8].politician;
+    $scope.bUnder = $scope.masterData[8].boundDownUnder;
+    $scope.vul = $scope.masterData[8].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[8].warrantedCriminals;
+    $scope.cond = $scope.masterData[8].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl10', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[9].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[9].councellor;
+    $scope.gridRespected = $scope.masterData[9].respectedPpl;
+    $scope.gridRetired = $scope.masterData[9].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[9].neighbourPolling;
+    $scope.gridArms = $scope.masterData[9].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[9].historySheeter;
+    $scope.stName = $scope.masterData[9].stationName;
+    $scope.lat = $scope.masterData[9].latitude;
+    $scope.lon = $scope.masterData[9].longitude;
+    $scope.pop = $scope.masterData[9].population;
+    $scope.vot = $scope.masterData[9].voters;
+    $scope.vill = $scope.masterData[9].villageMohalla;
+    $scope.gridCon = $scope.masterData[9].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[9].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[9].electionCrimes;
+    $scope.gridPoli = $scope.masterData[9].politician;
+    $scope.bUnder = $scope.masterData[9].boundDownUnder;
+    $scope.vul = $scope.masterData[9].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[9].warrantedCriminals;
+    $scope.cond = $scope.masterData[9].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl11', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[10].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[10].councellor;
+    $scope.gridRespected = $scope.masterData[10].respectedPpl;
+    $scope.gridRetired = $scope.masterData[10].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[10].neighbourPolling;
+    $scope.gridArms = $scope.masterData[10].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[10].historySheeter;
+    $scope.stName = $scope.masterData[10].stationName;
+    $scope.lat = $scope.masterData[10].latitude;
+    $scope.lon = $scope.masterData[10].longitude;
+    $scope.pop = $scope.masterData[10].population;
+    $scope.vot = $scope.masterData[10].voters;
+    $scope.vill = $scope.masterData[10].villageMohalla;
+    $scope.gridCon = $scope.masterData[10].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[10].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[10].electionCrimes;
+    $scope.gridPoli = $scope.masterData[10].politician;
+    $scope.bUnder = $scope.masterData[10].boundDownUnder;
+    $scope.vul = $scope.masterData[10].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[10].warrantedCriminals;
+    $scope.cond = $scope.masterData[10].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl12', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[11].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[11].councellor;
+    $scope.gridRespected = $scope.masterData[11].respectedPpl;
+    $scope.gridRetired = $scope.masterData[11].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[11].neighbourPolling;
+    $scope.gridArms = $scope.masterData[11].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[11].historySheeter;
+    $scope.stName = $scope.masterData[11].stationName;
+    $scope.lat = $scope.masterData[11].latitude;
+    $scope.lon = $scope.masterData[11].longitude;
+    $scope.pop = $scope.masterData[11].population;
+    $scope.vot = $scope.masterData[11].voters;
+    $scope.vill = $scope.masterData[11].villageMohalla;
+    $scope.gridCon = $scope.masterData[11].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[11].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[11].electionCrimes;
+    $scope.gridPoli = $scope.masterData[11].politician;
+    $scope.bUnder = $scope.masterData[11].boundDownUnder;
+    $scope.vul = $scope.masterData[11].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[11].warrantedCriminals;
+    $scope.cond = $scope.masterData[11].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl13', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[12].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[12].councellor;
+    $scope.gridRespected = $scope.masterData[12].respectedPpl;
+    $scope.gridRetired = $scope.masterData[12].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[12].neighbourPolling;
+    $scope.gridArms = $scope.masterData[12].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[12].historySheeter;
+    $scope.stName = $scope.masterData[12].stationName;
+    $scope.lat = $scope.masterData[12].latitude;
+    $scope.lon = $scope.masterData[12].longitude;
+    $scope.pop = $scope.masterData[12].population;
+    $scope.vot = $scope.masterData[12].voters;
+    $scope.vill = $scope.masterData[12].villageMohalla;
+    $scope.gridCon = $scope.masterData[12].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[12].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[12].electionCrimes;
+    $scope.gridPoli = $scope.masterData[12].politician;
+    $scope.bUnder = $scope.masterData[12].boundDownUnder;
+    $scope.vul = $scope.masterData[12].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[12].warrantedCriminals;
+    $scope.cond = $scope.masterData[12].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl14', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[13].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[13].councellor;
+    $scope.gridRespected = $scope.masterData[13].respectedPpl;
+    $scope.gridRetired = $scope.masterData[13].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[13].neighbourPolling;
+    $scope.gridArms = $scope.masterData[13].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[13].historySheeter;
+    $scope.stName = $scope.masterData[13].stationName;
+    $scope.lat = $scope.masterData[13].latitude;
+    $scope.lon = $scope.masterData[13].longitude;
+    $scope.pop = $scope.masterData[13].population;
+    $scope.vot = $scope.masterData[13].voters;
+    $scope.vill = $scope.masterData[13].villageMohalla;
+    $scope.gridCon = $scope.masterData[13].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[13].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[13].electionCrimes;
+    $scope.gridPoli = $scope.masterData[13].politician;
+    $scope.bUnder = $scope.masterData[13].boundDownUnder;
+    $scope.vul = $scope.masterData[13].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[13].warrantedCriminals;
+    $scope.cond = $scope.masterData[13].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl15', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[14].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[14].councellor;
+    $scope.gridRespected = $scope.masterData[14].respectedPpl;
+    $scope.gridRetired = $scope.masterData[14].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[14].neighbourPolling;
+    $scope.gridArms = $scope.masterData[14].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[14].historySheeter;
+    $scope.stName = $scope.masterData[14].stationName;
+    $scope.lat = $scope.masterData[14].latitude;
+    $scope.lon = $scope.masterData[14].longitude;
+    $scope.pop = $scope.masterData[14].population;
+    $scope.vot = $scope.masterData[14].voters;
+    $scope.vill = $scope.masterData[14].villageMohalla;
+    $scope.gridCon = $scope.masterData[14].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[14].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[14].electionCrimes;
+    $scope.gridPoli = $scope.masterData[14].politician;
+    $scope.bUnder = $scope.masterData[14].boundDownUnder;
+    $scope.vul = $scope.masterData[14].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[14].warrantedCriminals;
+    $scope.cond = $scope.masterData[14].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl16', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[15].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[15].councellor;
+    $scope.gridRespected = $scope.masterData[15].respectedPpl;
+    $scope.gridRetired = $scope.masterData[15].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[15].neighbourPolling;
+    $scope.gridArms = $scope.masterData[15].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[15].historySheeter;
+    $scope.stName = $scope.masterData[15].stationName;
+    $scope.lat = $scope.masterData[15].latitude;
+    $scope.lon = $scope.masterData[15].longitude;
+    $scope.pop = $scope.masterData[15].population;
+    $scope.vot = $scope.masterData[15].voters;
+    $scope.vill = $scope.masterData[15].villageMohalla;
+    $scope.gridCon = $scope.masterData[15].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[15].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[15].electionCrimes;
+    $scope.gridPoli = $scope.masterData[15].politician;
+    $scope.bUnder = $scope.masterData[15].boundDownUnder;
+    $scope.vul = $scope.masterData[15].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[15].warrantedCriminals;
+    $scope.cond = $scope.masterData[15].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl17', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[16].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[16].councellor;
+    $scope.gridRespected = $scope.masterData[16].respectedPpl;
+    $scope.gridRetired = $scope.masterData[16].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[16].neighbourPolling;
+    $scope.gridArms = $scope.masterData[16].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[16].historySheeter;
+    $scope.stName = $scope.masterData[16].stationName;
+    $scope.lat = $scope.masterData[16].latitude;
+    $scope.lon = $scope.masterData[16].longitude;
+    $scope.pop = $scope.masterData[16].population;
+    $scope.vot = $scope.masterData[16].voters;
+    $scope.vill = $scope.masterData[16].villageMohalla;
+    $scope.gridCon = $scope.masterData[16].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[16].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[16].electionCrimes;
+    $scope.gridPoli = $scope.masterData[16].politician;
+    $scope.bUnder = $scope.masterData[16].boundDownUnder;
+    $scope.vul = $scope.masterData[16].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[16].warrantedCriminals;
+    $scope.cond = $scope.masterData[16].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl18', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[17].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[17].councellor;
+    $scope.gridRespected = $scope.masterData[17].respectedPpl;
+    $scope.gridRetired = $scope.masterData[17].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[17].neighbourPolling;
+    $scope.gridArms = $scope.masterData[17].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[17].historySheeter;
+    $scope.stName = $scope.masterData[17].stationName;
+    $scope.lat = $scope.masterData[17].latitude;
+    $scope.lon = $scope.masterData[17].longitude;
+    $scope.pop = $scope.masterData[17].population;
+    $scope.vot = $scope.masterData[17].voters;
+    $scope.vill = $scope.masterData[17].villageMohalla;
+    $scope.gridCon = $scope.masterData[17].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[17].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[17].electionCrimes;
+    $scope.gridPoli = $scope.masterData[17].politician;
+    $scope.bUnder = $scope.masterData[17].boundDownUnder;
+    $scope.vul = $scope.masterData[17].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[17].warrantedCriminals;
+    $scope.cond = $scope.masterData[17].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl19', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[18].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[18].councellor;
+    $scope.gridRespected = $scope.masterData[18].respectedPpl;
+    $scope.gridRetired = $scope.masterData[18].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[18].neighbourPolling;
+    $scope.gridArms = $scope.masterData[18].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[18].historySheeter;
+    $scope.stName = $scope.masterData[18].stationName;
+    $scope.lat = $scope.masterData[18].latitude;
+    $scope.lon = $scope.masterData[18].longitude;
+    $scope.pop = $scope.masterData[18].population;
+    $scope.vot = $scope.masterData[18].voters;
+    $scope.vill = $scope.masterData[18].villageMohalla;
+    $scope.gridCon = $scope.masterData[18].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[18].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[18].electionCrimes;
+    $scope.gridPoli = $scope.masterData[18].politician;
+    $scope.bUnder = $scope.masterData[18].boundDownUnder;
+    $scope.vul = $scope.masterData[18].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[18].warrantedCriminals;
+    $scope.cond = $scope.masterData[18].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl20', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[19].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[19].councellor;
+    $scope.gridRespected = $scope.masterData[19].respectedPpl;
+    $scope.gridRetired = $scope.masterData[19].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[19].neighbourPolling;
+    $scope.gridArms = $scope.masterData[19].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[19].historySheeter;
+    $scope.stName = $scope.masterData[19].stationName;
+    $scope.lat = $scope.masterData[19].latitude;
+    $scope.lon = $scope.masterData[19].longitude;
+    $scope.pop = $scope.masterData[19].population;
+    $scope.vot = $scope.masterData[19].voters;
+    $scope.vill = $scope.masterData[19].villageMohalla;
+    $scope.gridCon = $scope.masterData[19].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[19].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[19].electionCrimes;
+    $scope.gridPoli = $scope.masterData[19].politician;
+    $scope.bUnder = $scope.masterData[19].boundDownUnder;
+    $scope.vul = $scope.masterData[19].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[19].warrantedCriminals;
+    $scope.cond = $scope.masterData[19].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl21', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[20].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[20].councellor;
+    $scope.gridRespected = $scope.masterData[20].respectedPpl;
+    $scope.gridRetired = $scope.masterData[20].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[20].neighbourPolling;
+    $scope.gridArms = $scope.masterData[20].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[20].historySheeter;
+    $scope.stName = $scope.masterData[20].stationName;
+    $scope.lat = $scope.masterData[20].latitude;
+    $scope.lon = $scope.masterData[20].longitude;
+    $scope.pop = $scope.masterData[20].population;
+    $scope.vot = $scope.masterData[20].voters;
+    $scope.vill = $scope.masterData[20].villageMohalla;
+    $scope.gridCon = $scope.masterData[20].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[20].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[20].electionCrimes;
+    $scope.gridPoli = $scope.masterData[20].politician;
+    $scope.bUnder = $scope.masterData[20].boundDownUnder;
+    $scope.vul = $scope.masterData[20].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[20].warrantedCriminals;
+    $scope.cond = $scope.masterData[20].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl22', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[21].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[21].councellor;
+    $scope.gridRespected = $scope.masterData[21].respectedPpl;
+    $scope.gridRetired = $scope.masterData[21].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[21].neighbourPolling;
+    $scope.gridArms = $scope.masterData[21].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[21].historySheeter;
+    $scope.stName = $scope.masterData[21].stationName;
+    $scope.lat = $scope.masterData[21].latitude;
+    $scope.lon = $scope.masterData[21].longitude;
+    $scope.pop = $scope.masterData[21].population;
+    $scope.vot = $scope.masterData[21].voters;
+    $scope.vill = $scope.masterData[21].villageMohalla;
+    $scope.gridCon = $scope.masterData[21].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[21].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[21].electionCrimes;
+    $scope.gridPoli = $scope.masterData[21].politician;
+    $scope.bUnder = $scope.masterData[21].boundDownUnder;
+    $scope.vul = $scope.masterData[21].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[21].warrantedCriminals;
+    $scope.cond = $scope.masterData[21].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl23', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[22].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[22].councellor;
+    $scope.gridRespected = $scope.masterData[22].respectedPpl;
+    $scope.gridRetired = $scope.masterData[22].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[22].neighbourPolling;
+    $scope.gridArms = $scope.masterData[22].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[22].historySheeter;
+    $scope.stName = $scope.masterData[22].stationName;
+    $scope.lat = $scope.masterData[22].latitude;
+    $scope.lon = $scope.masterData[22].longitude;
+    $scope.pop = $scope.masterData[22].population;
+    $scope.vot = $scope.masterData[22].voters;
+    $scope.vill = $scope.masterData[22].villageMohalla;
+    $scope.gridCon = $scope.masterData[22].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[22].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[22].electionCrimes;
+    $scope.gridPoli = $scope.masterData[22].politician;
+    $scope.bUnder = $scope.masterData[22].boundDownUnder;
+    $scope.vul = $scope.masterData[22].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[22].warrantedCriminals;
+    $scope.cond = $scope.masterData[22].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl24', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[23].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[23].councellor;
+    $scope.gridRespected = $scope.masterData[23].respectedPpl;
+    $scope.gridRetired = $scope.masterData[23].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[23].neighbourPolling;
+    $scope.gridArms = $scope.masterData[23].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[23].historySheeter;
+    $scope.stName = $scope.masterData[23].stationName;
+    $scope.lat = $scope.masterData[23].latitude;
+    $scope.lon = $scope.masterData[23].longitude;
+    $scope.pop = $scope.masterData[23].population;
+    $scope.vot = $scope.masterData[23].voters;
+    $scope.vill = $scope.masterData[23].villageMohalla;
+    $scope.gridCon = $scope.masterData[23].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[23].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[23].electionCrimes;
+    $scope.gridPoli = $scope.masterData[23].politician;
+    $scope.bUnder = $scope.masterData[23].boundDownUnder;
+    $scope.vul = $scope.masterData[23].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[23].warrantedCriminals;
+    $scope.cond = $scope.masterData[23].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl25', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[24].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[24].councellor;
+    $scope.gridRespected = $scope.masterData[24].respectedPpl;
+    $scope.gridRetired = $scope.masterData[24].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[24].neighbourPolling;
+    $scope.gridArms = $scope.masterData[24].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[24].historySheeter;
+    $scope.stName = $scope.masterData[24].stationName;
+    $scope.lat = $scope.masterData[24].latitude;
+    $scope.lon = $scope.masterData[24].longitude;
+    $scope.pop = $scope.masterData[24].population;
+    $scope.vot = $scope.masterData[24].voters;
+    $scope.vill = $scope.masterData[24].villageMohalla;
+    $scope.gridCon = $scope.masterData[24].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[24].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[24].electionCrimes;
+    $scope.gridPoli = $scope.masterData[24].politician;
+    $scope.bUnder = $scope.masterData[24].boundDownUnder;
+    $scope.vul = $scope.masterData[24].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[24].warrantedCriminals;
+    $scope.cond = $scope.masterData[24].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl26', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[25].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[25].councellor;
+    $scope.gridRespected = $scope.masterData[25].respectedPpl;
+    $scope.gridRetired = $scope.masterData[25].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[25].neighbourPolling;
+    $scope.gridArms = $scope.masterData[25].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[25].historySheeter;
+    $scope.stName = $scope.masterData[25].stationName;
+    $scope.lat = $scope.masterData[25].latitude;
+    $scope.lon = $scope.masterData[25].longitude;
+    $scope.pop = $scope.masterData[25].population;
+    $scope.vot = $scope.masterData[25].voters;
+    $scope.vill = $scope.masterData[25].villageMohalla;
+    $scope.gridCon = $scope.masterData[25].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[25].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[25].electionCrimes;
+    $scope.gridPoli = $scope.masterData[25].politician;
+    $scope.bUnder = $scope.masterData[25].boundDownUnder;
+    $scope.vul = $scope.masterData[25].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[25].warrantedCriminals;
+    $scope.cond = $scope.masterData[25].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl27', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[26].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[26].councellor;
+    $scope.gridRespected = $scope.masterData[26].respectedPpl;
+    $scope.gridRetired = $scope.masterData[26].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[26].neighbourPolling;
+    $scope.gridArms = $scope.masterData[26].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[26].historySheeter;
+    $scope.stName = $scope.masterData[26].stationName;
+    $scope.lat = $scope.masterData[26].latitude;
+    $scope.lon = $scope.masterData[26].longitude;
+    $scope.pop = $scope.masterData[26].population;
+    $scope.vot = $scope.masterData[26].voters;
+    $scope.vill = $scope.masterData[26].villageMohalla;
+    $scope.gridCon = $scope.masterData[26].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[26].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[26].electionCrimes;
+    $scope.gridPoli = $scope.masterData[26].politician;
+    $scope.bUnder = $scope.masterData[26].boundDownUnder;
+    $scope.vul = $scope.masterData[26].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[26].warrantedCriminals;
+    $scope.cond = $scope.masterData[26].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl28', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[27].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[27].councellor;
+    $scope.gridRespected = $scope.masterData[27].respectedPpl;
+    $scope.gridRetired = $scope.masterData[27].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[27].neighbourPolling;
+    $scope.gridArms = $scope.masterData[27].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[27].historySheeter;
+    $scope.stName = $scope.masterData[27].stationName;
+    $scope.lat = $scope.masterData[27].latitude;
+    $scope.lon = $scope.masterData[27].longitude;
+    $scope.pop = $scope.masterData[27].population;
+    $scope.vot = $scope.masterData[27].voters;
+    $scope.vill = $scope.masterData[27].villageMohalla;
+    $scope.gridCon = $scope.masterData[27].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[27].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[27].electionCrimes;
+    $scope.gridPoli = $scope.masterData[27].politician;
+    $scope.bUnder = $scope.masterData[27].boundDownUnder;
+    $scope.vul = $scope.masterData[27].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[27].warrantedCriminals;
+    $scope.cond = $scope.masterData[27].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl29', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[28].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[28].councellor;
+    $scope.gridRespected = $scope.masterData[28].respectedPpl;
+    $scope.gridRetired = $scope.masterData[28].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[28].neighbourPolling;
+    $scope.gridArms = $scope.masterData[28].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[28].historySheeter;
+    $scope.stName = $scope.masterData[28].stationName;
+    $scope.lat = $scope.masterData[28].latitude;
+    $scope.lon = $scope.masterData[28].longitude;
+    $scope.pop = $scope.masterData[28].population;
+    $scope.vot = $scope.masterData[28].voters;
+    $scope.vill = $scope.masterData[28].villageMohalla;
+    $scope.gridCon = $scope.masterData[28].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[28].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[28].electionCrimes;
+    $scope.gridPoli = $scope.masterData[28].politician;
+    $scope.bUnder = $scope.masterData[28].boundDownUnder;
+    $scope.vul = $scope.masterData[28].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[28].warrantedCriminals;
+    $scope.cond = $scope.masterData[28].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl30', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[29].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[29].councellor;
+    $scope.gridRespected = $scope.masterData[29].respectedPpl;
+    $scope.gridRetired = $scope.masterData[29].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[29].neighbourPolling;
+    $scope.gridArms = $scope.masterData[29].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[29].historySheeter;
+    $scope.stName = $scope.masterData[29].stationName;
+    $scope.lat = $scope.masterData[29].latitude;
+    $scope.lon = $scope.masterData[29].longitude;
+    $scope.pop = $scope.masterData[29].population;
+    $scope.vot = $scope.masterData[29].voters;
+    $scope.vill = $scope.masterData[29].villageMohalla;
+    $scope.gridCon = $scope.masterData[29].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[29].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[29].electionCrimes;
+    $scope.gridPoli = $scope.masterData[29].politician;
+    $scope.bUnder = $scope.masterData[29].boundDownUnder;
+    $scope.vul = $scope.masterData[29].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[29].warrantedCriminals;
+    $scope.cond = $scope.masterData[29].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl31', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[30].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[30].councellor;
+    $scope.gridRespected = $scope.masterData[30].respectedPpl;
+    $scope.gridRetired = $scope.masterData[30].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[30].neighbourPolling;
+    $scope.gridArms = $scope.masterData[30].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[30].historySheeter;
+    $scope.stName = $scope.masterData[30].stationName;
+    $scope.lat = $scope.masterData[30].latitude;
+    $scope.lon = $scope.masterData[30].longitude;
+    $scope.pop = $scope.masterData[30].population;
+    $scope.vot = $scope.masterData[30].voters;
+    $scope.vill = $scope.masterData[30].villageMohalla;
+    $scope.gridCon = $scope.masterData[30].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[30].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[30].electionCrimes;
+    $scope.gridPoli = $scope.masterData[30].politician;
+    $scope.bUnder = $scope.masterData[30].boundDownUnder;
+    $scope.vul = $scope.masterData[30].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[30].warrantedCriminals;
+    $scope.cond = $scope.masterData[30].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl32', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[31].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[31].councellor;
+    $scope.gridRespected = $scope.masterData[31].respectedPpl;
+    $scope.gridRetired = $scope.masterData[31].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[31].neighbourPolling;
+    $scope.gridArms = $scope.masterData[31].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[31].historySheeter;
+    $scope.stName = $scope.masterData[31].stationName;
+    $scope.lat = $scope.masterData[31].latitude;
+    $scope.lon = $scope.masterData[31].longitude;
+    $scope.pop = $scope.masterData[31].population;
+    $scope.vot = $scope.masterData[31].voters;
+    $scope.vill = $scope.masterData[31].villageMohalla;
+    $scope.gridCon = $scope.masterData[31].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[31].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[31].electionCrimes;
+    $scope.gridPoli = $scope.masterData[31].politician;
+    $scope.bUnder = $scope.masterData[31].boundDownUnder;
+    $scope.vul = $scope.masterData[31].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[31].warrantedCriminals;
+    $scope.cond = $scope.masterData[31].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl33', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[32].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[32].councellor;
+    $scope.gridRespected = $scope.masterData[32].respectedPpl;
+    $scope.gridRetired = $scope.masterData[32].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[32].neighbourPolling;
+    $scope.gridArms = $scope.masterData[32].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[32].historySheeter;
+    $scope.stName = $scope.masterData[32].stationName;
+    $scope.lat = $scope.masterData[32].latitude;
+    $scope.lon = $scope.masterData[32].longitude;
+    $scope.pop = $scope.masterData[32].population;
+    $scope.vot = $scope.masterData[32].voters;
+    $scope.vill = $scope.masterData[32].villageMohalla;
+    $scope.gridCon = $scope.masterData[32].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[32].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[32].electionCrimes;
+    $scope.gridPoli = $scope.masterData[32].politician;
+    $scope.bUnder = $scope.masterData[32].boundDownUnder;
+    $scope.vul = $scope.masterData[32].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[32].warrantedCriminals;
+    $scope.cond = $scope.masterData[32].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl34', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[33].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[33].councellor;
+    $scope.gridRespected = $scope.masterData[33].respectedPpl;
+    $scope.gridRetired = $scope.masterData[33].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[33].neighbourPolling;
+    $scope.gridArms = $scope.masterData[33].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[33].historySheeter;
+    $scope.stName = $scope.masterData[33].stationName;
+    $scope.lat = $scope.masterData[33].latitude;
+    $scope.lon = $scope.masterData[33].longitude;
+    $scope.pop = $scope.masterData[33].population;
+    $scope.vot = $scope.masterData[33].voters;
+    $scope.vill = $scope.masterData[33].villageMohalla;
+    $scope.gridCon = $scope.masterData[33].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[33].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[33].electionCrimes;
+    $scope.gridPoli = $scope.masterData[33].politician;
+    $scope.bUnder = $scope.masterData[33].boundDownUnder;
+    $scope.vul = $scope.masterData[33].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[33].warrantedCriminals;
+    $scope.cond = $scope.masterData[33].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl35', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[34].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[34].councellor;
+    $scope.gridRespected = $scope.masterData[34].respectedPpl;
+    $scope.gridRetired = $scope.masterData[34].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[34].neighbourPolling;
+    $scope.gridArms = $scope.masterData[34].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[34].historySheeter;
+    $scope.stName = $scope.masterData[34].stationName;
+    $scope.lat = $scope.masterData[34].latitude;
+    $scope.lon = $scope.masterData[34].longitude;
+    $scope.pop = $scope.masterData[34].population;
+    $scope.vot = $scope.masterData[34].voters;
+    $scope.vill = $scope.masterData[34].villageMohalla;
+    $scope.gridCon = $scope.masterData[34].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[34].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[34].electionCrimes;
+    $scope.gridPoli = $scope.masterData[34].politician;
+    $scope.bUnder = $scope.masterData[34].boundDownUnder;
+    $scope.vul = $scope.masterData[34].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[34].warrantedCriminals;
+    $scope.cond = $scope.masterData[34].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[34].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl36', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[35].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[35].councellor;
+    $scope.gridRespected = $scope.masterData[35].respectedPpl;
+    $scope.gridRetired = $scope.masterData[35].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[35].neighbourPolling;
+    $scope.gridArms = $scope.masterData[35].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[35].historySheeter;
+    $scope.stName = $scope.masterData[35].stationName;
+    $scope.lat = $scope.masterData[35].latitude;
+    $scope.lon = $scope.masterData[35].longitude;
+    $scope.pop = $scope.masterData[35].population;
+    $scope.vot = $scope.masterData[35].voters;
+    $scope.vill = $scope.masterData[35].villageMohalla;
+    $scope.gridCon = $scope.masterData[35].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[35].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[35].electionCrimes;
+    $scope.gridPoli = $scope.masterData[35].politician;
+    $scope.bUnder = $scope.masterData[35].boundDownUnder;
+    $scope.vul = $scope.masterData[35].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[35].warrantedCriminals;
+    $scope.cond = $scope.masterData[35].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[35].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl37', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[36].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[36].councellor;
+    $scope.gridRespected = $scope.masterData[36].respectedPpl;
+    $scope.gridRetired = $scope.masterData[36].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[36].neighbourPolling;
+    $scope.gridArms = $scope.masterData[36].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[36].historySheeter;
+    $scope.stName = $scope.masterData[36].stationName;
+    $scope.lat = $scope.masterData[36].latitude;
+    $scope.lon = $scope.masterData[36].longitude;
+    $scope.pop = $scope.masterData[36].population;
+    $scope.vot = $scope.masterData[36].voters;
+    $scope.vill = $scope.masterData[36].villageMohalla;
+    $scope.gridCon = $scope.masterData[36].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[36].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[36].electionCrimes;
+    $scope.gridPoli = $scope.masterData[36].politician;
+    $scope.bUnder = $scope.masterData[36].boundDownUnder;
+    $scope.vul = $scope.masterData[36].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[36].warrantedCriminals;
+    $scope.cond = $scope.masterData[36].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl38', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[37].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[37].councellor;
+    $scope.gridRespected = $scope.masterData[37].respectedPpl;
+    $scope.gridRetired = $scope.masterData[37].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[37].neighbourPolling;
+    $scope.gridArms = $scope.masterData[37].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[37].historySheeter;
+    $scope.stName = $scope.masterData[37].stationName;
+    $scope.lat = $scope.masterData[37].latitude;
+    $scope.lon = $scope.masterData[37].longitude;
+    $scope.pop = $scope.masterData[37].population;
+    $scope.vot = $scope.masterData[37].voters;
+    $scope.vill = $scope.masterData[37].villageMohalla;
+    $scope.gridCon = $scope.masterData[37].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[37].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[37].electionCrimes;
+    $scope.gridPoli = $scope.masterData[37].politician;
+    $scope.bUnder = $scope.masterData[37].boundDownUnder;
+    $scope.vul = $scope.masterData[37].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[37].warrantedCriminals;
+    $scope.cond = $scope.masterData[37].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl39', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[38].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[38].councellor;
+    $scope.gridRespected = $scope.masterData[38].respectedPpl;
+    $scope.gridRetired = $scope.masterData[38].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[38].neighbourPolling;
+    $scope.gridArms = $scope.masterData[38].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[38].historySheeter;
+    $scope.stName = $scope.masterData[38].stationName;
+    $scope.lat = $scope.masterData[38].latitude;
+    $scope.lon = $scope.masterData[38].longitude;
+    $scope.pop = $scope.masterData[38].population;
+    $scope.vot = $scope.masterData[38].voters;
+    $scope.vill = $scope.masterData[38].villageMohalla;
+    $scope.gridCon = $scope.masterData[38].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[38].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[38].electionCrimes;
+    $scope.gridPoli = $scope.masterData[38].politician;
+    $scope.bUnder = $scope.masterData[38].boundDownUnder;
+    $scope.vul = $scope.masterData[38].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[38].warrantedCriminals;
+    $scope.cond = $scope.masterData[38].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl40', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[39].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[39].councellor;
+    $scope.gridRespected = $scope.masterData[39].respectedPpl;
+    $scope.gridRetired = $scope.masterData[39].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[39].neighbourPolling;
+    $scope.gridArms = $scope.masterData[39].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[39].historySheeter;
+    $scope.stName = $scope.masterData[39].stationName;
+    $scope.lat = $scope.masterData[39].latitude;
+    $scope.lon = $scope.masterData[39].longitude;
+    $scope.pop = $scope.masterData[39].population;
+    $scope.vot = $scope.masterData[39].voters;
+    $scope.vill = $scope.masterData[39].villageMohalla;
+    $scope.gridCon = $scope.masterData[39].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[39].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[39].electionCrimes;
+    $scope.gridPoli = $scope.masterData[39].politician;
+    $scope.bUnder = $scope.masterData[39].boundDownUnder;
+    $scope.vul = $scope.masterData[39].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[39].warrantedCriminals;
+    $scope.cond = $scope.masterData[39].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl41', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[40].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[40].councellor;
+    $scope.gridRespected = $scope.masterData[40].respectedPpl;
+    $scope.gridRetired = $scope.masterData[40].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[40].neighbourPolling;
+    $scope.gridArms = $scope.masterData[40].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[40].historySheeter;
+    $scope.stName = $scope.masterData[40].stationName;
+    $scope.lat = $scope.masterData[40].latitude;
+    $scope.lon = $scope.masterData[40].longitude;
+    $scope.pop = $scope.masterData[40].population;
+    $scope.vot = $scope.masterData[40].voters;
+    $scope.vill = $scope.masterData[40].villageMohalla;
+    $scope.gridCon = $scope.masterData[40].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[40].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[40].electionCrimes;
+    $scope.gridPoli = $scope.masterData[40].politician;
+    $scope.bUnder = $scope.masterData[40].boundDownUnder;
+    $scope.vul = $scope.masterData[40].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[40].warrantedCriminals;
+    $scope.cond = $scope.masterData[40].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl42', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[41].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[41].councellor;
+    $scope.gridRespected = $scope.masterData[41].respectedPpl;
+    $scope.gridRetired = $scope.masterData[41].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[41].neighbourPolling;
+    $scope.gridArms = $scope.masterData[41].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[41].historySheeter;
+    $scope.stName = $scope.masterData[41].stationName;
+    $scope.lat = $scope.masterData[41].latitude;
+    $scope.lon = $scope.masterData[41].longitude;
+    $scope.pop = $scope.masterData[41].population;
+    $scope.vot = $scope.masterData[41].voters;
+    $scope.vill = $scope.masterData[41].villageMohalla;
+    $scope.gridCon = $scope.masterData[41].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[41].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[41].electionCrimes;
+    $scope.gridPoli = $scope.masterData[41].politician;
+    $scope.bUnder = $scope.masterData[41].boundDownUnder;
+    $scope.vul = $scope.masterData[41].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[41].warrantedCriminals;
+    $scope.cond = $scope.masterData[41].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl43', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[42].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[42].councellor;
+    $scope.gridRespected = $scope.masterData[42].respectedPpl;
+    $scope.gridRetired = $scope.masterData[42].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[42].neighbourPolling;
+    $scope.gridArms = $scope.masterData[42].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[42].historySheeter;
+    $scope.stName = $scope.masterData[42].stationName;
+    $scope.lat = $scope.masterData[42].latitude;
+    $scope.lon = $scope.masterData[42].longitude;
+    $scope.pop = $scope.masterData[42].population;
+    $scope.vot = $scope.masterData[42].voters;
+    $scope.vill = $scope.masterData[42].villageMohalla;
+    $scope.gridCon = $scope.masterData[42].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[42].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[42].electionCrimes;
+    $scope.gridPoli = $scope.masterData[42].politician;
+    $scope.bUnder = $scope.masterData[42].boundDownUnder;
+    $scope.vul = $scope.masterData[42].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[42].warrantedCriminals;
+    $scope.cond = $scope.masterData[42].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl44', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[43].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[43].councellor;
+    $scope.gridRespected = $scope.masterData[43].respectedPpl;
+    $scope.gridRetired = $scope.masterData[43].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[43].neighbourPolling;
+    $scope.gridArms = $scope.masterData[43].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[43].historySheeter;
+    $scope.stName = $scope.masterData[43].stationName;
+    $scope.lat = $scope.masterData[43].latitude;
+    $scope.lon = $scope.masterData[43].longitude;
+    $scope.pop = $scope.masterData[43].population;
+    $scope.vot = $scope.masterData[43].voters;
+    $scope.vill = $scope.masterData[43].villageMohalla;
+    $scope.gridCon = $scope.masterData[43].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[43].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[43].electionCrimes;
+    $scope.gridPoli = $scope.masterData[43].politician;
+    $scope.bUnder = $scope.masterData[43].boundDownUnder;
+    $scope.vul = $scope.masterData[43].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[43].warrantedCriminals;
+    $scope.cond = $scope.masterData[43].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl45', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[44].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[44].councellor;
+    $scope.gridRespected = $scope.masterData[44].respectedPpl;
+    $scope.gridRetired = $scope.masterData[44].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[44].neighbourPolling;
+    $scope.gridArms = $scope.masterData[44].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[44].historySheeter;
+    $scope.stName = $scope.masterData[44].stationName;
+    $scope.lat = $scope.masterData[44].latitude;
+    $scope.lon = $scope.masterData[44].longitude;
+    $scope.pop = $scope.masterData[44].population;
+    $scope.vot = $scope.masterData[44].voters;
+    $scope.vill = $scope.masterData[44].villageMohalla;
+    $scope.gridCon = $scope.masterData[44].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[44].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[44].electionCrimes;
+    $scope.gridPoli = $scope.masterData[44].politician;
+    $scope.bUnder = $scope.masterData[44].boundDownUnder;
+    $scope.vul = $scope.masterData[44].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[44].warrantedCriminals;
+    $scope.cond = $scope.masterData[44].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl46', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[45].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[45].councellor;
+    $scope.gridRespected = $scope.masterData[45].respectedPpl;
+    $scope.gridRetired = $scope.masterData[45].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[45].neighbourPolling;
+    $scope.gridArms = $scope.masterData[45].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[45].historySheeter;
+    $scope.stName = $scope.masterData[45].stationName;
+    $scope.lat = $scope.masterData[45].latitude;
+    $scope.lon = $scope.masterData[45].longitude;
+    $scope.pop = $scope.masterData[45].population;
+    $scope.vot = $scope.masterData[45].voters;
+    $scope.vill = $scope.masterData[45].villageMohalla;
+    $scope.gridCon = $scope.masterData[45].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[45].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[45].electionCrimes;
+    $scope.gridPoli = $scope.masterData[45].politician;
+    $scope.bUnder = $scope.masterData[45].boundDownUnder;
+    $scope.vul = $scope.masterData[45].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[45].warrantedCriminals;
+    $scope.cond = $scope.masterData[45].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl47', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[46].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[46].councellor;
+    $scope.gridRespected = $scope.masterData[46].respectedPpl;
+    $scope.gridRetired = $scope.masterData[46].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[46].neighbourPolling;
+    $scope.gridArms = $scope.masterData[46].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[46].historySheeter;
+    $scope.stName = $scope.masterData[46].stationName;
+    $scope.lat = $scope.masterData[46].latitude;
+    $scope.lon = $scope.masterData[46].longitude;
+    $scope.pop = $scope.masterData[46].population;
+    $scope.vot = $scope.masterData[46].voters;
+    $scope.vill = $scope.masterData[46].villageMohalla;
+    $scope.gridCon = $scope.masterData[46].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[46].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[46].electionCrimes;
+    $scope.gridPoli = $scope.masterData[46].politician;
+    $scope.bUnder = $scope.masterData[46].boundDownUnder;
+    $scope.vul = $scope.masterData[46].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[46].warrantedCriminals;
+    $scope.cond = $scope.masterData[46].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl48', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[47].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[47].councellor;
+    $scope.gridRespected = $scope.masterData[47].respectedPpl;
+    $scope.gridRetired = $scope.masterData[47].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[47].neighbourPolling;
+    $scope.gridArms = $scope.masterData[47].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[47].historySheeter;
+    $scope.stName = $scope.masterData[47].stationName;
+    $scope.lat = $scope.masterData[47].latitude;
+    $scope.lon = $scope.masterData[47].longitude;
+    $scope.pop = $scope.masterData[47].population;
+    $scope.vot = $scope.masterData[47].voters;
+    $scope.vill = $scope.masterData[47].villageMohalla;
+    $scope.gridCon = $scope.masterData[47].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[47].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[47].electionCrimes;
+    $scope.gridPoli = $scope.masterData[47].politician;
+    $scope.bUnder = $scope.masterData[47].boundDownUnder;
+    $scope.vul = $scope.masterData[47].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[47].warrantedCriminals;
+    $scope.cond = $scope.masterData[47].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl49', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[48].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[48].councellor;
+    $scope.gridRespected = $scope.masterData[48].respectedPpl;
+    $scope.gridRetired = $scope.masterData[48].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[48].neighbourPolling;
+    $scope.gridArms = $scope.masterData[48].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[48].historySheeter;
+    $scope.stName = $scope.masterData[48].stationName;
+    $scope.lat = $scope.masterData[48].latitude;
+    $scope.lon = $scope.masterData[48].longitude;
+    $scope.pop = $scope.masterData[48].population;
+    $scope.vot = $scope.masterData[48].voters;
+    $scope.vill = $scope.masterData[48].villageMohalla;
+    $scope.gridCon = $scope.masterData[48].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[48].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[48].electionCrimes;
+    $scope.gridPoli = $scope.masterData[48].politician;
+    $scope.bUnder = $scope.masterData[48].boundDownUnder;
+    $scope.vul = $scope.masterData[48].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[48].warrantedCriminals;
+    $scope.cond = $scope.masterData[48].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl50', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[49].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[49].councellor;
+    $scope.gridRespected = $scope.masterData[49].respectedPpl;
+    $scope.gridRetired = $scope.masterData[49].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[49].neighbourPolling;
+    $scope.gridArms = $scope.masterData[49].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[49].historySheeter;
+    $scope.stName = $scope.masterData[49].stationName;
+    $scope.lat = $scope.masterData[49].latitude;
+    $scope.lon = $scope.masterData[49].longitude;
+    $scope.pop = $scope.masterData[49].population;
+    $scope.vot = $scope.masterData[49].voters;
+    $scope.vill = $scope.masterData[49].villageMohalla;
+    $scope.gridCon = $scope.masterData[49].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[49].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[49].electionCrimes;
+    $scope.gridPoli = $scope.masterData[49].politician;
+    $scope.bUnder = $scope.masterData[49].boundDownUnder;
+    $scope.vul = $scope.masterData[49].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[49].warrantedCriminals;
+    $scope.cond = $scope.masterData[49].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl51', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[50].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[50].councellor;
+    $scope.gridRespected = $scope.masterData[50].respectedPpl;
+    $scope.gridRetired = $scope.masterData[50].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[50].neighbourPolling;
+    $scope.gridArms = $scope.masterData[50].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[50].historySheeter;
+    $scope.stName = $scope.masterData[50].stationName;
+    $scope.lat = $scope.masterData[50].latitude;
+    $scope.lon = $scope.masterData[50].longitude;
+    $scope.pop = $scope.masterData[50].population;
+    $scope.vot = $scope.masterData[50].voters;
+    $scope.vill = $scope.masterData[50].villageMohalla;
+    $scope.gridCon = $scope.masterData[50].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[50].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[50].electionCrimes;
+    $scope.gridPoli = $scope.masterData[50].politician;
+    $scope.bUnder = $scope.masterData[50].boundDownUnder;
+    $scope.vul = $scope.masterData[50].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[50].warrantedCriminals;
+    $scope.cond = $scope.masterData[50].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl52', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[51].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[51].councellor;
+    $scope.gridRespected = $scope.masterData[51].respectedPpl;
+    $scope.gridRetired = $scope.masterData[51].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[51].neighbourPolling;
+    $scope.gridArms = $scope.masterData[51].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[51].historySheeter;
+    $scope.stName = $scope.masterData[51].stationName;
+    $scope.lat = $scope.masterData[51].latitude;
+    $scope.lon = $scope.masterData[51].longitude;
+    $scope.pop = $scope.masterData[51].population;
+    $scope.vot = $scope.masterData[51].voters;
+    $scope.vill = $scope.masterData[51].villageMohalla;
+    $scope.gridCon = $scope.masterData[51].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[51].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[51].electionCrimes;
+    $scope.gridPoli = $scope.masterData[51].politician;
+    $scope.bUnder = $scope.masterData[51].boundDownUnder;
+    $scope.vul = $scope.masterData[51].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[51].warrantedCriminals;
+    $scope.cond = $scope.masterData[51].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl53', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[52].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[52].councellor;
+    $scope.gridRespected = $scope.masterData[52].respectedPpl;
+    $scope.gridRetired = $scope.masterData[52].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[52].neighbourPolling;
+    $scope.gridArms = $scope.masterData[52].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[52].historySheeter;
+    $scope.stName = $scope.masterData[52].stationName;
+    $scope.lat = $scope.masterData[52].latitude;
+    $scope.lon = $scope.masterData[52].longitude;
+    $scope.pop = $scope.masterData[52].population;
+    $scope.vot = $scope.masterData[52].voters;
+    $scope.vill = $scope.masterData[52].villageMohalla;
+    $scope.gridCon = $scope.masterData[52].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[52].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[52].electionCrimes;
+    $scope.gridPoli = $scope.masterData[52].politician;
+    $scope.bUnder = $scope.masterData[52].boundDownUnder;
+    $scope.vul = $scope.masterData[52].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[52].warrantedCriminals;
+    $scope.cond = $scope.masterData[52].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+}) 
+.controller('sdCtrl54', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana54_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana54_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana54_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[53].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[53].councellor;
+    $scope.gridRespected = $scope.masterData[53].respectedPpl;
+    $scope.gridRetired = $scope.masterData[53].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[53].neighbourPolling;
+    $scope.gridArms = $scope.masterData[53].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[53].historySheeter;
+    $scope.stName = $scope.masterData[53].stationName;
+    $scope.lat = $scope.masterData[53].latitude;
+    $scope.lon = $scope.masterData[53].longitude;
+    $scope.pop = $scope.masterData[53].population;
+    $scope.vot = $scope.masterData[53].voters;
+    $scope.vill = $scope.masterData[53].villageMohalla;
+    $scope.gridCon = $scope.masterData[53].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[53].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[53].electionCrimes;
+    $scope.gridPoli = $scope.masterData[53].politician;
+    $scope.bUnder = $scope.masterData[53].boundDownUnder;
+    $scope.vul = $scope.masterData[53].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[53].warrantedCriminals;
+    $scope.cond = $scope.masterData[53].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl55', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana55_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana55_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana55_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[54].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[54].councellor;
+    $scope.gridRespected = $scope.masterData[54].respectedPpl;
+    $scope.gridRetired = $scope.masterData[54].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[54].neighbourPolling;
+    $scope.gridArms = $scope.masterData[54].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[54].historySheeter;
+    $scope.stName = $scope.masterData[54].stationName;
+    $scope.lat = $scope.masterData[54].latitude;
+    $scope.lon = $scope.masterData[54].longitude;
+    $scope.pop = $scope.masterData[54].population;
+    $scope.vot = $scope.masterData[54].voters;
+    $scope.vill = $scope.masterData[54].villageMohalla;
+    $scope.gridCon = $scope.masterData[54].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[54].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[54].electionCrimes;
+    $scope.gridPoli = $scope.masterData[54].politician;
+    $scope.bUnder = $scope.masterData[54].boundDownUnder;
+    $scope.vul = $scope.masterData[54].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[54].warrantedCriminals;
+    $scope.cond = $scope.masterData[54].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl56', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana56_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana56_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana56_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[55].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[55].councellor;
+    $scope.gridRespected = $scope.masterData[55].respectedPpl;
+    $scope.gridRetired = $scope.masterData[55].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[55].neighbourPolling;
+    $scope.gridArms = $scope.masterData[55].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[55].historySheeter;
+    $scope.stName = $scope.masterData[55].stationName;
+    $scope.lat = $scope.masterData[55].latitude;
+    $scope.lon = $scope.masterData[55].longitude;
+    $scope.pop = $scope.masterData[55].population;
+    $scope.vot = $scope.masterData[55].voters;
+    $scope.vill = $scope.masterData[55].villageMohalla;
+    $scope.gridCon = $scope.masterData[55].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[55].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[55].electionCrimes;
+    $scope.gridPoli = $scope.masterData[55].politician;
+    $scope.bUnder = $scope.masterData[55].boundDownUnder;
+    $scope.vul = $scope.masterData[55].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[55].warrantedCriminals;
+    $scope.cond = $scope.masterData[55].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl57', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana57_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana57_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana57_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[56].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[56].councellor;
+    $scope.gridRespected = $scope.masterData[56].respectedPpl;
+    $scope.gridRetired = $scope.masterData[56].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[56].neighbourPolling;
+    $scope.gridArms = $scope.masterData[56].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[56].historySheeter;
+    $scope.stName = $scope.masterData[56].stationName;
+    $scope.lat = $scope.masterData[56].latitude;
+    $scope.lon = $scope.masterData[56].longitude;
+    $scope.pop = $scope.masterData[56].population;
+    $scope.vot = $scope.masterData[56].voters;
+    $scope.vill = $scope.masterData[56].villageMohalla;
+    $scope.gridCon = $scope.masterData[56].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[56].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[56].electionCrimes;
+    $scope.gridPoli = $scope.masterData[56].politician;
+    $scope.bUnder = $scope.masterData[56].boundDownUnder;
+    $scope.vul = $scope.masterData[56].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[56].warrantedCriminals;
+    $scope.cond = $scope.masterData[56].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl58', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana58_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana58_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana58_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[57].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[57].councellor;
+    $scope.gridRespected = $scope.masterData[57].respectedPpl;
+    $scope.gridRetired = $scope.masterData[57].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[57].neighbourPolling;
+    $scope.gridArms = $scope.masterData[57].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[57].historySheeter;
+    $scope.stName = $scope.masterData[57].stationName;
+    $scope.lat = $scope.masterData[57].latitude;
+    $scope.lon = $scope.masterData[57].longitude;
+    $scope.pop = $scope.masterData[57].population;
+    $scope.vot = $scope.masterData[57].voters;
+    $scope.vill = $scope.masterData[57].villageMohalla;
+    $scope.gridCon = $scope.masterData[57].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[57].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[57].electionCrimes;
+    $scope.gridPoli = $scope.masterData[57].politician;
+    $scope.bUnder = $scope.masterData[57].boundDownUnder;
+    $scope.vul = $scope.masterData[57].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[57].warrantedCriminals;
+    $scope.cond = $scope.masterData[57].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl59', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana59_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana59_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana59_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[58].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[58].councellor;
+    $scope.gridRespected = $scope.masterData[58].respectedPpl;
+    $scope.gridRetired = $scope.masterData[58].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[58].neighbourPolling;
+    $scope.gridArms = $scope.masterData[58].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[58].historySheeter;
+    $scope.stName = $scope.masterData[58].stationName;
+    $scope.lat = $scope.masterData[58].latitude;
+    $scope.lon = $scope.masterData[58].longitude;
+    $scope.pop = $scope.masterData[58].population;
+    $scope.vot = $scope.masterData[58].voters;
+    $scope.vill = $scope.masterData[58].villageMohalla;
+    $scope.gridCon = $scope.masterData[58].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[58].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[58].electionCrimes;
+    $scope.gridPoli = $scope.masterData[58].politician;
+    $scope.bUnder = $scope.masterData[58].boundDownUnder;
+    $scope.vul = $scope.masterData[58].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[58].warrantedCriminals;
+    $scope.cond = $scope.masterData[58].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl60', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana60_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana60_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana60_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[59].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[59].councellor;
+    $scope.gridRespected = $scope.masterData[59].respectedPpl;
+    $scope.gridRetired = $scope.masterData[59].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[59].neighbourPolling;
+    $scope.gridArms = $scope.masterData[59].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[59].historySheeter;
+    $scope.stName = $scope.masterData[59].stationName;
+    $scope.lat = $scope.masterData[59].latitude;
+    $scope.lon = $scope.masterData[59].longitude;
+    $scope.pop = $scope.masterData[59].population;
+    $scope.vot = $scope.masterData[59].voters;
+    $scope.vill = $scope.masterData[59].villageMohalla;
+    $scope.gridCon = $scope.masterData[59].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[59].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[59].electionCrimes;
+    $scope.gridPoli = $scope.masterData[59].politician;
+    $scope.bUnder = $scope.masterData[59].boundDownUnder;
+    $scope.vul = $scope.masterData[59].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[59].warrantedCriminals;
+    $scope.cond = $scope.masterData[59].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl61', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana61_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana61_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana61_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[60].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[60].councellor;
+    $scope.gridRespected = $scope.masterData[60].respectedPpl;
+    $scope.gridRetired = $scope.masterData[60].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[60].neighbourPolling;
+    $scope.gridArms = $scope.masterData[60].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[60].historySheeter;
+    $scope.stName = $scope.masterData[60].stationName;
+    $scope.lat = $scope.masterData[60].latitude;
+    $scope.lon = $scope.masterData[60].longitude;
+    $scope.pop = $scope.masterData[60].population;
+    $scope.vot = $scope.masterData[60].voters;
+    $scope.vill = $scope.masterData[60].villageMohalla;
+    $scope.gridCon = $scope.masterData[60].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[60].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[60].electionCrimes;
+    $scope.gridPoli = $scope.masterData[60].politician;
+    $scope.bUnder = $scope.masterData[60].boundDownUnder;
+    $scope.vul = $scope.masterData[60].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[60].warrantedCriminals;
+    $scope.cond = $scope.masterData[60].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl62', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana62_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana62_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana62_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[61].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[61].councellor;
+    $scope.gridRespected = $scope.masterData[61].respectedPpl;
+    $scope.gridRetired = $scope.masterData[61].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[61].neighbourPolling;
+    $scope.gridArms = $scope.masterData[61].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[61].historySheeter;
+    $scope.stName = $scope.masterData[61].stationName;
+    $scope.lat = $scope.masterData[61].latitude;
+    $scope.lon = $scope.masterData[61].longitude;
+    $scope.pop = $scope.masterData[61].population;
+    $scope.vot = $scope.masterData[61].voters;
+    $scope.vill = $scope.masterData[61].villageMohalla;
+    $scope.gridCon = $scope.masterData[61].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[61].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[61].electionCrimes;
+    $scope.gridPoli = $scope.masterData[61].politician;
+    $scope.bUnder = $scope.masterData[61].boundDownUnder;
+    $scope.vul = $scope.masterData[61].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[61].warrantedCriminals;
+    $scope.cond = $scope.masterData[61].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl63', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana63_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana63_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana63_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[62].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[62].councellor;
+    $scope.gridRespected = $scope.masterData[62].respectedPpl;
+    $scope.gridRetired = $scope.masterData[62].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[62].neighbourPolling;
+    $scope.gridArms = $scope.masterData[62].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[62].historySheeter;
+    $scope.stName = $scope.masterData[62].stationName;
+    $scope.lat = $scope.masterData[62].latitude;
+    $scope.lon = $scope.masterData[62].longitude;
+    $scope.pop = $scope.masterData[62].population;
+    $scope.vot = $scope.masterData[62].voters;
+    $scope.vill = $scope.masterData[62].villageMohalla;
+    $scope.gridCon = $scope.masterData[62].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[62].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[62].electionCrimes;
+    $scope.gridPoli = $scope.masterData[62].politician;
+    $scope.bUnder = $scope.masterData[62].boundDownUnder;
+    $scope.vul = $scope.masterData[62].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[62].warrantedCriminals;
+    $scope.cond = $scope.masterData[62].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl64', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana64_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana64_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana64_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[63].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[63].councellor;
+    $scope.gridRespected = $scope.masterData[63].respectedPpl;
+    $scope.gridRetired = $scope.masterData[63].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[63].neighbourPolling;
+    $scope.gridArms = $scope.masterData[63].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[63].historySheeter;
+    $scope.stName = $scope.masterData[63].stationName;
+    $scope.lat = $scope.masterData[63].latitude;
+    $scope.lon = $scope.masterData[63].longitude;
+    $scope.pop = $scope.masterData[63].population;
+    $scope.vot = $scope.masterData[63].voters;
+    $scope.vill = $scope.masterData[63].villageMohalla;
+    $scope.gridCon = $scope.masterData[63].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[63].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[63].electionCrimes;
+    $scope.gridPoli = $scope.masterData[63].politician;
+    $scope.bUnder = $scope.masterData[63].boundDownUnder;
+    $scope.vul = $scope.masterData[63].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[63].warrantedCriminals;
+    $scope.cond = $scope.masterData[63].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl65', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana65_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana65_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana65_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[64].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[64].councellor;
+    $scope.gridRespected = $scope.masterData[64].respectedPpl;
+    $scope.gridRetired = $scope.masterData[64].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[64].neighbourPolling;
+    $scope.gridArms = $scope.masterData[64].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[64].historySheeter;
+    $scope.stName = $scope.masterData[64].stationName;
+    $scope.lat = $scope.masterData[64].latitude;
+    $scope.lon = $scope.masterData[64].longitude;
+    $scope.pop = $scope.masterData[64].population;
+    $scope.vot = $scope.masterData[64].voters;
+    $scope.vill = $scope.masterData[64].villageMohalla;
+    $scope.gridCon = $scope.masterData[64].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[64].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[64].electionCrimes;
+    $scope.gridPoli = $scope.masterData[64].politician;
+    $scope.bUnder = $scope.masterData[64].boundDownUnder;
+    $scope.vul = $scope.masterData[64].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[64].warrantedCriminals;
+    $scope.cond = $scope.masterData[64].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl66', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana66_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana66_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana66_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[65].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[65].councellor;
+    $scope.gridRespected = $scope.masterData[65].respectedPpl;
+    $scope.gridRetired = $scope.masterData[65].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[65].neighbourPolling;
+    $scope.gridArms = $scope.masterData[65].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[65].historySheeter;
+    $scope.stName = $scope.masterData[65].stationName;
+    $scope.lat = $scope.masterData[65].latitude;
+    $scope.lon = $scope.masterData[65].longitude;
+    $scope.pop = $scope.masterData[65].population;
+    $scope.vot = $scope.masterData[65].voters;
+    $scope.vill = $scope.masterData[65].villageMohalla;
+    $scope.gridCon = $scope.masterData[65].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[65].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[65].electionCrimes;
+    $scope.gridPoli = $scope.masterData[65].politician;
+    $scope.bUnder = $scope.masterData[65].boundDownUnder;
+    $scope.vul = $scope.masterData[65].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[65].warrantedCriminals;
+    $scope.cond = $scope.masterData[65].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl67', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana67_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana67_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana67_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[66].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[66].councellor;
+    $scope.gridRespected = $scope.masterData[66].respectedPpl;
+    $scope.gridRetired = $scope.masterData[66].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[66].neighbourPolling;
+    $scope.gridArms = $scope.masterData[66].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[66].historySheeter;
+    $scope.stName = $scope.masterData[66].stationName;
+    $scope.lat = $scope.masterData[66].latitude;
+    $scope.lon = $scope.masterData[66].longitude;
+    $scope.pop = $scope.masterData[66].population;
+    $scope.vot = $scope.masterData[66].voters;
+    $scope.vill = $scope.masterData[66].villageMohalla;
+    $scope.gridCon = $scope.masterData[66].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[66].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[66].electionCrimes;
+    $scope.gridPoli = $scope.masterData[66].politician;
+    $scope.bUnder = $scope.masterData[66].boundDownUnder;
+    $scope.vul = $scope.masterData[66].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[66].warrantedCriminals;
+    $scope.cond = $scope.masterData[66].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl68', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana68_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana68_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana68_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[67].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[67].councellor;
+    $scope.gridRespected = $scope.masterData[67].respectedPpl;
+    $scope.gridRetired = $scope.masterData[67].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[67].neighbourPolling;
+    $scope.gridArms = $scope.masterData[67].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[67].historySheeter;
+    $scope.stName = $scope.masterData[67].stationName;
+    $scope.lat = $scope.masterData[67].latitude;
+    $scope.lon = $scope.masterData[67].longitude;
+    $scope.pop = $scope.masterData[67].population;
+    $scope.vot = $scope.masterData[67].voters;
+    $scope.vill = $scope.masterData[67].villageMohalla;
+    $scope.gridCon = $scope.masterData[67].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[67].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[67].electionCrimes;
+    $scope.gridPoli = $scope.masterData[67].politician;
+    $scope.bUnder = $scope.masterData[67].boundDownUnder;
+    $scope.vul = $scope.masterData[67].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[67].warrantedCriminals;
+    $scope.cond = $scope.masterData[67].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl69', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana69_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana69_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana69_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[68].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[68].councellor;
+    $scope.gridRespected = $scope.masterData[68].respectedPpl;
+    $scope.gridRetired = $scope.masterData[68].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[68].neighbourPolling;
+    $scope.gridArms = $scope.masterData[68].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[68].historySheeter;
+    $scope.stName = $scope.masterData[68].stationName;
+    $scope.lat = $scope.masterData[68].latitude;
+    $scope.lon = $scope.masterData[68].longitude;
+    $scope.pop = $scope.masterData[68].population;
+    $scope.vot = $scope.masterData[68].voters;
+    $scope.vill = $scope.masterData[68].villageMohalla;
+    $scope.gridCon = $scope.masterData[68].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[68].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[68].electionCrimes;
+    $scope.gridPoli = $scope.masterData[68].politician;
+    $scope.bUnder = $scope.masterData[68].boundDownUnder;
+    $scope.vul = $scope.masterData[68].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[68].warrantedCriminals;
+    $scope.cond = $scope.masterData[68].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl70', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana70_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana70_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana70_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[69].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[69].councellor;
+    $scope.gridRespected = $scope.masterData[69].respectedPpl;
+    $scope.gridRetired = $scope.masterData[69].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[69].neighbourPolling;
+    $scope.gridArms = $scope.masterData[69].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[69].historySheeter;
+    $scope.stName = $scope.masterData[69].stationName;
+    $scope.lat = $scope.masterData[69].latitude;
+    $scope.lon = $scope.masterData[69].longitude;
+    $scope.pop = $scope.masterData[69].population;
+    $scope.vot = $scope.masterData[69].voters;
+    $scope.vill = $scope.masterData[69].villageMohalla;
+    $scope.gridCon = $scope.masterData[69].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[69].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[69].electionCrimes;
+    $scope.gridPoli = $scope.masterData[69].politician;
+    $scope.bUnder = $scope.masterData[69].boundDownUnder;
+    $scope.vul = $scope.masterData[69].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[69].warrantedCriminals;
+    $scope.cond = $scope.masterData[69].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl71', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana71_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana71_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana71_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[70].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[70].councellor;
+    $scope.gridRespected = $scope.masterData[70].respectedPpl;
+    $scope.gridRetired = $scope.masterData[70].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[70].neighbourPolling;
+    $scope.gridArms = $scope.masterData[70].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[70].historySheeter;
+    $scope.stName = $scope.masterData[70].stationName;
+    $scope.lat = $scope.masterData[70].latitude;
+    $scope.lon = $scope.masterData[70].longitude;
+    $scope.pop = $scope.masterData[70].population;
+    $scope.vot = $scope.masterData[70].voters;
+    $scope.vill = $scope.masterData[70].villageMohalla;
+    $scope.gridCon = $scope.masterData[70].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[70].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[70].electionCrimes;
+    $scope.gridPoli = $scope.masterData[70].politician;
+    $scope.bUnder = $scope.masterData[70].boundDownUnder;
+    $scope.vul = $scope.masterData[70].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[70].warrantedCriminals;
+    $scope.cond = $scope.masterData[70].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl72', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana72_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana72_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana72_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[71].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[71].councellor;
+    $scope.gridRespected = $scope.masterData[71].respectedPpl;
+    $scope.gridRetired = $scope.masterData[71].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[71].neighbourPolling;
+    $scope.gridArms = $scope.masterData[71].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[71].historySheeter;
+    $scope.stName = $scope.masterData[71].stationName;
+    $scope.lat = $scope.masterData[71].latitude;
+    $scope.lon = $scope.masterData[71].longitude;
+    $scope.pop = $scope.masterData[71].population;
+    $scope.vot = $scope.masterData[71].voters;
+    $scope.vill = $scope.masterData[71].villageMohalla;
+    $scope.gridCon = $scope.masterData[71].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[71].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[71].electionCrimes;
+    $scope.gridPoli = $scope.masterData[71].politician;
+    $scope.bUnder = $scope.masterData[71].boundDownUnder;
+    $scope.vul = $scope.masterData[71].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[71].warrantedCriminals;
+    $scope.cond = $scope.masterData[71].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl73', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana73_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana73_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana73_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[72].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[72].councellor;
+    $scope.gridRespected = $scope.masterData[72].respectedPpl;
+    $scope.gridRetired = $scope.masterData[72].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[72].neighbourPolling;
+    $scope.gridArms = $scope.masterData[72].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[72].historySheeter;
+    $scope.stName = $scope.masterData[72].stationName;
+    $scope.lat = $scope.masterData[72].latitude;
+    $scope.lon = $scope.masterData[72].longitude;
+    $scope.pop = $scope.masterData[72].population;
+    $scope.vot = $scope.masterData[72].voters;
+    $scope.vill = $scope.masterData[72].villageMohalla;
+    $scope.gridCon = $scope.masterData[72].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[72].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[72].electionCrimes;
+    $scope.gridPoli = $scope.masterData[72].politician;
+    $scope.bUnder = $scope.masterData[72].boundDownUnder;
+    $scope.vul = $scope.masterData[72].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[72].warrantedCriminals;
+    $scope.cond = $scope.masterData[72].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl74', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana74_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana74_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana74_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[73].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[73].councellor;
+    $scope.gridRespected = $scope.masterData[73].respectedPpl;
+    $scope.gridRetired = $scope.masterData[73].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[73].neighbourPolling;
+    $scope.gridArms = $scope.masterData[73].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[73].historySheeter;
+    $scope.stName = $scope.masterData[73].stationName;
+    $scope.lat = $scope.masterData[73].latitude;
+    $scope.lon = $scope.masterData[73].longitude;
+    $scope.pop = $scope.masterData[73].population;
+    $scope.vot = $scope.masterData[73].voters;
+    $scope.vill = $scope.masterData[73].villageMohalla;
+    $scope.gridCon = $scope.masterData[73].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[73].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[73].electionCrimes;
+    $scope.gridPoli = $scope.masterData[73].politician;
+    $scope.bUnder = $scope.masterData[73].boundDownUnder;
+    $scope.vul = $scope.masterData[73].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[73].warrantedCriminals;
+    $scope.cond = $scope.masterData[73].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl75', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana75_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana75_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana75_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[74].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[74].councellor;
+    $scope.gridRespected = $scope.masterData[74].respectedPpl;
+    $scope.gridRetired = $scope.masterData[74].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[74].neighbourPolling;
+    $scope.gridArms = $scope.masterData[74].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[74].historySheeter;
+    $scope.stName = $scope.masterData[74].stationName;
+    $scope.lat = $scope.masterData[74].latitude;
+    $scope.lon = $scope.masterData[74].longitude;
+    $scope.pop = $scope.masterData[74].population;
+    $scope.vot = $scope.masterData[74].voters;
+    $scope.vill = $scope.masterData[74].villageMohalla;
+    $scope.gridCon = $scope.masterData[74].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[74].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[74].electionCrimes;
+    $scope.gridPoli = $scope.masterData[74].politician;
+    $scope.bUnder = $scope.masterData[74].boundDownUnder;
+    $scope.vul = $scope.masterData[74].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[74].warrantedCriminals;
+    $scope.cond = $scope.masterData[74].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl76', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana76_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana76_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana76_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[75].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[75].councellor;
+    $scope.gridRespected = $scope.masterData[75].respectedPpl;
+    $scope.gridRetired = $scope.masterData[75].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[75].neighbourPolling;
+    $scope.gridArms = $scope.masterData[75].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[75].historySheeter;
+    $scope.stName = $scope.masterData[75].stationName;
+    $scope.lat = $scope.masterData[75].latitude;
+    $scope.lon = $scope.masterData[75].longitude;
+    $scope.pop = $scope.masterData[75].population;
+    $scope.vot = $scope.masterData[75].voters;
+    $scope.vill = $scope.masterData[75].villageMohalla;
+    $scope.gridCon = $scope.masterData[75].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[75].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[75].electionCrimes;
+    $scope.gridPoli = $scope.masterData[75].politician;
+    $scope.bUnder = $scope.masterData[75].boundDownUnder;
+    $scope.vul = $scope.masterData[75].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[75].warrantedCriminals;
+    $scope.cond = $scope.masterData[75].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl77', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana77_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana77_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana77_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[76].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[76].councellor;
+    $scope.gridRespected = $scope.masterData[76].respectedPpl;
+    $scope.gridRetired = $scope.masterData[76].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[76].neighbourPolling;
+    $scope.gridArms = $scope.masterData[76].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[76].historySheeter;
+    $scope.stName = $scope.masterData[76].stationName;
+    $scope.lat = $scope.masterData[76].latitude;
+    $scope.lon = $scope.masterData[76].longitude;
+    $scope.pop = $scope.masterData[76].population;
+    $scope.vot = $scope.masterData[76].voters;
+    $scope.vill = $scope.masterData[76].villageMohalla;
+    $scope.gridCon = $scope.masterData[76].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[76].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[76].electionCrimes;
+    $scope.gridPoli = $scope.masterData[76].politician;
+    $scope.bUnder = $scope.masterData[76].boundDownUnder;
+    $scope.vul = $scope.masterData[76].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[76].warrantedCriminals;
+    $scope.cond = $scope.masterData[76].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl78', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana78_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana78_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana78_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[77].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[77].councellor;
+    $scope.gridRespected = $scope.masterData[77].respectedPpl;
+    $scope.gridRetired = $scope.masterData[77].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[77].neighbourPolling;
+    $scope.gridArms = $scope.masterData[77].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[77].historySheeter;
+    $scope.stName = $scope.masterData[77].stationName;
+    $scope.lat = $scope.masterData[77].latitude;
+    $scope.lon = $scope.masterData[77].longitude;
+    $scope.pop = $scope.masterData[77].population;
+    $scope.vot = $scope.masterData[77].voters;
+    $scope.vill = $scope.masterData[77].villageMohalla;
+    $scope.gridCon = $scope.masterData[77].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[77].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[77].electionCrimes;
+    $scope.gridPoli = $scope.masterData[77].politician;
+    $scope.bUnder = $scope.masterData[77].boundDownUnder;
+    $scope.vul = $scope.masterData[77].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[77].warrantedCriminals;
+    $scope.cond = $scope.masterData[77].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl79', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana79_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana79_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana79_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[78].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[78].councellor;
+    $scope.gridRespected = $scope.masterData[78].respectedPpl;
+    $scope.gridRetired = $scope.masterData[78].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[78].neighbourPolling;
+    $scope.gridArms = $scope.masterData[78].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[78].historySheeter;
+    $scope.stName = $scope.masterData[78].stationName;
+    $scope.lat = $scope.masterData[78].latitude;
+    $scope.lon = $scope.masterData[78].longitude;
+    $scope.pop = $scope.masterData[78].population;
+    $scope.vot = $scope.masterData[78].voters;
+    $scope.vill = $scope.masterData[78].villageMohalla;
+    $scope.gridCon = $scope.masterData[78].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[78].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[78].electionCrimes;
+    $scope.gridPoli = $scope.masterData[78].politician;
+    $scope.bUnder = $scope.masterData[78].boundDownUnder;
+    $scope.vul = $scope.masterData[78].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[78].warrantedCriminals;
+    $scope.cond = $scope.masterData[78].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl80', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana80_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana80_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana80_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[79].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[79].councellor;
+    $scope.gridRespected = $scope.masterData[79].respectedPpl;
+    $scope.gridRetired = $scope.masterData[79].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[79].neighbourPolling;
+    $scope.gridArms = $scope.masterData[79].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[79].historySheeter;
+    $scope.stName = $scope.masterData[79].stationName;
+    $scope.lat = $scope.masterData[79].latitude;
+    $scope.lon = $scope.masterData[79].longitude;
+    $scope.pop = $scope.masterData[79].population;
+    $scope.vot = $scope.masterData[79].voters;
+    $scope.vill = $scope.masterData[79].villageMohalla;
+    $scope.gridCon = $scope.masterData[79].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[79].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[79].electionCrimes;
+    $scope.gridPoli = $scope.masterData[79].politician;
+    $scope.bUnder = $scope.masterData[79].boundDownUnder;
+    $scope.vul = $scope.masterData[79].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[79].warrantedCriminals;
+    $scope.cond = $scope.masterData[79].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl81', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana81_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana81_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana81_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[80].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[80].councellor;
+    $scope.gridRespected = $scope.masterData[80].respectedPpl;
+    $scope.gridRetired = $scope.masterData[80].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[80].neighbourPolling;
+    $scope.gridArms = $scope.masterData[80].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[80].historySheeter;
+    $scope.stName = $scope.masterData[80].stationName;
+    $scope.lat = $scope.masterData[80].latitude;
+    $scope.lon = $scope.masterData[80].longitude;
+    $scope.pop = $scope.masterData[80].population;
+    $scope.vot = $scope.masterData[80].voters;
+    $scope.vill = $scope.masterData[80].villageMohalla;
+    $scope.gridCon = $scope.masterData[80].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[80].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[80].electionCrimes;
+    $scope.gridPoli = $scope.masterData[80].politician;
+    $scope.bUnder = $scope.masterData[80].boundDownUnder;
+    $scope.vul = $scope.masterData[80].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[80].warrantedCriminals;
+    $scope.cond = $scope.masterData[80].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl82', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana82_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana82_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana82_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[81].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[81].councellor;
+    $scope.gridRespected = $scope.masterData[81].respectedPpl;
+    $scope.gridRetired = $scope.masterData[81].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[81].neighbourPolling;
+    $scope.gridArms = $scope.masterData[81].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[81].historySheeter;
+    $scope.stName = $scope.masterData[81].stationName;
+    $scope.lat = $scope.masterData[81].latitude;
+    $scope.lon = $scope.masterData[81].longitude;
+    $scope.pop = $scope.masterData[81].population;
+    $scope.vot = $scope.masterData[81].voters;
+    $scope.vill = $scope.masterData[81].villageMohalla;
+    $scope.gridCon = $scope.masterData[81].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[81].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[81].electionCrimes;
+    $scope.gridPoli = $scope.masterData[81].politician;
+    $scope.bUnder = $scope.masterData[81].boundDownUnder;
+    $scope.vul = $scope.masterData[81].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[81].warrantedCriminals;
+    $scope.cond = $scope.masterData[81].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl83', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana83_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana83_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana83_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[82].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[82].councellor;
+    $scope.gridRespected = $scope.masterData[82].respectedPpl;
+    $scope.gridRetired = $scope.masterData[82].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[82].neighbourPolling;
+    $scope.gridArms = $scope.masterData[82].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[82].historySheeter;
+    $scope.stName = $scope.masterData[82].stationName;
+    $scope.lat = $scope.masterData[82].latitude;
+    $scope.lon = $scope.masterData[82].longitude;
+    $scope.pop = $scope.masterData[82].population;
+    $scope.vot = $scope.masterData[82].voters;
+    $scope.vill = $scope.masterData[82].villageMohalla;
+    $scope.gridCon = $scope.masterData[82].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[82].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[82].electionCrimes;
+    $scope.gridPoli = $scope.masterData[82].politician;
+    $scope.bUnder = $scope.masterData[82].boundDownUnder;
+    $scope.vul = $scope.masterData[82].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[82].warrantedCriminals;
+    $scope.cond = $scope.masterData[82].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl84', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana84_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana84_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana84_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[83].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[83].councellor;
+    $scope.gridRespected = $scope.masterData[83].respectedPpl;
+    $scope.gridRetired = $scope.masterData[83].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[83].neighbourPolling;
+    $scope.gridArms = $scope.masterData[83].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[83].historySheeter;
+    $scope.stName = $scope.masterData[83].stationName;
+    $scope.lat = $scope.masterData[83].latitude;
+    $scope.lon = $scope.masterData[83].longitude;
+    $scope.pop = $scope.masterData[83].population;
+    $scope.vot = $scope.masterData[83].voters;
+    $scope.vill = $scope.masterData[83].villageMohalla;
+    $scope.gridCon = $scope.masterData[83].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[83].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[83].electionCrimes;
+    $scope.gridPoli = $scope.masterData[83].politician;
+    $scope.bUnder = $scope.masterData[83].boundDownUnder;
+    $scope.vul = $scope.masterData[83].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[83].warrantedCriminals;
+    $scope.cond = $scope.masterData[83].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl85', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana85_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana85_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana85_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[84].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[84].councellor;
+    $scope.gridRespected = $scope.masterData[84].respectedPpl;
+    $scope.gridRetired = $scope.masterData[84].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[84].neighbourPolling;
+    $scope.gridArms = $scope.masterData[84].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[84].historySheeter;
+    $scope.stName = $scope.masterData[84].stationName;
+    $scope.lat = $scope.masterData[84].latitude;
+    $scope.lon = $scope.masterData[84].longitude;
+    $scope.pop = $scope.masterData[84].population;
+    $scope.vot = $scope.masterData[84].voters;
+    $scope.vill = $scope.masterData[84].villageMohalla;
+    $scope.gridCon = $scope.masterData[84].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[84].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[84].electionCrimes;
+    $scope.gridPoli = $scope.masterData[84].politician;
+    $scope.bUnder = $scope.masterData[84].boundDownUnder;
+    $scope.vul = $scope.masterData[84].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[84].warrantedCriminals;
+    $scope.cond = $scope.masterData[84].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl86', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana86_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana86_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana86_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[85].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[85].councellor;
+    $scope.gridRespected = $scope.masterData[85].respectedPpl;
+    $scope.gridRetired = $scope.masterData[85].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[85].neighbourPolling;
+    $scope.gridArms = $scope.masterData[85].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[85].historySheeter;
+    $scope.stName = $scope.masterData[85].stationName;
+    $scope.lat = $scope.masterData[85].latitude;
+    $scope.lon = $scope.masterData[85].longitude;
+    $scope.pop = $scope.masterData[85].population;
+    $scope.vot = $scope.masterData[85].voters;
+    $scope.vill = $scope.masterData[85].villageMohalla;
+    $scope.gridCon = $scope.masterData[85].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[85].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[85].electionCrimes;
+    $scope.gridPoli = $scope.masterData[85].politician;
+    $scope.bUnder = $scope.masterData[85].boundDownUnder;
+    $scope.vul = $scope.masterData[85].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[85].warrantedCriminals;
+    $scope.cond = $scope.masterData[85].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl87', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana87_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana87_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana87_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[86].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[86].councellor;
+    $scope.gridRespected = $scope.masterData[86].respectedPpl;
+    $scope.gridRetired = $scope.masterData[86].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[86].neighbourPolling;
+    $scope.gridArms = $scope.masterData[86].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[86].historySheeter;
+    $scope.stName = $scope.masterData[86].stationName;
+    $scope.lat = $scope.masterData[86].latitude;
+    $scope.lon = $scope.masterData[86].longitude;
+    $scope.pop = $scope.masterData[86].population;
+    $scope.vot = $scope.masterData[86].voters;
+    $scope.vill = $scope.masterData[86].villageMohalla;
+    $scope.gridCon = $scope.masterData[86].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[86].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[86].electionCrimes;
+    $scope.gridPoli = $scope.masterData[86].politician;
+    $scope.bUnder = $scope.masterData[86].boundDownUnder;
+    $scope.vul = $scope.masterData[86].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[86].warrantedCriminals;
+    $scope.cond = $scope.masterData[86].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl88', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana88_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana88_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana88_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[87].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[87].councellor;
+    $scope.gridRespected = $scope.masterData[87].respectedPpl;
+    $scope.gridRetired = $scope.masterData[87].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[87].neighbourPolling;
+    $scope.gridArms = $scope.masterData[87].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[87].historySheeter;
+    $scope.stName = $scope.masterData[87].stationName;
+    $scope.lat = $scope.masterData[87].latitude;
+    $scope.lon = $scope.masterData[87].longitude;
+    $scope.pop = $scope.masterData[87].population;
+    $scope.vot = $scope.masterData[87].voters;
+    $scope.vill = $scope.masterData[87].villageMohalla;
+    $scope.gridCon = $scope.masterData[87].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[87].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[87].electionCrimes;
+    $scope.gridPoli = $scope.masterData[87].politician;
+    $scope.bUnder = $scope.masterData[87].boundDownUnder;
+    $scope.vul = $scope.masterData[87].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[87].warrantedCriminals;
+    $scope.cond = $scope.masterData[87].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl89', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana89_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana89_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana89_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[88].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[88].councellor;
+    $scope.gridRespected = $scope.masterData[88].respectedPpl;
+    $scope.gridRetired = $scope.masterData[88].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[88].neighbourPolling;
+    $scope.gridArms = $scope.masterData[88].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[88].historySheeter;
+    $scope.stName = $scope.masterData[88].stationName;
+    $scope.lat = $scope.masterData[88].latitude;
+    $scope.lon = $scope.masterData[88].longitude;
+    $scope.pop = $scope.masterData[88].population;
+    $scope.vot = $scope.masterData[88].voters;
+    $scope.vill = $scope.masterData[88].villageMohalla;
+    $scope.gridCon = $scope.masterData[88].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[88].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[88].electionCrimes;
+    $scope.gridPoli = $scope.masterData[88].politician;
+    $scope.bUnder = $scope.masterData[88].boundDownUnder;
+    $scope.vul = $scope.masterData[88].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[88].warrantedCriminals;
+    $scope.cond = $scope.masterData[88].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl90', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana90_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana90_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana90_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[89].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[89].councellor;
+    $scope.gridRespected = $scope.masterData[89].respectedPpl;
+    $scope.gridRetired = $scope.masterData[89].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[89].neighbourPolling;
+    $scope.gridArms = $scope.masterData[89].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[89].historySheeter;
+    $scope.stName = $scope.masterData[89].stationName;
+    $scope.lat = $scope.masterData[89].latitude;
+    $scope.lon = $scope.masterData[89].longitude;
+    $scope.pop = $scope.masterData[89].population;
+    $scope.vot = $scope.masterData[89].voters;
+    $scope.vill = $scope.masterData[89].villageMohalla;
+    $scope.gridCon = $scope.masterData[89].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[89].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[89].electionCrimes;
+    $scope.gridPoli = $scope.masterData[89].politician;
+    $scope.bUnder = $scope.masterData[89].boundDownUnder;
+    $scope.vul = $scope.masterData[89].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[89].warrantedCriminals;
+    $scope.cond = $scope.masterData[89].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl91', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana91_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana91_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana91_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[90].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[90].councellor;
+    $scope.gridRespected = $scope.masterData[90].respectedPpl;
+    $scope.gridRetired = $scope.masterData[90].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[90].neighbourPolling;
+    $scope.gridArms = $scope.masterData[90].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[90].historySheeter;
+    $scope.stName = $scope.masterData[90].stationName;
+    $scope.lat = $scope.masterData[90].latitude;
+    $scope.lon = $scope.masterData[90].longitude;
+    $scope.pop = $scope.masterData[90].population;
+    $scope.vot = $scope.masterData[90].voters;
+    $scope.vill = $scope.masterData[90].villageMohalla;
+    $scope.gridCon = $scope.masterData[90].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[90].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[90].electionCrimes;
+    $scope.gridPoli = $scope.masterData[90].politician;
+    $scope.bUnder = $scope.masterData[90].boundDownUnder;
+    $scope.vul = $scope.masterData[90].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[90].warrantedCriminals;
+    $scope.cond = $scope.masterData[90].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl92', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana92_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana92_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana92_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[91].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[91].councellor;
+    $scope.gridRespected = $scope.masterData[91].respectedPpl;
+    $scope.gridRetired = $scope.masterData[91].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[91].neighbourPolling;
+    $scope.gridArms = $scope.masterData[91].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[91].historySheeter;
+    $scope.stName = $scope.masterData[91].stationName;
+    $scope.lat = $scope.masterData[91].latitude;
+    $scope.lon = $scope.masterData[91].longitude;
+    $scope.pop = $scope.masterData[91].population;
+    $scope.vot = $scope.masterData[91].voters;
+    $scope.vill = $scope.masterData[91].villageMohalla;
+    $scope.gridCon = $scope.masterData[91].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[91].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[91].electionCrimes;
+    $scope.gridPoli = $scope.masterData[91].politician;
+    $scope.bUnder = $scope.masterData[91].boundDownUnder;
+    $scope.vul = $scope.masterData[91].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[91].warrantedCriminals;
+    $scope.cond = $scope.masterData[91].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl93', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana93_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana93_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana93_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[92].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[92].councellor;
+    $scope.gridRespected = $scope.masterData[92].respectedPpl;
+    $scope.gridRetired = $scope.masterData[92].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[92].neighbourPolling;
+    $scope.gridArms = $scope.masterData[92].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[92].historySheeter;
+    $scope.stName = $scope.masterData[92].stationName;
+    $scope.lat = $scope.masterData[92].latitude;
+    $scope.lon = $scope.masterData[92].longitude;
+    $scope.pop = $scope.masterData[92].population;
+    $scope.vot = $scope.masterData[92].voters;
+    $scope.vill = $scope.masterData[92].villageMohalla;
+    $scope.gridCon = $scope.masterData[92].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[92].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[92].electionCrimes;
+    $scope.gridPoli = $scope.masterData[92].politician;
+    $scope.bUnder = $scope.masterData[92].boundDownUnder;
+    $scope.vul = $scope.masterData[92].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[92].warrantedCriminals;
+    $scope.cond = $scope.masterData[92].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl94', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana94_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana94_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana94_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[93].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[93].councellor;
+    $scope.gridRespected = $scope.masterData[93].respectedPpl;
+    $scope.gridRetired = $scope.masterData[93].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[93].neighbourPolling;
+    $scope.gridArms = $scope.masterData[93].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[93].historySheeter;
+    $scope.stName = $scope.masterData[93].stationName;
+    $scope.lat = $scope.masterData[93].latitude;
+    $scope.lon = $scope.masterData[93].longitude;
+    $scope.pop = $scope.masterData[93].population;
+    $scope.vot = $scope.masterData[93].voters;
+    $scope.vill = $scope.masterData[93].villageMohalla;
+    $scope.gridCon = $scope.masterData[93].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[93].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[93].electionCrimes;
+    $scope.gridPoli = $scope.masterData[93].politician;
+    $scope.bUnder = $scope.masterData[93].boundDownUnder;
+    $scope.vul = $scope.masterData[93].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[93].warrantedCriminals;
+    $scope.cond = $scope.masterData[93].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('sdCtrl95', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/sardhana95_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/sardhana95_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/sardhana95_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/sardhana.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[94].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[94].councellor;
+    $scope.gridRespected = $scope.masterData[94].respectedPpl;
+    $scope.gridRetired = $scope.masterData[94].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[94].neighbourPolling;
+    $scope.gridArms = $scope.masterData[94].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[94].historySheeter;
+    $scope.stName = $scope.masterData[94].stationName;
+    $scope.lat = $scope.masterData[94].latitude;
+    $scope.lon = $scope.masterData[94].longitude;
+    $scope.pop = $scope.masterData[94].population;
+    $scope.vot = $scope.masterData[94].voters;
+    $scope.vill = $scope.masterData[94].villageMohalla;
+    $scope.gridCon = $scope.masterData[94].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[94].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[94].electionCrimes;
+    $scope.gridPoli = $scope.masterData[94].politician;
+    $scope.bUnder = $scope.masterData[94].boundDownUnder;
+    $scope.vul = $scope.masterData[94].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[94].warrantedCriminals;
+    $scope.cond = $scope.masterData[94].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+
+// End of sardhana Controllers
+
+.controller('drCtrl', function($scope, $http){
+  $scope.items = [
+      {
+        "title": "Praymari Pathsala Garam Kaili",
+        "path": "#/menu/tab/drDetail"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Kaili",
+        "path": "#/menu/tab/drDetail2"
+      },
+      {
+        "title": "Purva Mahdyamik Vidhyaliya Ruhasa",
+        "path": "#/menu/tab/drDetail3"
+      },
+      {
+        "title": "Priymary Vidhyaliya  Ruhasa",
+        "path": "#/menu/tab/drDetail4"
+      },
+      {
+        "title": "Primari Pathsala Tanda",
+        "path": "#/menu/tab/drDetail5"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyalya Dadri",
+        "path": "#/menu/tab/drDetail6"
+      },
+      {
+        "title": "Primari Vidhyaliya Dadri",
+        "path": "#/menu/tab/drDetail7"
+      },
+      {
+        "title": "Primari Vidhyalya Sahapur Peerpur",
+        "path": "#/menu/tab/drDetail8"
+      },
+      {
+        "title": "Primari Vidhyaliya Madaripur",
+        "path": "#/menu/tab/drDetail9"
+      },
+      {
+        "title": "Primari Vidhyaliya Sakoti",
+        "path": "#/menu/tab/drDetail10"
+      },
+      {
+        "title": "Kaniya Ucch Prathmik Vidhyaliya Sakoti",
+        "path": "#/menu/tab/drDetail11"
+      },
+      {
+        "title": "Primari Vidhyaliya Jeetpur",
+        "path": "#/menu/tab/drDetail12"
+      },
+      {
+        "title": "Priamari Vidhyaliya Dashrathpur",
+        "path": "#/menu/tab/drDetail13"
+      },
+      {
+        "title": "Priymari Vidhyaliya Jamalpur Goma",
+        "path": "#/menu/tab/drDetail14"
+      },
+      {
+        "title": "Priymari Vidhyalya Kanoda",
+        "path": "#/menu/tab/drDetail15"
+      },
+      {
+        "title": "Ucch Madhyami Vidhyaliya Badkali nakpur",
+        "path": "#/menu/tab/drDetail16"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Chirodi",
+        "path": "#/menu/tab/drDetail17"
+      },
+      {
+        "title": "Ucchprathmik Vidhyaliya Machri",
+        "path": "#/menu/tab/drDetail18"
+      },
+      {
+        "title": "Pryimary Pathsala Ghishupur Bafawat",
+        "path": "#/menu/tab/drDetail19"
+      },
+      {
+        "title": "Pryimaaary Vidhyaliya Pawarsha",
+        "path": "#/menu/tab/drDetail20"
+      },
+      {
+        "title": "Kaniya Ucch Prathmik Vidhyaliya Shivaya Jama Ulhapur",
+        "path": "#/menu/tab/drDetail21"
+      },
+      {
+        "title": "Priyamari Vidhyaliya Shivaya Jama Ulhpur",
+        "path": "#/menu/tab/drDetail22"
+      },
+      {
+        "title": "Pryimari Vidhyaliya Daurala",
+        "path": "#/menu/tab/drDetail23"
+      },
+      {
+        "title": "Uuch Prathmik Vidhyaliya Daurala",
+        "path": "#/menu/tab/drDetail24"
+      },
+      {
+        "title": "Uuch Shramik Shudhar Priymari Vidhyaliya Daurala",
+        "path": "#/menu/tab/drDetail25"
+      },
+      {
+        "title": "Kaniyaucch Prathmik Vidhyaliya Daurala",
+        "path": "#/menu/tab/drDetail26"
+      },
+      {
+        "title": "Rajkiya Mahila Poleticanil College Daurala",
+        "path": "#/menu/tab/drDetail27"
+      },
+      {
+        "title": "Vriymari Vidhyaliya Mhomadpur Hayak",
+        "path": "#/menu/tab/drDetail28"
+      },
+      {
+        "title": "Priymari Vidhyaliya Mator",
+        "path": "#/menu/tab/drDetail29"
+      },
+      {
+        "title": "Priymari Vidhyaliya Validpur",
+        "path": "#/menu/tab/drDetail30"
+      },
+      {
+        "title": "Priymari Vidhyaliya Lohiya",
+        "path": "#/menu/tab/drDetail31"
+      },
+      {
+        "title": "Kaniya Ucch Prathmik Vidhyaliya Lohiya",
+        "path": "#/menu/tab/drDetail32"
+      },
+      {
+        "title": "Pryimari Vidhyaliya Mamuri",
+        "path": "#/menu/tab/drDetail33"
+      },
+      {
+        "title": "Priymari Vidhyalya Sahapur Jaded",
+        "path": "#/menu/tab/drDetail34"
+      },
+      {
+        "title": "Priymari Vidhyaliya Mohinipur",
+        "path": "#/menu/tab/drDetail35"
+      },
+      {
+        "title": "Priymari Vidhyaliya Bharotha",
+        "path": "#/menu/tab/drDetail36"
+      },
+      {
+        "title": "Priymarividhyaliya Mandora",
+        "path": "#/menu/tab/drDetail37"
+      },
+      {
+        "title": "Priymari Vidhyaliya Nagli Sadharan",
+        "path": "#/menu/tab/drDetail38"
+      },
+      {
+        "title": "Primari Vidhyaliya Nagla Rathi",
+        "path": "#/menu/tab/drDetail39"
+      },
+      {
+        "title": "Priymari Vidhyaliya Nagli Aazad",
+        "path": "#/menu/tab/drDetail40"
+      },
+      {
+        "title": "Adarsh Inter Colleg Sharswa",
+        "path": "#/menu/tab/drDetail41"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Akhtiyarpur",
+        "path": "#/menu/tab/drDetail42"
+      },
+      {
+        "title": "Ucchprathmik  Vidhyaliya Samoli Shalempur",
+        "path": "#/menu/tab/drDetail43"
+      },
+      {
+        "title": "Panchayatghar Samoli Shalempur",
+        "path": "#/menu/tab/drDetail44"
+      },
+      {
+        "title": "Aaja Chopal Samoli Shalempur",
+        "path": "#/menu/tab/drDetail45"
+      },
+      {
+        "title": "Primari Vidhyaliya Kahdi Tapa Lavar",
+        "path": "#/menu/tab/drDetail46"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Kahdi Tapa lavar",
+        "path": "#/menu/tab/drDetail47"
+      },
+      {
+        "title": "Priymari Vidhyaliya Mavi Mira",
+        "path": "#/menu/tab/drDetail48"
+      },
+      {
+        "title": "Priymari Vidhyaliya Jainpur",
+        "path": "#/menu/tab/drDetail49"
+      },
+      {
+        "title": "Priymari Vidhiyaliya Aajhoota",
+        "path": "#/menu/tab/drDetail50"
+      },
+      {
+        "title": "Ucch Prathmik Vidhyaliya Panwadi",
+        "path": "#/menu/tab/drDetail51"
+      },
+      {
+        "title": "B.P. Inter College Bharala",
+        "path": "#/menu/tab/drDetail52"
+      },
+      {
+        "title": "Priymari Vidhyaliya Eklauta",
+        "path": "#/menu/tab/drDetail53"
+      }
+    ];
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[0].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[0].councellor;
+    $scope.gridRespected = $scope.masterData[0].respectedPpl;
+    $scope.gridRetired = $scope.masterData[0].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[0].neighbourPolling;
+    $scope.gridArms = $scope.masterData[0].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[0].historySheeter;
+    $scope.stName = $scope.masterData[0].stationName;
+    $scope.lat = $scope.masterData[0].latitude;
+    $scope.lon = $scope.masterData[0].longitude;
+    $scope.pop = $scope.masterData[0].population;
+    $scope.vot = $scope.masterData[0].voters;
+    $scope.vill = $scope.masterData[0].villageMohalla;
+    $scope.gridCon = $scope.masterData[0].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[0].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[0].electionCrimes;
+    $scope.gridPoli = $scope.masterData[0].politician;
+    $scope.bUnder = $scope.masterData[0].boundDownUnder;
+    $scope.vul = $scope.masterData[0].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[0].warrantedCriminals;
+    $scope.cond = $scope.masterData[0].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl2', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[1].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[1].councellor;
+    $scope.gridRespected = $scope.masterData[1].respectedPpl;
+    $scope.gridRetired = $scope.masterData[1].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[1].neighbourPolling;
+    $scope.gridArms = $scope.masterData[1].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[1].historySheeter;
+    $scope.stName = $scope.masterData[1].stationName;
+    $scope.lat = $scope.masterData[1].latitude;
+    $scope.lon = $scope.masterData[1].longitude;
+    $scope.pop = $scope.masterData[1].population;
+    $scope.vot = $scope.masterData[1].voters;
+    $scope.vill = $scope.masterData[1].villageMohalla;
+    $scope.gridCon = $scope.masterData[1].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[1].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[1].electionCrimes;
+    $scope.gridPoli = $scope.masterData[1].politician;
+    $scope.bUnder = $scope.masterData[1].boundDownUnder;
+    $scope.vul = $scope.masterData[1].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[1].warrantedCriminals;
+    $scope.cond = $scope.masterData[1].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl3', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[2].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[2].councellor;
+    $scope.gridRespected = $scope.masterData[2].respectedPpl;
+    $scope.gridRetired = $scope.masterData[2].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[2].neighbourPolling;
+    $scope.gridArms = $scope.masterData[2].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[2].historySheeter;
+    $scope.stName = $scope.masterData[2].stationName;
+    $scope.lat = $scope.masterData[2].latitude;
+    $scope.lon = $scope.masterData[2].longitude;
+    $scope.pop = $scope.masterData[2].population;
+    $scope.vot = $scope.masterData[2].voters;
+    $scope.vill = $scope.masterData[2].villageMohalla;
+    $scope.gridCon = $scope.masterData[2].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[2].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[2].electionCrimes;
+    $scope.gridPoli = $scope.masterData[2].politician;
+    $scope.bUnder = $scope.masterData[2].boundDownUnder;
+    $scope.vul = $scope.masterData[2].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[2].warrantedCriminals;
+    $scope.cond = $scope.masterData[2].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl4', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[3].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[3].councellor;
+    $scope.gridRespected = $scope.masterData[3].respectedPpl;
+    $scope.gridRetired = $scope.masterData[3].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[3].neighbourPolling;
+    $scope.gridArms = $scope.masterData[3].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[3].historySheeter;
+    $scope.stName = $scope.masterData[3].stationName;
+    $scope.lat = $scope.masterData[3].latitude;
+    $scope.lon = $scope.masterData[3].longitude;
+    $scope.pop = $scope.masterData[3].population;
+    $scope.vot = $scope.masterData[3].voters;
+    $scope.vill = $scope.masterData[3].villageMohalla;
+    $scope.gridCon = $scope.masterData[3].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[3].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[3].electionCrimes;
+    $scope.gridPoli = $scope.masterData[3].politician;
+    $scope.bUnder = $scope.masterData[3].boundDownUnder;
+    $scope.vul = $scope.masterData[3].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[3].warrantedCriminals;
+    $scope.cond = $scope.masterData[3].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[3].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl5', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[4].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[4].councellor;
+    $scope.gridRespected = $scope.masterData[4].respectedPpl;
+    $scope.gridRetired = $scope.masterData[4].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[4].neighbourPolling;
+    $scope.gridArms = $scope.masterData[4].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[4].historySheeter;
+    $scope.stName = $scope.masterData[4].stationName;
+    $scope.lat = $scope.masterData[4].latitude;
+    $scope.lon = $scope.masterData[4].longitude;
+    $scope.pop = $scope.masterData[4].population;
+    $scope.vot = $scope.masterData[4].voters;
+    $scope.vill = $scope.masterData[4].villageMohalla;
+    $scope.gridCon = $scope.masterData[4].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[4].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[4].electionCrimes;
+    $scope.gridPoli = $scope.masterData[4].politician;
+    $scope.bUnder = $scope.masterData[4].boundDownUnder;
+    $scope.vul = $scope.masterData[4].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[4].warrantedCriminals;
+    $scope.cond = $scope.masterData[4].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl6', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[5].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[5].councellor;
+    $scope.gridRespected = $scope.masterData[5].respectedPpl;
+    $scope.gridRetired = $scope.masterData[5].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[5].neighbourPolling;
+    $scope.gridArms = $scope.masterData[5].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[5].historySheeter;
+    $scope.stName = $scope.masterData[5].stationName;
+    $scope.lat = $scope.masterData[5].latitude;
+    $scope.lon = $scope.masterData[5].longitude;
+    $scope.pop = $scope.masterData[5].population;
+    $scope.vot = $scope.masterData[5].voters;
+    $scope.vill = $scope.masterData[5].villageMohalla;
+    $scope.gridCon = $scope.masterData[5].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[5].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[5].electionCrimes;
+    $scope.gridPoli = $scope.masterData[5].politician;
+    $scope.bUnder = $scope.masterData[5].boundDownUnder;
+    $scope.vul = $scope.masterData[5].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[5].warrantedCriminals;
+    $scope.cond = $scope.masterData[5].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl7', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[6].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[6].councellor;
+    $scope.gridRespected = $scope.masterData[6].respectedPpl;
+    $scope.gridRetired = $scope.masterData[6].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[6].neighbourPolling;
+    $scope.gridArms = $scope.masterData[6].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[6].historySheeter;
+    $scope.stName = $scope.masterData[6].stationName;
+    $scope.lat = $scope.masterData[6].latitude;
+    $scope.lon = $scope.masterData[6].longitude;
+    $scope.pop = $scope.masterData[6].population;
+    $scope.vot = $scope.masterData[6].voters;
+    $scope.vill = $scope.masterData[6].villageMohalla;
+    $scope.gridCon = $scope.masterData[6].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[6].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[6].electionCrimes;
+    $scope.gridPoli = $scope.masterData[6].politician;
+    $scope.bUnder = $scope.masterData[6].boundDownUnder;
+    $scope.vul = $scope.masterData[6].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[6].warrantedCriminals;
+    $scope.cond = $scope.masterData[6].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl8', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[7].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[7].councellor;
+    $scope.gridRespected = $scope.masterData[7].respectedPpl;
+    $scope.gridRetired = $scope.masterData[7].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[7].neighbourPolling;
+    $scope.gridArms = $scope.masterData[7].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[7].historySheeter;
+    $scope.stName = $scope.masterData[7].stationName;
+    $scope.lat = $scope.masterData[7].latitude;
+    $scope.lon = $scope.masterData[7].longitude;
+    $scope.pop = $scope.masterData[7].population;
+    $scope.vot = $scope.masterData[7].voters;
+    $scope.vill = $scope.masterData[7].villageMohalla;
+    $scope.gridCon = $scope.masterData[7].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[7].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[7].electionCrimes;
+    $scope.gridPoli = $scope.masterData[7].politician;
+    $scope.bUnder = $scope.masterData[7].boundDownUnder;
+    $scope.vul = $scope.masterData[7].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[7].warrantedCriminals;
+    $scope.cond = $scope.masterData[7].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl9', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[8].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[8].councellor;
+    $scope.gridRespected = $scope.masterData[8].respectedPpl;
+    $scope.gridRetired = $scope.masterData[8].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[8].neighbourPolling;
+    $scope.gridArms = $scope.masterData[8].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[8].historySheeter;
+    $scope.stName = $scope.masterData[8].stationName;
+    $scope.lat = $scope.masterData[8].latitude;
+    $scope.lon = $scope.masterData[8].longitude;
+    $scope.pop = $scope.masterData[8].population;
+    $scope.vot = $scope.masterData[8].voters;
+    $scope.vill = $scope.masterData[8].villageMohalla;
+    $scope.gridCon = $scope.masterData[8].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[8].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[8].electionCrimes;
+    $scope.gridPoli = $scope.masterData[8].politician;
+    $scope.bUnder = $scope.masterData[8].boundDownUnder;
+    $scope.vul = $scope.masterData[8].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[8].warrantedCriminals;
+    $scope.cond = $scope.masterData[8].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl10', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[9].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[9].councellor;
+    $scope.gridRespected = $scope.masterData[9].respectedPpl;
+    $scope.gridRetired = $scope.masterData[9].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[9].neighbourPolling;
+    $scope.gridArms = $scope.masterData[9].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[9].historySheeter;
+    $scope.stName = $scope.masterData[9].stationName;
+    $scope.lat = $scope.masterData[9].latitude;
+    $scope.lon = $scope.masterData[9].longitude;
+    $scope.pop = $scope.masterData[9].population;
+    $scope.vot = $scope.masterData[9].voters;
+    $scope.vill = $scope.masterData[9].villageMohalla;
+    $scope.gridCon = $scope.masterData[9].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[9].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[9].electionCrimes;
+    $scope.gridPoli = $scope.masterData[9].politician;
+    $scope.bUnder = $scope.masterData[9].boundDownUnder;
+    $scope.vul = $scope.masterData[9].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[9].warrantedCriminals;
+    $scope.cond = $scope.masterData[9].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl11', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[10].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[10].councellor;
+    $scope.gridRespected = $scope.masterData[10].respectedPpl;
+    $scope.gridRetired = $scope.masterData[10].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[10].neighbourPolling;
+    $scope.gridArms = $scope.masterData[10].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[10].historySheeter;
+    $scope.stName = $scope.masterData[10].stationName;
+    $scope.lat = $scope.masterData[10].latitude;
+    $scope.lon = $scope.masterData[10].longitude;
+    $scope.pop = $scope.masterData[10].population;
+    $scope.vot = $scope.masterData[10].voters;
+    $scope.vill = $scope.masterData[10].villageMohalla;
+    $scope.gridCon = $scope.masterData[10].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[10].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[10].electionCrimes;
+    $scope.gridPoli = $scope.masterData[10].politician;
+    $scope.bUnder = $scope.masterData[10].boundDownUnder;
+    $scope.vul = $scope.masterData[10].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[10].warrantedCriminals;
+    $scope.cond = $scope.masterData[10].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl12', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[11].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[11].councellor;
+    $scope.gridRespected = $scope.masterData[11].respectedPpl;
+    $scope.gridRetired = $scope.masterData[11].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[11].neighbourPolling;
+    $scope.gridArms = $scope.masterData[11].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[11].historySheeter;
+    $scope.stName = $scope.masterData[11].stationName;
+    $scope.lat = $scope.masterData[11].latitude;
+    $scope.lon = $scope.masterData[11].longitude;
+    $scope.pop = $scope.masterData[11].population;
+    $scope.vot = $scope.masterData[11].voters;
+    $scope.vill = $scope.masterData[11].villageMohalla;
+    $scope.gridCon = $scope.masterData[11].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[11].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[11].electionCrimes;
+    $scope.gridPoli = $scope.masterData[11].politician;
+    $scope.bUnder = $scope.masterData[11].boundDownUnder;
+    $scope.vul = $scope.masterData[11].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[11].warrantedCriminals;
+    $scope.cond = $scope.masterData[11].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl13', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[12].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[12].councellor;
+    $scope.gridRespected = $scope.masterData[12].respectedPpl;
+    $scope.gridRetired = $scope.masterData[12].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[12].neighbourPolling;
+    $scope.gridArms = $scope.masterData[12].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[12].historySheeter;
+    $scope.stName = $scope.masterData[12].stationName;
+    $scope.lat = $scope.masterData[12].latitude;
+    $scope.lon = $scope.masterData[12].longitude;
+    $scope.pop = $scope.masterData[12].population;
+    $scope.vot = $scope.masterData[12].voters;
+    $scope.vill = $scope.masterData[12].villageMohalla;
+    $scope.gridCon = $scope.masterData[12].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[12].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[12].electionCrimes;
+    $scope.gridPoli = $scope.masterData[12].politician;
+    $scope.bUnder = $scope.masterData[12].boundDownUnder;
+    $scope.vul = $scope.masterData[12].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[12].warrantedCriminals;
+    $scope.cond = $scope.masterData[12].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl14', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[13].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[13].councellor;
+    $scope.gridRespected = $scope.masterData[13].respectedPpl;
+    $scope.gridRetired = $scope.masterData[13].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[13].neighbourPolling;
+    $scope.gridArms = $scope.masterData[13].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[13].historySheeter;
+    $scope.stName = $scope.masterData[13].stationName;
+    $scope.lat = $scope.masterData[13].latitude;
+    $scope.lon = $scope.masterData[13].longitude;
+    $scope.pop = $scope.masterData[13].population;
+    $scope.vot = $scope.masterData[13].voters;
+    $scope.vill = $scope.masterData[13].villageMohalla;
+    $scope.gridCon = $scope.masterData[13].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[13].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[13].electionCrimes;
+    $scope.gridPoli = $scope.masterData[13].politician;
+    $scope.bUnder = $scope.masterData[13].boundDownUnder;
+    $scope.vul = $scope.masterData[13].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[13].warrantedCriminals;
+    $scope.cond = $scope.masterData[13].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl15', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[14].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[14].councellor;
+    $scope.gridRespected = $scope.masterData[14].respectedPpl;
+    $scope.gridRetired = $scope.masterData[14].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[14].neighbourPolling;
+    $scope.gridArms = $scope.masterData[14].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[14].historySheeter;
+    $scope.stName = $scope.masterData[14].stationName;
+    $scope.lat = $scope.masterData[14].latitude;
+    $scope.lon = $scope.masterData[14].longitude;
+    $scope.pop = $scope.masterData[14].population;
+    $scope.vot = $scope.masterData[14].voters;
+    $scope.vill = $scope.masterData[14].villageMohalla;
+    $scope.gridCon = $scope.masterData[14].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[14].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[14].electionCrimes;
+    $scope.gridPoli = $scope.masterData[14].politician;
+    $scope.bUnder = $scope.masterData[14].boundDownUnder;
+    $scope.vul = $scope.masterData[14].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[14].warrantedCriminals;
+    $scope.cond = $scope.masterData[14].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl16', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[15].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[15].councellor;
+    $scope.gridRespected = $scope.masterData[15].respectedPpl;
+    $scope.gridRetired = $scope.masterData[15].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[15].neighbourPolling;
+    $scope.gridArms = $scope.masterData[15].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[15].historySheeter;
+    $scope.stName = $scope.masterData[15].stationName;
+    $scope.lat = $scope.masterData[15].latitude;
+    $scope.lon = $scope.masterData[15].longitude;
+    $scope.pop = $scope.masterData[15].population;
+    $scope.vot = $scope.masterData[15].voters;
+    $scope.vill = $scope.masterData[15].villageMohalla;
+    $scope.gridCon = $scope.masterData[15].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[15].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[15].electionCrimes;
+    $scope.gridPoli = $scope.masterData[15].politician;
+    $scope.bUnder = $scope.masterData[15].boundDownUnder;
+    $scope.vul = $scope.masterData[15].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[15].warrantedCriminals;
+    $scope.cond = $scope.masterData[15].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl17', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[16].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[16].councellor;
+    $scope.gridRespected = $scope.masterData[16].respectedPpl;
+    $scope.gridRetired = $scope.masterData[16].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[16].neighbourPolling;
+    $scope.gridArms = $scope.masterData[16].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[16].historySheeter;
+    $scope.stName = $scope.masterData[16].stationName;
+    $scope.lat = $scope.masterData[16].latitude;
+    $scope.lon = $scope.masterData[16].longitude;
+    $scope.pop = $scope.masterData[16].population;
+    $scope.vot = $scope.masterData[16].voters;
+    $scope.vill = $scope.masterData[16].villageMohalla;
+    $scope.gridCon = $scope.masterData[16].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[16].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[16].electionCrimes;
+    $scope.gridPoli = $scope.masterData[16].politician;
+    $scope.bUnder = $scope.masterData[16].boundDownUnder;
+    $scope.vul = $scope.masterData[16].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[16].warrantedCriminals;
+    $scope.cond = $scope.masterData[16].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl18', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[17].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[17].councellor;
+    $scope.gridRespected = $scope.masterData[17].respectedPpl;
+    $scope.gridRetired = $scope.masterData[17].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[17].neighbourPolling;
+    $scope.gridArms = $scope.masterData[17].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[17].historySheeter;
+    $scope.stName = $scope.masterData[17].stationName;
+    $scope.lat = $scope.masterData[17].latitude;
+    $scope.lon = $scope.masterData[17].longitude;
+    $scope.pop = $scope.masterData[17].population;
+    $scope.vot = $scope.masterData[17].voters;
+    $scope.vill = $scope.masterData[17].villageMohalla;
+    $scope.gridCon = $scope.masterData[17].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[17].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[17].electionCrimes;
+    $scope.gridPoli = $scope.masterData[17].politician;
+    $scope.bUnder = $scope.masterData[17].boundDownUnder;
+    $scope.vul = $scope.masterData[17].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[17].warrantedCriminals;
+    $scope.cond = $scope.masterData[17].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl19', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[18].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[18].councellor;
+    $scope.gridRespected = $scope.masterData[18].respectedPpl;
+    $scope.gridRetired = $scope.masterData[18].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[18].neighbourPolling;
+    $scope.gridArms = $scope.masterData[18].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[18].historySheeter;
+    $scope.stName = $scope.masterData[18].stationName;
+    $scope.lat = $scope.masterData[18].latitude;
+    $scope.lon = $scope.masterData[18].longitude;
+    $scope.pop = $scope.masterData[18].population;
+    $scope.vot = $scope.masterData[18].voters;
+    $scope.vill = $scope.masterData[18].villageMohalla;
+    $scope.gridCon = $scope.masterData[18].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[18].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[18].electionCrimes;
+    $scope.gridPoli = $scope.masterData[18].politician;
+    $scope.bUnder = $scope.masterData[18].boundDownUnder;
+    $scope.vul = $scope.masterData[18].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[18].warrantedCriminals;
+    $scope.cond = $scope.masterData[18].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl20', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[19].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[19].councellor;
+    $scope.gridRespected = $scope.masterData[19].respectedPpl;
+    $scope.gridRetired = $scope.masterData[19].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[19].neighbourPolling;
+    $scope.gridArms = $scope.masterData[19].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[19].historySheeter;
+    $scope.stName = $scope.masterData[19].stationName;
+    $scope.lat = $scope.masterData[19].latitude;
+    $scope.lon = $scope.masterData[19].longitude;
+    $scope.pop = $scope.masterData[19].population;
+    $scope.vot = $scope.masterData[19].voters;
+    $scope.vill = $scope.masterData[19].villageMohalla;
+    $scope.gridCon = $scope.masterData[19].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[19].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[19].electionCrimes;
+    $scope.gridPoli = $scope.masterData[19].politician;
+    $scope.bUnder = $scope.masterData[19].boundDownUnder;
+    $scope.vul = $scope.masterData[19].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[19].warrantedCriminals;
+    $scope.cond = $scope.masterData[19].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl21', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[20].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[20].councellor;
+    $scope.gridRespected = $scope.masterData[20].respectedPpl;
+    $scope.gridRetired = $scope.masterData[20].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[20].neighbourPolling;
+    $scope.gridArms = $scope.masterData[20].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[20].historySheeter;
+    $scope.stName = $scope.masterData[20].stationName;
+    $scope.lat = $scope.masterData[20].latitude;
+    $scope.lon = $scope.masterData[20].longitude;
+    $scope.pop = $scope.masterData[20].population;
+    $scope.vot = $scope.masterData[20].voters;
+    $scope.vill = $scope.masterData[20].villageMohalla;
+    $scope.gridCon = $scope.masterData[20].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[20].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[20].electionCrimes;
+    $scope.gridPoli = $scope.masterData[20].politician;
+    $scope.bUnder = $scope.masterData[20].boundDownUnder;
+    $scope.vul = $scope.masterData[20].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[20].warrantedCriminals;
+    $scope.cond = $scope.masterData[20].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl22', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[21].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[21].councellor;
+    $scope.gridRespected = $scope.masterData[21].respectedPpl;
+    $scope.gridRetired = $scope.masterData[21].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[21].neighbourPolling;
+    $scope.gridArms = $scope.masterData[21].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[21].historySheeter;
+    $scope.stName = $scope.masterData[21].stationName;
+    $scope.lat = $scope.masterData[21].latitude;
+    $scope.lon = $scope.masterData[21].longitude;
+    $scope.pop = $scope.masterData[21].population;
+    $scope.vot = $scope.masterData[21].voters;
+    $scope.vill = $scope.masterData[21].villageMohalla;
+    $scope.gridCon = $scope.masterData[21].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[21].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[21].electionCrimes;
+    $scope.gridPoli = $scope.masterData[21].politician;
+    $scope.bUnder = $scope.masterData[21].boundDownUnder;
+    $scope.vul = $scope.masterData[21].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[21].warrantedCriminals;
+    $scope.cond = $scope.masterData[21].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl23', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[22].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[22].councellor;
+    $scope.gridRespected = $scope.masterData[22].respectedPpl;
+    $scope.gridRetired = $scope.masterData[22].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[22].neighbourPolling;
+    $scope.gridArms = $scope.masterData[22].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[22].historySheeter;
+    $scope.stName = $scope.masterData[22].stationName;
+    $scope.lat = $scope.masterData[22].latitude;
+    $scope.lon = $scope.masterData[22].longitude;
+    $scope.pop = $scope.masterData[22].population;
+    $scope.vot = $scope.masterData[22].voters;
+    $scope.vill = $scope.masterData[22].villageMohalla;
+    $scope.gridCon = $scope.masterData[22].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[22].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[22].electionCrimes;
+    $scope.gridPoli = $scope.masterData[22].politician;
+    $scope.bUnder = $scope.masterData[22].boundDownUnder;
+    $scope.vul = $scope.masterData[22].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[22].warrantedCriminals;
+    $scope.cond = $scope.masterData[22].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl24', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[23].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[23].councellor;
+    $scope.gridRespected = $scope.masterData[23].respectedPpl;
+    $scope.gridRetired = $scope.masterData[23].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[23].neighbourPolling;
+    $scope.gridArms = $scope.masterData[23].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[23].historySheeter;
+    $scope.stName = $scope.masterData[23].stationName;
+    $scope.lat = $scope.masterData[23].latitude;
+    $scope.lon = $scope.masterData[23].longitude;
+    $scope.pop = $scope.masterData[23].population;
+    $scope.vot = $scope.masterData[23].voters;
+    $scope.vill = $scope.masterData[23].villageMohalla;
+    $scope.gridCon = $scope.masterData[23].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[23].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[23].electionCrimes;
+    $scope.gridPoli = $scope.masterData[23].politician;
+    $scope.bUnder = $scope.masterData[23].boundDownUnder;
+    $scope.vul = $scope.masterData[23].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[23].warrantedCriminals;
+    $scope.cond = $scope.masterData[23].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl25', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[24].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[24].councellor;
+    $scope.gridRespected = $scope.masterData[24].respectedPpl;
+    $scope.gridRetired = $scope.masterData[24].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[24].neighbourPolling;
+    $scope.gridArms = $scope.masterData[24].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[24].historySheeter;
+    $scope.stName = $scope.masterData[24].stationName;
+    $scope.lat = $scope.masterData[24].latitude;
+    $scope.lon = $scope.masterData[24].longitude;
+    $scope.pop = $scope.masterData[24].population;
+    $scope.vot = $scope.masterData[24].voters;
+    $scope.vill = $scope.masterData[24].villageMohalla;
+    $scope.gridCon = $scope.masterData[24].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[24].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[24].electionCrimes;
+    $scope.gridPoli = $scope.masterData[24].politician;
+    $scope.bUnder = $scope.masterData[24].boundDownUnder;
+    $scope.vul = $scope.masterData[24].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[24].warrantedCriminals;
+    $scope.cond = $scope.masterData[24].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl26', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[25].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[25].councellor;
+    $scope.gridRespected = $scope.masterData[25].respectedPpl;
+    $scope.gridRetired = $scope.masterData[25].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[25].neighbourPolling;
+    $scope.gridArms = $scope.masterData[25].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[25].historySheeter;
+    $scope.stName = $scope.masterData[25].stationName;
+    $scope.lat = $scope.masterData[25].latitude;
+    $scope.lon = $scope.masterData[25].longitude;
+    $scope.pop = $scope.masterData[25].population;
+    $scope.vot = $scope.masterData[25].voters;
+    $scope.vill = $scope.masterData[25].villageMohalla;
+    $scope.gridCon = $scope.masterData[25].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[25].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[25].electionCrimes;
+    $scope.gridPoli = $scope.masterData[25].politician;
+    $scope.bUnder = $scope.masterData[25].boundDownUnder;
+    $scope.vul = $scope.masterData[25].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[25].warrantedCriminals;
+    $scope.cond = $scope.masterData[25].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl27', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[26].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[26].councellor;
+    $scope.gridRespected = $scope.masterData[26].respectedPpl;
+    $scope.gridRetired = $scope.masterData[26].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[26].neighbourPolling;
+    $scope.gridArms = $scope.masterData[26].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[26].historySheeter;
+    $scope.stName = $scope.masterData[26].stationName;
+    $scope.lat = $scope.masterData[26].latitude;
+    $scope.lon = $scope.masterData[26].longitude;
+    $scope.pop = $scope.masterData[26].population;
+    $scope.vot = $scope.masterData[26].voters;
+    $scope.vill = $scope.masterData[26].villageMohalla;
+    $scope.gridCon = $scope.masterData[26].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[26].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[26].electionCrimes;
+    $scope.gridPoli = $scope.masterData[26].politician;
+    $scope.bUnder = $scope.masterData[26].boundDownUnder;
+    $scope.vul = $scope.masterData[26].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[26].warrantedCriminals;
+    $scope.cond = $scope.masterData[26].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl28', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[27].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[27].councellor;
+    $scope.gridRespected = $scope.masterData[27].respectedPpl;
+    $scope.gridRetired = $scope.masterData[27].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[27].neighbourPolling;
+    $scope.gridArms = $scope.masterData[27].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[27].historySheeter;
+    $scope.stName = $scope.masterData[27].stationName;
+    $scope.lat = $scope.masterData[27].latitude;
+    $scope.lon = $scope.masterData[27].longitude;
+    $scope.pop = $scope.masterData[27].population;
+    $scope.vot = $scope.masterData[27].voters;
+    $scope.vill = $scope.masterData[27].villageMohalla;
+    $scope.gridCon = $scope.masterData[27].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[27].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[27].electionCrimes;
+    $scope.gridPoli = $scope.masterData[27].politician;
+    $scope.bUnder = $scope.masterData[27].boundDownUnder;
+    $scope.vul = $scope.masterData[27].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[27].warrantedCriminals;
+    $scope.cond = $scope.masterData[27].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl29', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[28].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[28].councellor;
+    $scope.gridRespected = $scope.masterData[28].respectedPpl;
+    $scope.gridRetired = $scope.masterData[28].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[28].neighbourPolling;
+    $scope.gridArms = $scope.masterData[28].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[28].historySheeter;
+    $scope.stName = $scope.masterData[28].stationName;
+    $scope.lat = $scope.masterData[28].latitude;
+    $scope.lon = $scope.masterData[28].longitude;
+    $scope.pop = $scope.masterData[28].population;
+    $scope.vot = $scope.masterData[28].voters;
+    $scope.vill = $scope.masterData[28].villageMohalla;
+    $scope.gridCon = $scope.masterData[28].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[28].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[28].electionCrimes;
+    $scope.gridPoli = $scope.masterData[28].politician;
+    $scope.bUnder = $scope.masterData[28].boundDownUnder;
+    $scope.vul = $scope.masterData[28].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[28].warrantedCriminals;
+    $scope.cond = $scope.masterData[28].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl30', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[29].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[29].councellor;
+    $scope.gridRespected = $scope.masterData[29].respectedPpl;
+    $scope.gridRetired = $scope.masterData[29].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[29].neighbourPolling;
+    $scope.gridArms = $scope.masterData[29].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[29].historySheeter;
+    $scope.stName = $scope.masterData[29].stationName;
+    $scope.lat = $scope.masterData[29].latitude;
+    $scope.lon = $scope.masterData[29].longitude;
+    $scope.pop = $scope.masterData[29].population;
+    $scope.vot = $scope.masterData[29].voters;
+    $scope.vill = $scope.masterData[29].villageMohalla;
+    $scope.gridCon = $scope.masterData[29].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[29].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[29].electionCrimes;
+    $scope.gridPoli = $scope.masterData[29].politician;
+    $scope.bUnder = $scope.masterData[29].boundDownUnder;
+    $scope.vul = $scope.masterData[29].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[29].warrantedCriminals;
+    $scope.cond = $scope.masterData[29].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl31', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[30].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[30].councellor;
+    $scope.gridRespected = $scope.masterData[30].respectedPpl;
+    $scope.gridRetired = $scope.masterData[30].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[30].neighbourPolling;
+    $scope.gridArms = $scope.masterData[30].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[30].historySheeter;
+    $scope.stName = $scope.masterData[30].stationName;
+    $scope.lat = $scope.masterData[30].latitude;
+    $scope.lon = $scope.masterData[30].longitude;
+    $scope.pop = $scope.masterData[30].population;
+    $scope.vot = $scope.masterData[30].voters;
+    $scope.vill = $scope.masterData[30].villageMohalla;
+    $scope.gridCon = $scope.masterData[30].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[30].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[30].electionCrimes;
+    $scope.gridPoli = $scope.masterData[30].politician;
+    $scope.bUnder = $scope.masterData[30].boundDownUnder;
+    $scope.vul = $scope.masterData[30].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[30].warrantedCriminals;
+    $scope.cond = $scope.masterData[30].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl32', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[31].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[31].councellor;
+    $scope.gridRespected = $scope.masterData[31].respectedPpl;
+    $scope.gridRetired = $scope.masterData[31].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[31].neighbourPolling;
+    $scope.gridArms = $scope.masterData[31].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[31].historySheeter;
+    $scope.stName = $scope.masterData[31].stationName;
+    $scope.lat = $scope.masterData[31].latitude;
+    $scope.lon = $scope.masterData[31].longitude;
+    $scope.pop = $scope.masterData[31].population;
+    $scope.vot = $scope.masterData[31].voters;
+    $scope.vill = $scope.masterData[31].villageMohalla;
+    $scope.gridCon = $scope.masterData[31].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[31].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[31].electionCrimes;
+    $scope.gridPoli = $scope.masterData[31].politician;
+    $scope.bUnder = $scope.masterData[31].boundDownUnder;
+    $scope.vul = $scope.masterData[31].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[31].warrantedCriminals;
+    $scope.cond = $scope.masterData[31].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl33', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[32].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[32].councellor;
+    $scope.gridRespected = $scope.masterData[32].respectedPpl;
+    $scope.gridRetired = $scope.masterData[32].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[32].neighbourPolling;
+    $scope.gridArms = $scope.masterData[32].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[32].historySheeter;
+    $scope.stName = $scope.masterData[32].stationName;
+    $scope.lat = $scope.masterData[32].latitude;
+    $scope.lon = $scope.masterData[32].longitude;
+    $scope.pop = $scope.masterData[32].population;
+    $scope.vot = $scope.masterData[32].voters;
+    $scope.vill = $scope.masterData[32].villageMohalla;
+    $scope.gridCon = $scope.masterData[32].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[32].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[32].electionCrimes;
+    $scope.gridPoli = $scope.masterData[32].politician;
+    $scope.bUnder = $scope.masterData[32].boundDownUnder;
+    $scope.vul = $scope.masterData[32].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[32].warrantedCriminals;
+    $scope.cond = $scope.masterData[32].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl34', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[33].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[33].councellor;
+    $scope.gridRespected = $scope.masterData[33].respectedPpl;
+    $scope.gridRetired = $scope.masterData[33].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[33].neighbourPolling;
+    $scope.gridArms = $scope.masterData[33].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[33].historySheeter;
+    $scope.stName = $scope.masterData[33].stationName;
+    $scope.lat = $scope.masterData[33].latitude;
+    $scope.lon = $scope.masterData[33].longitude;
+    $scope.pop = $scope.masterData[33].population;
+    $scope.vot = $scope.masterData[33].voters;
+    $scope.vill = $scope.masterData[33].villageMohalla;
+    $scope.gridCon = $scope.masterData[33].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[33].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[33].electionCrimes;
+    $scope.gridPoli = $scope.masterData[33].politician;
+    $scope.bUnder = $scope.masterData[33].boundDownUnder;
+    $scope.vul = $scope.masterData[33].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[33].warrantedCriminals;
+    $scope.cond = $scope.masterData[33].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl35', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[34].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[34].councellor;
+    $scope.gridRespected = $scope.masterData[34].respectedPpl;
+    $scope.gridRetired = $scope.masterData[34].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[34].neighbourPolling;
+    $scope.gridArms = $scope.masterData[34].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[34].historySheeter;
+    $scope.stName = $scope.masterData[34].stationName;
+    $scope.lat = $scope.masterData[34].latitude;
+    $scope.lon = $scope.masterData[34].longitude;
+    $scope.pop = $scope.masterData[34].population;
+    $scope.vot = $scope.masterData[34].voters;
+    $scope.vill = $scope.masterData[34].villageMohalla;
+    $scope.gridCon = $scope.masterData[34].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[34].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[34].electionCrimes;
+    $scope.gridPoli = $scope.masterData[34].politician;
+    $scope.bUnder = $scope.masterData[34].boundDownUnder;
+    $scope.vul = $scope.masterData[34].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[34].warrantedCriminals;
+    $scope.cond = $scope.masterData[34].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[34].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl36', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[35].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[35].councellor;
+    $scope.gridRespected = $scope.masterData[35].respectedPpl;
+    $scope.gridRetired = $scope.masterData[35].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[35].neighbourPolling;
+    $scope.gridArms = $scope.masterData[35].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[35].historySheeter;
+    $scope.stName = $scope.masterData[35].stationName;
+    $scope.lat = $scope.masterData[35].latitude;
+    $scope.lon = $scope.masterData[35].longitude;
+    $scope.pop = $scope.masterData[35].population;
+    $scope.vot = $scope.masterData[35].voters;
+    $scope.vill = $scope.masterData[35].villageMohalla;
+    $scope.gridCon = $scope.masterData[35].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[35].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[35].electionCrimes;
+    $scope.gridPoli = $scope.masterData[35].politician;
+    $scope.bUnder = $scope.masterData[35].boundDownUnder;
+    $scope.vul = $scope.masterData[35].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[35].warrantedCriminals;
+    $scope.cond = $scope.masterData[35].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[35].stationName);
+
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl37', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[36].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[36].councellor;
+    $scope.gridRespected = $scope.masterData[36].respectedPpl;
+    $scope.gridRetired = $scope.masterData[36].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[36].neighbourPolling;
+    $scope.gridArms = $scope.masterData[36].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[36].historySheeter;
+    $scope.stName = $scope.masterData[36].stationName;
+    $scope.lat = $scope.masterData[36].latitude;
+    $scope.lon = $scope.masterData[36].longitude;
+    $scope.pop = $scope.masterData[36].population;
+    $scope.vot = $scope.masterData[36].voters;
+    $scope.vill = $scope.masterData[36].villageMohalla;
+    $scope.gridCon = $scope.masterData[36].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[36].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[36].electionCrimes;
+    $scope.gridPoli = $scope.masterData[36].politician;
+    $scope.bUnder = $scope.masterData[36].boundDownUnder;
+    $scope.vul = $scope.masterData[36].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[36].warrantedCriminals;
+    $scope.cond = $scope.masterData[36].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[5].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl38', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[37].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[37].councellor;
+    $scope.gridRespected = $scope.masterData[37].respectedPpl;
+    $scope.gridRetired = $scope.masterData[37].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[37].neighbourPolling;
+    $scope.gridArms = $scope.masterData[37].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[37].historySheeter;
+    $scope.stName = $scope.masterData[37].stationName;
+    $scope.lat = $scope.masterData[37].latitude;
+    $scope.lon = $scope.masterData[37].longitude;
+    $scope.pop = $scope.masterData[37].population;
+    $scope.vot = $scope.masterData[37].voters;
+    $scope.vill = $scope.masterData[37].villageMohalla;
+    $scope.gridCon = $scope.masterData[37].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[37].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[37].electionCrimes;
+    $scope.gridPoli = $scope.masterData[37].politician;
+    $scope.bUnder = $scope.masterData[37].boundDownUnder;
+    $scope.vul = $scope.masterData[37].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[37].warrantedCriminals;
+    $scope.cond = $scope.masterData[37].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[6].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl39', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[38].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[38].councellor;
+    $scope.gridRespected = $scope.masterData[38].respectedPpl;
+    $scope.gridRetired = $scope.masterData[38].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[38].neighbourPolling;
+    $scope.gridArms = $scope.masterData[38].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[38].historySheeter;
+    $scope.stName = $scope.masterData[38].stationName;
+    $scope.lat = $scope.masterData[38].latitude;
+    $scope.lon = $scope.masterData[38].longitude;
+    $scope.pop = $scope.masterData[38].population;
+    $scope.vot = $scope.masterData[38].voters;
+    $scope.vill = $scope.masterData[38].villageMohalla;
+    $scope.gridCon = $scope.masterData[38].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[38].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[38].electionCrimes;
+    $scope.gridPoli = $scope.masterData[38].politician;
+    $scope.bUnder = $scope.masterData[38].boundDownUnder;
+    $scope.vul = $scope.masterData[38].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[38].warrantedCriminals;
+    $scope.cond = $scope.masterData[38].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl40', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[39].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[39].councellor;
+    $scope.gridRespected = $scope.masterData[39].respectedPpl;
+    $scope.gridRetired = $scope.masterData[39].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[39].neighbourPolling;
+    $scope.gridArms = $scope.masterData[39].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[39].historySheeter;
+    $scope.stName = $scope.masterData[39].stationName;
+    $scope.lat = $scope.masterData[39].latitude;
+    $scope.lon = $scope.masterData[39].longitude;
+    $scope.pop = $scope.masterData[39].population;
+    $scope.vot = $scope.masterData[39].voters;
+    $scope.vill = $scope.masterData[39].villageMohalla;
+    $scope.gridCon = $scope.masterData[39].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[39].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[39].electionCrimes;
+    $scope.gridPoli = $scope.masterData[39].politician;
+    $scope.bUnder = $scope.masterData[39].boundDownUnder;
+    $scope.vul = $scope.masterData[39].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[39].warrantedCriminals;
+    $scope.cond = $scope.masterData[39].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl41', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[40].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[40].councellor;
+    $scope.gridRespected = $scope.masterData[40].respectedPpl;
+    $scope.gridRetired = $scope.masterData[40].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[40].neighbourPolling;
+    $scope.gridArms = $scope.masterData[40].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[40].historySheeter;
+    $scope.stName = $scope.masterData[40].stationName;
+    $scope.lat = $scope.masterData[40].latitude;
+    $scope.lon = $scope.masterData[40].longitude;
+    $scope.pop = $scope.masterData[40].population;
+    $scope.vot = $scope.masterData[40].voters;
+    $scope.vill = $scope.masterData[40].villageMohalla;
+    $scope.gridCon = $scope.masterData[40].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[40].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[40].electionCrimes;
+    $scope.gridPoli = $scope.masterData[40].politician;
+    $scope.bUnder = $scope.masterData[40].boundDownUnder;
+    $scope.vul = $scope.masterData[40].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[40].warrantedCriminals;
+    $scope.cond = $scope.masterData[40].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl42', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[41].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[41].councellor;
+    $scope.gridRespected = $scope.masterData[41].respectedPpl;
+    $scope.gridRetired = $scope.masterData[41].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[41].neighbourPolling;
+    $scope.gridArms = $scope.masterData[41].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[41].historySheeter;
+    $scope.stName = $scope.masterData[41].stationName;
+    $scope.lat = $scope.masterData[41].latitude;
+    $scope.lon = $scope.masterData[41].longitude;
+    $scope.pop = $scope.masterData[41].population;
+    $scope.vot = $scope.masterData[41].voters;
+    $scope.vill = $scope.masterData[41].villageMohalla;
+    $scope.gridCon = $scope.masterData[41].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[41].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[41].electionCrimes;
+    $scope.gridPoli = $scope.masterData[41].politician;
+    $scope.bUnder = $scope.masterData[41].boundDownUnder;
+    $scope.vul = $scope.masterData[41].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[41].warrantedCriminals;
+    $scope.cond = $scope.masterData[41].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl43', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[42].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[42].councellor;
+    $scope.gridRespected = $scope.masterData[42].respectedPpl;
+    $scope.gridRetired = $scope.masterData[42].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[42].neighbourPolling;
+    $scope.gridArms = $scope.masterData[42].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[42].historySheeter;
+    $scope.stName = $scope.masterData[42].stationName;
+    $scope.lat = $scope.masterData[42].latitude;
+    $scope.lon = $scope.masterData[42].longitude;
+    $scope.pop = $scope.masterData[42].population;
+    $scope.vot = $scope.masterData[42].voters;
+    $scope.vill = $scope.masterData[42].villageMohalla;
+    $scope.gridCon = $scope.masterData[42].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[42].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[42].electionCrimes;
+    $scope.gridPoli = $scope.masterData[42].politician;
+    $scope.bUnder = $scope.masterData[42].boundDownUnder;
+    $scope.vul = $scope.masterData[42].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[42].warrantedCriminals;
+    $scope.cond = $scope.masterData[42].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl44', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[43].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[43].councellor;
+    $scope.gridRespected = $scope.masterData[43].respectedPpl;
+    $scope.gridRetired = $scope.masterData[43].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[43].neighbourPolling;
+    $scope.gridArms = $scope.masterData[43].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[43].historySheeter;
+    $scope.stName = $scope.masterData[43].stationName;
+    $scope.lat = $scope.masterData[43].latitude;
+    $scope.lon = $scope.masterData[43].longitude;
+    $scope.pop = $scope.masterData[43].population;
+    $scope.vot = $scope.masterData[43].voters;
+    $scope.vill = $scope.masterData[43].villageMohalla;
+    $scope.gridCon = $scope.masterData[43].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[43].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[43].electionCrimes;
+    $scope.gridPoli = $scope.masterData[43].politician;
+    $scope.bUnder = $scope.masterData[43].boundDownUnder;
+    $scope.vul = $scope.masterData[43].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[43].warrantedCriminals;
+    $scope.cond = $scope.masterData[43].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl45', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[44].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[44].councellor;
+    $scope.gridRespected = $scope.masterData[44].respectedPpl;
+    $scope.gridRetired = $scope.masterData[44].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[44].neighbourPolling;
+    $scope.gridArms = $scope.masterData[44].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[44].historySheeter;
+    $scope.stName = $scope.masterData[44].stationName;
+    $scope.lat = $scope.masterData[44].latitude;
+    $scope.lon = $scope.masterData[44].longitude;
+    $scope.pop = $scope.masterData[44].population;
+    $scope.vot = $scope.masterData[44].voters;
+    $scope.vill = $scope.masterData[44].villageMohalla;
+    $scope.gridCon = $scope.masterData[44].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[44].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[44].electionCrimes;
+    $scope.gridPoli = $scope.masterData[44].politician;
+    $scope.bUnder = $scope.masterData[44].boundDownUnder;
+    $scope.vul = $scope.masterData[44].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[44].warrantedCriminals;
+    $scope.cond = $scope.masterData[44].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl46', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[45].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[45].councellor;
+    $scope.gridRespected = $scope.masterData[45].respectedPpl;
+    $scope.gridRetired = $scope.masterData[45].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[45].neighbourPolling;
+    $scope.gridArms = $scope.masterData[45].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[45].historySheeter;
+    $scope.stName = $scope.masterData[45].stationName;
+    $scope.lat = $scope.masterData[45].latitude;
+    $scope.lon = $scope.masterData[45].longitude;
+    $scope.pop = $scope.masterData[45].population;
+    $scope.vot = $scope.masterData[45].voters;
+    $scope.vill = $scope.masterData[45].villageMohalla;
+    $scope.gridCon = $scope.masterData[45].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[45].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[45].electionCrimes;
+    $scope.gridPoli = $scope.masterData[45].politician;
+    $scope.bUnder = $scope.masterData[45].boundDownUnder;
+    $scope.vul = $scope.masterData[45].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[45].warrantedCriminals;
+    $scope.cond = $scope.masterData[45].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl47', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[46].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[46].councellor;
+    $scope.gridRespected = $scope.masterData[46].respectedPpl;
+    $scope.gridRetired = $scope.masterData[46].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[46].neighbourPolling;
+    $scope.gridArms = $scope.masterData[46].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[46].historySheeter;
+    $scope.stName = $scope.masterData[46].stationName;
+    $scope.lat = $scope.masterData[46].latitude;
+    $scope.lon = $scope.masterData[46].longitude;
+    $scope.pop = $scope.masterData[46].population;
+    $scope.vot = $scope.masterData[46].voters;
+    $scope.vill = $scope.masterData[46].villageMohalla;
+    $scope.gridCon = $scope.masterData[46].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[46].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[46].electionCrimes;
+    $scope.gridPoli = $scope.masterData[46].politician;
+    $scope.bUnder = $scope.masterData[46].boundDownUnder;
+    $scope.vul = $scope.masterData[46].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[46].warrantedCriminals;
+    $scope.cond = $scope.masterData[46].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl48', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[47].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[47].councellor;
+    $scope.gridRespected = $scope.masterData[47].respectedPpl;
+    $scope.gridRetired = $scope.masterData[47].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[47].neighbourPolling;
+    $scope.gridArms = $scope.masterData[47].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[47].historySheeter;
+    $scope.stName = $scope.masterData[47].stationName;
+    $scope.lat = $scope.masterData[47].latitude;
+    $scope.lon = $scope.masterData[47].longitude;
+    $scope.pop = $scope.masterData[47].population;
+    $scope.vot = $scope.masterData[47].voters;
+    $scope.vill = $scope.masterData[47].villageMohalla;
+    $scope.gridCon = $scope.masterData[47].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[47].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[47].electionCrimes;
+    $scope.gridPoli = $scope.masterData[47].politician;
+    $scope.bUnder = $scope.masterData[47].boundDownUnder;
+    $scope.vul = $scope.masterData[47].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[47].warrantedCriminals;
+    $scope.cond = $scope.masterData[47].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl49', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[48].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[48].councellor;
+    $scope.gridRespected = $scope.masterData[48].respectedPpl;
+    $scope.gridRetired = $scope.masterData[48].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[48].neighbourPolling;
+    $scope.gridArms = $scope.masterData[48].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[48].historySheeter;
+    $scope.stName = $scope.masterData[48].stationName;
+    $scope.lat = $scope.masterData[48].latitude;
+    $scope.lon = $scope.masterData[48].longitude;
+    $scope.pop = $scope.masterData[48].population;
+    $scope.vot = $scope.masterData[48].voters;
+    $scope.vill = $scope.masterData[48].villageMohalla;
+    $scope.gridCon = $scope.masterData[48].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[48].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[48].electionCrimes;
+    $scope.gridPoli = $scope.masterData[48].politician;
+    $scope.bUnder = $scope.masterData[48].boundDownUnder;
+    $scope.vul = $scope.masterData[48].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[48].warrantedCriminals;
+    $scope.cond = $scope.masterData[48].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl50', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[49].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[49].councellor;
+    $scope.gridRespected = $scope.masterData[49].respectedPpl;
+    $scope.gridRetired = $scope.masterData[49].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[49].neighbourPolling;
+    $scope.gridArms = $scope.masterData[49].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[49].historySheeter;
+    $scope.stName = $scope.masterData[49].stationName;
+    $scope.lat = $scope.masterData[49].latitude;
+    $scope.lon = $scope.masterData[49].longitude;
+    $scope.pop = $scope.masterData[49].population;
+    $scope.vot = $scope.masterData[49].voters;
+    $scope.vill = $scope.masterData[49].villageMohalla;
+    $scope.gridCon = $scope.masterData[49].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[49].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[49].electionCrimes;
+    $scope.gridPoli = $scope.masterData[49].politician;
+    $scope.bUnder = $scope.masterData[49].boundDownUnder;
+    $scope.vul = $scope.masterData[49].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[49].warrantedCriminals;
+    $scope.cond = $scope.masterData[49].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl51', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[50].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[50].councellor;
+    $scope.gridRespected = $scope.masterData[50].respectedPpl;
+    $scope.gridRetired = $scope.masterData[50].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[50].neighbourPolling;
+    $scope.gridArms = $scope.masterData[50].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[50].historySheeter;
+    $scope.stName = $scope.masterData[50].stationName;
+    $scope.lat = $scope.masterData[50].latitude;
+    $scope.lon = $scope.masterData[50].longitude;
+    $scope.pop = $scope.masterData[50].population;
+    $scope.vot = $scope.masterData[50].voters;
+    $scope.vill = $scope.masterData[50].villageMohalla;
+    $scope.gridCon = $scope.masterData[50].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[50].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[50].electionCrimes;
+    $scope.gridPoli = $scope.masterData[50].politician;
+    $scope.bUnder = $scope.masterData[50].boundDownUnder;
+    $scope.vul = $scope.masterData[50].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[50].warrantedCriminals;
+    $scope.cond = $scope.masterData[50].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl52', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[51].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[51].councellor;
+    $scope.gridRespected = $scope.masterData[51].respectedPpl;
+    $scope.gridRetired = $scope.masterData[51].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[51].neighbourPolling;
+    $scope.gridArms = $scope.masterData[51].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[51].historySheeter;
+    $scope.stName = $scope.masterData[51].stationName;
+    $scope.lat = $scope.masterData[51].latitude;
+    $scope.lon = $scope.masterData[51].longitude;
+    $scope.pop = $scope.masterData[51].population;
+    $scope.vot = $scope.masterData[51].voters;
+    $scope.vill = $scope.masterData[51].villageMohalla;
+    $scope.gridCon = $scope.masterData[51].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[51].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[51].electionCrimes;
+    $scope.gridPoli = $scope.masterData[51].politician;
+    $scope.bUnder = $scope.masterData[51].boundDownUnder;
+    $scope.vul = $scope.masterData[51].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[51].warrantedCriminals;
+    $scope.cond = $scope.masterData[51].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+.controller('drCtrl53', function($scope, $http){
+    $scope.gridChowkidar = {};
+    $scope.gridCouncellor = {};
+    $scope.gridRespected = {};
+    $scope.gridRetired = {};
+    $scope.gridNeighbour = {};
+    $scope.gridArms = {};
+    $scope.gridHistory = {};
+    $scope.stName = {};
+    $scope.gridCon = {};
+    $scope.gridCrime = {}
+    $scope.grideCrime = {};
+    $scope.gridPoli = {};
+    $scope.bUnder = {};
+    $scope.gridWar = {};
+    $scope.vul = {};
+    $scope.cond = {};
+    $scope.iPolPic = {};
+    $scope.iroutePic = {};
+    $scope.icollPtPic = {};
+
+    $http.get('json/daurala53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/daurala53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/daurala53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
+
+    $http.get('json/daurala.json').success(function(data){
+    $scope.masterData = data;
+    $scope.gridChowkidar = $scope.masterData[52].chowkidar;
+    $scope.gridCouncellor = $scope.masterData[52].councellor;
+    $scope.gridRespected = $scope.masterData[52].respectedPpl;
+    $scope.gridRetired = $scope.masterData[52].retiredGovtSer;
+    $scope.gridNeighbour = $scope.masterData[52].neighbourPolling;
+    $scope.gridArms = $scope.masterData[52].armsLicenseHolder;
+    $scope.gridHistory = $scope.masterData[52].historySheeter;
+    $scope.stName = $scope.masterData[52].stationName;
+    $scope.lat = $scope.masterData[52].latitude;
+    $scope.lon = $scope.masterData[52].longitude;
+    $scope.pop = $scope.masterData[52].population;
+    $scope.vot = $scope.masterData[52].voters;
+    $scope.vill = $scope.masterData[52].villageMohalla;
+    $scope.gridCon = $scope.masterData[52].convictedCriminals;
+    $scope.gridCrime = $scope.masterData[52].crimes5Yrs;
+    $scope.grideCrime = $scope.masterData[52].electionCrimes;
+    $scope.gridPoli = $scope.masterData[52].politician;
+    $scope.bUnder = $scope.masterData[52].boundDownUnder;
+    $scope.vul = $scope.masterData[52].vulnerabilityDetails;
+    $scope.gridWar = $scope.masterData[52].warrantedCriminals;
+    $scope.cond = $scope.masterData[52].condition;
+    
+      // $scope.stName.data = angular.fromJson($scope.masterData[7].stationName);
+
+      // $scope.stName.data = angular.fromJson($scope.masterData[4].stationName);
+
+    // console.table($scope.grideCrime);
+    });
+})
+// End of Daurala Controllers
+
 
 .controller('pkCtrl', function($scope, $http){
   $scope.items = [
