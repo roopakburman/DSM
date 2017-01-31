@@ -1,7 +1,5 @@
 var dsm = angular.module('ionicApp', ['ionic', 'ui.grid'])
-/*var ref = new Firebase("https://glowing-fire-7224.firebaseio.com/");*/
-window.currentUser = "";
-window.sortState ="";
+
 dsm.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -11121,155 +11119,153 @@ dsm.run(function($ionicPlatform, $rootScope) {
       }
     })
 //<<-- Daurala Routes End -->
+//<<-- Unused routes Start here -->
+  .state('menu.tabs.myEvents3', {
+      url: "/myEvents3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/myEvents3.html"
+        }
+      }
+    })
+  .state('menu.tabs.myPastEvents', {
+      url: "/myPastEvents",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/myPastEvents.html"
+        }
+      }
+    })
+  .state('menu.tabs.myPastEvents2', {
+      url: "/myPastEvents2",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/myPastEvents2.html"
+        }
+      }
+    })
+  .state('menu.tabs.myPastEvents3', {
+      url: "/myPastEvents3",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/myPastEvents3.html"
+        }
+      }
+    })
+  .state('menu.tabs.myPastEvents4', {
+      url: "/myPastEvents4",
+      views: {
+        'slide-tab': {
+          templateUrl: "templates/myPastEvents4.html"
+        }
+      }
+    })
+  .state('menu.tabs.podcast', {
+      url: "/podcast",
+      views: {
+        'podcast-tab': {
+          templateUrl: "templates/podcast.html",
+          controller: 'podcastCtrl'
+        }
+      }
+    })
+  .state('menu.tabs.search', {
+      url: "/search",
+      views: {
+        'search-tab': {
+          templateUrl: "templates/search.html",
+          controller: 'dataCtrl'
 
+        }
+      }
+    })
 
-.state('menu.tabs.myEvents3', {
-    url: "/myEvents3",
-    views: {
-      'slide-tab': {
-        templateUrl: "templates/myEvents3.html"
-      }
-    }
-  })
-.state('menu.tabs.myPastEvents', {
-    url: "/myPastEvents",
-    views: {
-      'slide-tab': {
-        templateUrl: "templates/myPastEvents.html"
-      }
-    }
-  })
-.state('menu.tabs.myPastEvents2', {
-    url: "/myPastEvents2",
-    views: {
-      'slide-tab': {
-        templateUrl: "templates/myPastEvents2.html"
-      }
-    }
-  })
-.state('menu.tabs.myPastEvents3', {
-    url: "/myPastEvents3",
-    views: {
-      'slide-tab': {
-        templateUrl: "templates/myPastEvents3.html"
-      }
-    }
-  })
-.state('menu.tabs.myPastEvents4', {
-    url: "/myPastEvents4",
-    views: {
-      'slide-tab': {
-        templateUrl: "templates/myPastEvents4.html"
-      }
-    }
-  })
-.state('menu.tabs.podcast', {
-    url: "/podcast",
-    views: {
-      'podcast-tab': {
-        templateUrl: "templates/podcast.html",
-        controller: 'podcastCtrl'
-      }
-    }
-  })
-.state('menu.tabs.search', {
-    url: "/search",
-    views: {
-      'search-tab': {
-        templateUrl: "templates/search.html",
-        controller: 'dataCtrl'
+  .state('menu.tabs.userProfileExtn', {
+      url: "/userProfileExtn",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/userProfileExtn.html",
+          controller: 'userProfileCtrl'
 
+        }
       }
-    }
-  })
-
-.state('menu.tabs.userProfileExtn', {
-    url: "/userProfileExtn",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/userProfileExtn.html",
-        controller: 'userProfileCtrl'
-
+    })
+  .state('menu.tabs.contactUs1', {
+      url: "/contactUs",
+      views: {
+        'buttons-tab': {
+          templateUrl: "templates/contactUs.html",
+          controller: 'userProfileCtrl'
+        }
       }
-    }
-  })
-.state('menu.tabs.contactUs1', {
-    url: "/contactUs",
-    views: {
-      'buttons-tab': {
-        templateUrl: "templates/contactUs.html",
-        controller: 'userProfileCtrl'
+    })
+  .state('menu.tabs.faView1', {
+      url: "/faView1",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView1.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.faView1', {
-    url: "/faView1",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView1.html"
+    })
+  .state('menu.tabs.img1', {
+      url: "/img1",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView1img.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.img1', {
-    url: "/img1",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView1img.html"
+    })
+  .state('menu.tabs.faView2', {
+      url: "/faView2",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView2.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.faView2', {
-    url: "/faView2",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView2.html"
+    })
+  .state('menu.tabs.img2', {
+      url: "/img2",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView2img.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.img2', {
-    url: "/img2",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView2img.html"
+    })
+  .state('menu.tabs.faView3', {
+      url: "/faView3",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView3.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.faView3', {
-    url: "/faView3",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView3.html"
+    })
+  .state('menu.tabs.img3', {
+      url: "/img3",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/faView3img.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.img3', {
-    url: "/img3",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/faView3img.html"
+    })
+  .state('menu.tabs.testPush', {
+      url: "/testPush",
+      views: {
+        'userProfile-tab': {
+          templateUrl: "templates/testPush.html"
+        }
       }
-    }
-  })
-.state('menu.tabs.testPush', {
-    url: "/testPush",
-    views: {
-      'userProfile-tab': {
-        templateUrl: "templates/testPush.html"
+    })
+    .state('menu.login', {
+      url: "/login",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/login.html",
+  	  controller: "loginCtrl"
+        }
       }
-    }
-  })
-  .state('menu.login', {
-    url: "/login",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/login.html",
-	  controller: "loginCtrl"
-      }
-    }
-  })
-
+    })
+//<<-- Unused routes End here -->
 	$urlRouterProvider.otherwise("/menu/login");
-
 })
 .controller('podcastCtrl', function($scope) {
 
@@ -11380,7 +11376,6 @@ dsm.run(function($ionicPlatform, $rootScope) {
 	$http.get('json/data.json').then(function(res){
 		$scope.data = res.data;
 	});
-
 function PeopleCtrl($scope, $http) {
 
     $scope.people = [];
@@ -11395,8 +11390,8 @@ function PeopleCtrl($scope, $http) {
             $scope.people = data;
         });
 
-    };
-}
+      };
+    }
 })
 .controller('ListCtrl', function ($scope) {
 
@@ -11450,14 +11445,10 @@ function PeopleCtrl($scope, $http) {
       id: 10
     }
   ];
-
 })
 .controller("ButtonsTabCtrl", function ($scope) {
-
 })
 .controller("chartCtrl3", function ($scope) {
-
-
 })
 // .controller('pollCntrl', function($scope, $http){
 // 	$http.get('json/feed.json').then(function(res){
@@ -11496,7 +11487,6 @@ function PeopleCtrl($scope, $http) {
     //             console.table(data);
     //     })
 })
-
 .controller('rrCtrl', function($scope, $http){
   $scope.items = [
     {
@@ -12111,6 +12101,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
+
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[0].chowkidar;
@@ -12161,6 +12161,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/ganganagar2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12213,6 +12223,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[2].chowkidar;
@@ -12263,6 +12283,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/ganganagar4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12315,6 +12345,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[4].chowkidar;
@@ -12365,6 +12405,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/ganganagar6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12417,6 +12467,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
+
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
     $scope.gridChowkidar = $scope.masterData[6].chowkidar;
@@ -12467,6 +12527,16 @@ function PeopleCtrl($scope, $http) {
     $scope.iPolPic = {};
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
+
+    $http.get('json/ganganagar8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12520,6 +12590,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12573,6 +12652,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12626,6 +12714,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12679,6 +12776,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12732,6 +12838,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12785,6 +12900,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12838,6 +12962,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12891,6 +13024,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -12944,6 +13086,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/ganganagar17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/ganganagar17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/ganganagar17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/gangaNagar.json').success(function(data){
     $scope.masterData = data;
@@ -17189,6 +17340,7 @@ function PeopleCtrl($scope, $http) {
 })
 
 //End of PallavPuram Controllers
+
 .controller('phCtrl', function($scope, $http){
   $scope.items = [
     {
@@ -17348,6 +17500,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17400,6 +17561,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17452,6 +17622,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17504,6 +17683,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17556,6 +17744,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17608,6 +17805,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17661,6 +17867,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17714,6 +17929,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17767,6 +17991,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17820,6 +18053,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17873,6 +18115,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17926,6 +18177,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -17979,6 +18239,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18032,6 +18301,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18085,6 +18363,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18138,6 +18425,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18191,6 +18487,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18244,7 +18549,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18298,7 +18611,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18352,7 +18673,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18406,7 +18735,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18460,7 +18797,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18514,7 +18859,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18568,7 +18921,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18622,7 +18983,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18676,7 +19045,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18730,7 +19107,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18784,7 +19169,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18838,7 +19231,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18892,7 +19293,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -18946,7 +19355,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -19000,7 +19417,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/phalawda32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -19054,6 +19479,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -19106,6 +19540,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/phalawda34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/phalawda34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/phalawda34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/phalawda.json').success(function(data){
     $scope.masterData = data;
@@ -46939,279 +47382,279 @@ function PeopleCtrl($scope, $http) {
 
 .controller('hsCtrl', function($scope, $http){
   $scope.items = [
-    {
-      "title": "Prathamik Vidhyalay 01 Tarapur",
-      "path": "#/menu/tab/hsDetail"
-    },
-    {
-      "title": "Prathamik Vidhyalay 02 Tarapur",
-      "path": "#/menu/tab/hsDetail2"
-    },
-    {
-      "title": "Prathamik Vidhyalay Choti Cham Road",
-      "path": "#/menu/tab/hsDetail3"
-    },
-    {
-      "title": "Prathamik Vidhyalay Manpur",
-      "path": "#/menu/tab/hsDetail4"
-    },
-    {
-      "title": "Uccha Prathamik Vidhyalay Rathora khurd Hastinapur",
-      "path": "#/menu/tab/hsDetail5"
-    },
-    {
-      "title": "Uccha Prathamik Vidhyalay Rathora Khurd",
-      "path": "#/menu/tab/hsDetail6"
-    },
-    {
-      "title": "Prathamik Vidhyalay Kunaira",
-      "path": "#/menu/tab/hsDetail7"
-    },
-    {
-      "title": "Prathamik Vidhyalay Kunaira Bam Nouli",
-      "path": "#/menu/tab/hsDetail8"
-    },
-    {
-      "title": "Prathamik Vidhyalay Kunaira Rathoura Kala",
-      "path": "#/menu/tab/hsDetail9"
-    },
-    {
-      "title": "Prathamik Vidhyalay Hansapur Parshapur",
-      "path": "#/menu/tab/hsDetail10"
-    },
-    {
-      "title": "Prathamik Vidhyalay Sirjepur",
-      "path": "#/menu/tab/hsDetail11"
-    },
-    {
-      "title": "Prathamik Vidhyalay 01 Latifpur",
-      "path": "#/menu/tab/hsDetail12"
-    },
-    {
-      "title": "Prathamik Vidhyalay 02 Latifpur",
-      "path": "#/menu/tab/hsDetail13"
-    },
-    {
-      "title": "Prathamik Vidhyalay Latifpur Kankarkhera",
-      "path": "#/menu/tab/hsDetail14"
-    },
-    {
-      "title": "Prathamik Vidhyalay Rustam aka Bhikund",
-      "path": "#/menu/tab/hsDetail15"
-    },
-    {
-      "title": "Prathamik Vidhyalay Jalalpur aka Makbulpur",
-      "path": "#/menu/tab/hsDetail16"
-    },
-    {
-      "title": "Prathamik Vidhyalay 01 Dudhali Khadar",
-      "path": "#/menu/tab/hsDetail17"
-    },
-    {
-      "title": "Prathamik Vidhyalay 02 Dudhali Khadar",
-      "path": "#/menu/tab/hsDetail18"
-    },
-    {
-      "title": "Prathamik Vidhyalay Aedalpur",
-      "path": "#/menu/tab/hsDetail19"
-    },
-    {
-      "title": "Prathamik Vidhyalay Jharkka",
-      "path": "#/menu/tab/hsDetail20"
-    },
-    {
-      "title": "Prathamik Vidhyalay Doulatpur Aka Malipur",
-      "path": "#/menu/tab/hsDetail21"
-    },
-    {
-      "title": "Vigyan Kender 01 Hastinapur",
-      "path": "#/menu/tab/hsDetail22"
-    },
-    {
-      "title": "Krishi Vigyan Kender 02",
-      "path": "#/menu/tab/hsDetail23"
-    },
-    {
-      "title": "Rajkiya Inter Colleg Hastinapur",
-      "path": "#/menu/tab/hsDetail24"
-    },
-    {
-      "title": "Rajkiya Inter Collge 02",
-      "path": "#/menu/tab/hsDetail25"
-    },
-    {
-      "title": "Rajkiya Inter Collge 03",
-      "path": "#/menu/tab/hsDetail26"
-    },
-    {
-      "title": "Rajkiya Inter Collge 04",
-      "path": "#/menu/tab/hsDetail27"
-    },
-    {
-      "title": "Rajkiya Inter Collge 05",
-      "path": "#/menu/tab/hsDetail28"
-    },
-    {
-      "title": "Vikash Khand Karyalay Hastinapur",
-      "path": "#/menu/tab/hsDetail29"
-    },
-    {
-      "title": "G.G.I.C Room 01 Hastinapur",
-      "path": "#/menu/tab/hsDetail30"
-    },
-    {
-      "title": "G.G.I.C Room 02 Hastinapur",
-      "path": "#/menu/tab/hsDetail31"
-    },
-    {
-      "title": "Sowami Kalyandev Krishi Kender 02 Hastinapur",
-      "path": "#/menu/tab/hsDetail32"
-    },
-    {
-      "title": "Sowami Klyandev Krishi Kender Bheemnagar 02 Hastinapur",
-      "path": "#/menu/tab/hsDetail33"
-    },
-    {
-      "title": "Rajkiye Vidhyalay 01 Hastinapur",
-      "path": "#/menu/tab/hsDetail34"
-    },
-    {
-      "title": "RAjkiy Vidhyalay 02 Hastinapur",
-      "path": "#/menu/tab/hsDetail35"
-    },
-    {
-      "title": "Rajkiy Vidhyalay 03 Hastinapur",
-      "path": "#/menu/tab/hsDetail36"
-    },
-    {
-      "title": "Rajkiy Vidhyalay 04 Hastinapur",
-      "path": "#/menu/tab/hsDetail37"
-    },
-    {
-      "title": "Rajkiy Vidhyalay 05 Hastinapur",
-      "path": "#/menu/tab/hsDetail38"
-    },
-    {
-      "title": "Ucch Prathamik Vidhyalay Saifpur Karmchandpur Hastinapur",
-      "path": "#/menu/tab/hsDetail39"
-    },
-    {
-      "title": "Ucch Prathamik Vidhyalay Saifpur Karmchandpur 03 Hastinapur",
-      "path": "#/menu/tab/hsDetail40"
-    },
-    {
-      "title": "Mejar Asharam Ismark inter College 01 Ganeshpur",
-      "path": "#/menu/tab/hsDetail41"
-    },
-    {
-      "title": "Mejar Asharam Ismark inter College 02 Ganeshpur",
-      "path": "#/menu/tab/hsDetail42"
-    },
-    {
-      "title": "Prathamik Vidhyalay 01 Ganeshpur 03",
-      "path": "#/menu/tab/hsDetail43"
-    },
-    {
-      "title": "Prathamik Vidhyalay Afzalpur aka Rani Nangala 01",
-      "path": "#/menu/tab/hsDetail44"
-    },
-    {
-      "title": "Prathamik Vidhyalay Afzalpur aka Rani Nangala 02",
-      "path": "#/menu/tab/hsDetail45"
-    },
-    {
-      "title": "Prathamik Vidhyalay Nangala Chand",
-      "path": "#/menu/tab/hsDetail46"
-    },
-    {
-      "title": "Prathamik Vidhyalay Ikwara",
-      "path": "#/menu/tab/hsDetail47"
-    },
-    {
-      "title": "Prathamik Vidhyalay Paali 01",
-      "path": "#/menu/tab/hsDetail48"
-    },
-    {
-      "title": "Prathamik Vidhyalay Paali 02",
-      "path": "#/menu/tab/hsDetail49"
-    },
-    {
-      "title": "Prathami Vidhyalay Dariapur",
-      "path": "#/menu/tab/hsDetail50"
-    },
-    {
-      "title": "Prathami Vidhyalay Nidawali",
-      "path": "#/menu/tab/hsDetail51"
-    },
-    {
-      "title": "Prathamik vidhyalay Khodhrai",
-      "path": "#/menu/tab/hsDetail52"
-    },
-    {
-      "title": "Prathamik vidhyalay Dayalpur",
-      "path": "#/menu/tab/hsDetail53"
-    },
-    {
-      "title": "Prathamik vidhyalay Bastoura Narang 01",
-      "path": "#/menu/tab/hsDetail54"
-    },
-    {
-      "title": "Prathamik vidhyalay Bastoura Narang 01",
-      "path": "#/menu/tab/hsDetail55"
-    },
-    {
-      "title": "Prathamik vidhyalay Bajam Pur Aka Makdumpur",
-      "path": "#/menu/tab/hsDetail56"
-    },
-    {
-      "title": "Jr. High School Mammipur",
-      "path": "#/menu/tab/hsDetail57"
-    },
-    {
-      "title": "Prathamik Vidhyalay Kishorpur",
-      "path": "#/menu/tab/hsDetail58"
-    },
-    {
-      "title": "Prathamik Vidhyalay Jalalpur Jora",
-      "path": "#/menu/tab/hsDetail59"
-    },
-    {
-      "title": "Prathamik Vidhyalay Alipur Morna 01",
-      "path": "#/menu/tab/hsDetail60"
-    },
-    {
-      "title": "Prathamik Vidhyalay Alipur Morna 02",
-      "path": "#/menu/tab/hsDetail61"
-    },
-    {
-      "title": "Prathamik Vidhyalay Alipur Morna 03",
-      "path": "#/menu/tab/hsDetail62"
-    },
-    {
-      "title": "Prathamik Vidhyalay Paldha",
-      "path": "#/menu/tab/hsDetail63"
-    },
-    {
-      "title": "Prathamik Vidhyalay Akabarpur Garhi 01",
-      "path": "#/menu/tab/hsDetail64"
-    },
-    {
-      "title": "Prathamik Vidhyalay Akabarpur Garhi 02",
-      "path": "#/menu/tab/hsDetail65"
-    },
-    {
-      "title": "Ucchatam Prathamik Vidhyalay Akabarpur Icchawad",
-      "path": "#/menu/tab/hsDetail66"
-    },
-    {
-      "title": "Prathamik Vidhyalay Humayunpur Hastinapur",
-      "path": "#/menu/tab/hsDetail67"
-    },
-    {
-      "title": "Prathamik Vidhyalay Gurha",
-      "path": "#/menu/tab/hsDetail68"
-    }
-  ];
+      {
+        "title": "Prathamik Vidhyalay 01 Tarapur",
+        "path": "#/menu/tab/hsDetail"
+      },
+      {
+        "title": "Prathamik Vidhyalay 02 Tarapur",
+        "path": "#/menu/tab/hsDetail2"
+      },
+      {
+        "title": "Prathamik Vidhyalay Choti Cham Road",
+        "path": "#/menu/tab/hsDetail3"
+      },
+      {
+        "title": "Prathamik Vidhyalay Manpur",
+        "path": "#/menu/tab/hsDetail4"
+      },
+      {
+        "title": "Uccha Prathamik Vidhyalay Rathora khurd Hastinapur",
+        "path": "#/menu/tab/hsDetail5"
+      },
+      {
+        "title": "Uccha Prathamik Vidhyalay Rathora Khurd",
+        "path": "#/menu/tab/hsDetail6"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kunaira",
+        "path": "#/menu/tab/hsDetail7"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kunaira Bam Nouli",
+        "path": "#/menu/tab/hsDetail8"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kunaira Rathoura Kala",
+        "path": "#/menu/tab/hsDetail9"
+      },
+      {
+        "title": "Prathamik Vidhyalay Hansapur Parshapur",
+        "path": "#/menu/tab/hsDetail10"
+      },
+      {
+        "title": "Prathamik Vidhyalay Sirjepur",
+        "path": "#/menu/tab/hsDetail11"
+      },
+      {
+        "title": "Prathamik Vidhyalay 01 Latifpur",
+        "path": "#/menu/tab/hsDetail12"
+      },
+      {
+        "title": "Prathamik Vidhyalay 02 Latifpur",
+        "path": "#/menu/tab/hsDetail13"
+      },
+      {
+        "title": "Prathamik Vidhyalay Latifpur Kankarkhera",
+        "path": "#/menu/tab/hsDetail14"
+      },
+      {
+        "title": "Prathamik Vidhyalay Rustam aka Bhikund",
+        "path": "#/menu/tab/hsDetail15"
+      },
+      {
+        "title": "Prathamik Vidhyalay Jalalpur aka Makbulpur",
+        "path": "#/menu/tab/hsDetail16"
+      },
+      {
+        "title": "Prathamik Vidhyalay 01 Dudhali Khadar",
+        "path": "#/menu/tab/hsDetail17"
+      },
+      {
+        "title": "Prathamik Vidhyalay 02 Dudhali Khadar",
+        "path": "#/menu/tab/hsDetail18"
+      },
+      {
+        "title": "Prathamik Vidhyalay Aedalpur",
+        "path": "#/menu/tab/hsDetail19"
+      },
+      {
+        "title": "Prathamik Vidhyalay Jharkka",
+        "path": "#/menu/tab/hsDetail20"
+      },
+      {
+        "title": "Prathamik Vidhyalay Doulatpur Aka Malipur",
+        "path": "#/menu/tab/hsDetail21"
+      },
+      {
+        "title": "Vigyan Kender 01 Hastinapur",
+        "path": "#/menu/tab/hsDetail22"
+      },
+      {
+        "title": "Krishi Vigyan Kender 02",
+        "path": "#/menu/tab/hsDetail23"
+      },
+      {
+        "title": "Rajkiya Inter Colleg Hastinapur",
+        "path": "#/menu/tab/hsDetail24"
+      },
+      {
+        "title": "Rajkiya Inter Collge 02",
+        "path": "#/menu/tab/hsDetail25"
+      },
+      {
+        "title": "Rajkiya Inter Collge 03",
+        "path": "#/menu/tab/hsDetail26"
+      },
+      {
+        "title": "Rajkiya Inter Collge 04",
+        "path": "#/menu/tab/hsDetail27"
+      },
+      {
+        "title": "Rajkiya Inter Collge 05",
+        "path": "#/menu/tab/hsDetail28"
+      },
+      {
+        "title": "Vikash Khand Karyalay Hastinapur",
+        "path": "#/menu/tab/hsDetail29"
+      },
+      {
+        "title": "G.G.I.C Room 01 Hastinapur",
+        "path": "#/menu/tab/hsDetail30"
+      },
+      {
+        "title": "G.G.I.C Room 02 Hastinapur",
+        "path": "#/menu/tab/hsDetail31"
+      },
+      {
+        "title": "Sowami Kalyandev Krishi Kender 02 Hastinapur",
+        "path": "#/menu/tab/hsDetail32"
+      },
+      {
+        "title": "Sowami Klyandev Krishi Kender Bheemnagar 02 Hastinapur",
+        "path": "#/menu/tab/hsDetail33"
+      },
+      {
+        "title": "Rajkiye Vidhyalay 01 Hastinapur",
+        "path": "#/menu/tab/hsDetail34"
+      },
+      {
+        "title": "RAjkiy Vidhyalay 02 Hastinapur",
+        "path": "#/menu/tab/hsDetail35"
+      },
+      {
+        "title": "Rajkiy Vidhyalay 03 Hastinapur",
+        "path": "#/menu/tab/hsDetail36"
+      },
+      {
+        "title": "Rajkiy Vidhyalay 04 Hastinapur",
+        "path": "#/menu/tab/hsDetail37"
+      },
+      {
+        "title": "Rajkiy Vidhyalay 05 Hastinapur",
+        "path": "#/menu/tab/hsDetail38"
+      },
+      {
+        "title": "Ucch Prathamik Vidhyalay Saifpur Karmchandpur Hastinapur",
+        "path": "#/menu/tab/hsDetail39"
+      },
+      {
+        "title": "Ucch Prathamik Vidhyalay Saifpur Karmchandpur 03 Hastinapur",
+        "path": "#/menu/tab/hsDetail40"
+      },
+      {
+        "title": "Mejar Asharam Ismark inter College 01 Ganeshpur",
+        "path": "#/menu/tab/hsDetail41"
+      },
+      {
+        "title": "Mejar Asharam Ismark inter College 02 Ganeshpur",
+        "path": "#/menu/tab/hsDetail42"
+      },
+      {
+        "title": "Prathamik Vidhyalay 01 Ganeshpur 03",
+        "path": "#/menu/tab/hsDetail43"
+      },
+      {
+        "title": "Prathamik Vidhyalay Afzalpur aka Rani Nangala 01",
+        "path": "#/menu/tab/hsDetail44"
+      },
+      {
+        "title": "Prathamik Vidhyalay Afzalpur aka Rani Nangala 02",
+        "path": "#/menu/tab/hsDetail45"
+      },
+      {
+        "title": "Prathamik Vidhyalay Nangala Chand",
+        "path": "#/menu/tab/hsDetail46"
+      },
+      {
+        "title": "Prathamik Vidhyalay Ikwara",
+        "path": "#/menu/tab/hsDetail47"
+      },
+      {
+        "title": "Prathamik Vidhyalay Paali 01",
+        "path": "#/menu/tab/hsDetail48"
+      },
+      {
+        "title": "Prathamik Vidhyalay Paali 02",
+        "path": "#/menu/tab/hsDetail49"
+      },
+      {
+        "title": "Prathami Vidhyalay Dariapur",
+        "path": "#/menu/tab/hsDetail50"
+      },
+      {
+        "title": "Prathami Vidhyalay Nidawali",
+        "path": "#/menu/tab/hsDetail51"
+      },
+      {
+        "title": "Prathamik vidhyalay Khodhrai",
+        "path": "#/menu/tab/hsDetail52"
+      },
+      {
+        "title": "Prathamik vidhyalay Dayalpur",
+        "path": "#/menu/tab/hsDetail53"
+      },
+      {
+        "title": "Prathamik vidhyalay Bastoura Narang 01",
+        "path": "#/menu/tab/hsDetail54"
+      },
+      {
+        "title": "Prathamik vidhyalay Bastoura Narang 01",
+        "path": "#/menu/tab/hsDetail55"
+      },
+      {
+        "title": "Prathamik vidhyalay Bajam Pur Aka Makdumpur",
+        "path": "#/menu/tab/hsDetail56"
+      },
+      {
+        "title": "Jr. High School Mammipur",
+        "path": "#/menu/tab/hsDetail57"
+      },
+      {
+        "title": "Prathamik Vidhyalay Kishorpur",
+        "path": "#/menu/tab/hsDetail58"
+      },
+      {
+        "title": "Prathamik Vidhyalay Jalalpur Jora",
+        "path": "#/menu/tab/hsDetail59"
+      },
+      {
+        "title": "Prathamik Vidhyalay Alipur Morna 01",
+        "path": "#/menu/tab/hsDetail60"
+      },
+      {
+        "title": "Prathamik Vidhyalay Alipur Morna 02",
+        "path": "#/menu/tab/hsDetail61"
+      },
+      {
+        "title": "Prathamik Vidhyalay Alipur Morna 03",
+        "path": "#/menu/tab/hsDetail62"
+      },
+      {
+        "title": "Prathamik Vidhyalay Paldha",
+        "path": "#/menu/tab/hsDetail63"
+      },
+      {
+        "title": "Prathamik Vidhyalay Akabarpur Garhi 01",
+        "path": "#/menu/tab/hsDetail64"
+      },
+      {
+        "title": "Prathamik Vidhyalay Akabarpur Garhi 02",
+        "path": "#/menu/tab/hsDetail65"
+      },
+      {
+        "title": "Ucchatam Prathamik Vidhyalay Akabarpur Icchawad",
+        "path": "#/menu/tab/hsDetail66"
+      },
+      {
+        "title": "Prathamik Vidhyalay Humayunpur Hastinapur",
+        "path": "#/menu/tab/hsDetail67"
+      },
+      {
+        "title": "Prathamik Vidhyalay Gurha",
+        "path": "#/menu/tab/hsDetail68"
+      }
+    ];
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
     $scope.gridRespected = {};
@@ -47232,6 +47675,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47284,6 +47736,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47336,6 +47797,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47388,6 +47858,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47440,6 +47919,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47492,6 +47980,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47545,6 +48042,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47598,6 +48104,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47651,6 +48166,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47704,6 +48228,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47757,6 +48290,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47810,6 +48352,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47863,6 +48414,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47916,6 +48476,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -47969,6 +48538,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48022,6 +48600,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48075,6 +48662,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48128,7 +48724,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48182,7 +48786,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48236,7 +48848,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48290,7 +48910,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48344,7 +48972,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48398,7 +49034,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48452,7 +49096,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48506,7 +49158,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48560,7 +49220,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48614,7 +49282,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48668,7 +49344,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48722,7 +49406,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48776,7 +49468,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48830,7 +49530,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48884,7 +49592,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48938,6 +49654,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -48990,6 +49715,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49042,6 +49776,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49094,6 +49837,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49146,6 +49898,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49199,6 +49960,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49252,6 +50022,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49305,6 +50084,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49358,6 +50146,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49411,6 +50208,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49464,6 +50270,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49517,6 +50332,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49570,6 +50394,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49623,6 +50456,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49676,6 +50518,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49729,6 +50580,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49782,7 +50642,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49836,7 +50704,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49890,7 +50766,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49944,7 +50828,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/hastinapur52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/hastinapur.json').success(function(data){
     $scope.masterData = data;
@@ -49998,6 +50890,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50030,7 +50931,7 @@ function PeopleCtrl($scope, $http) {
 
     // console.table($scope.grideCrime);
     });
-})
+}) 
 .controller('hsCtrl54', function($scope, $http){
     $scope.gridChowkidar = {};
     $scope.gridCouncellor = {};
@@ -50052,6 +50953,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur54_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur54_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur54_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50106,6 +51016,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur55_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur55_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur55_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50160,6 +51079,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur56_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur56_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur56_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50214,6 +51142,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur57_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur57_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur57_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50268,6 +51205,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur58_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur58_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur58_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50322,6 +51268,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur59_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur59_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur59_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50376,6 +51331,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur60_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur60_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur60_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50430,6 +51394,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur61_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur61_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur61_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50484,6 +51457,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur62_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur62_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur62_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50538,6 +51520,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur63_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur63_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur63_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50592,6 +51583,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur64_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur64_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur64_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50646,6 +51646,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur65_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur65_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur65_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50700,6 +51709,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur66_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur66_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur66_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50754,6 +51772,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur67_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur67_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur67_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50808,6 +51835,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/hastinapur68_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/hastinapur68_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/hastinapur68_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
 
     $http.get('json/hastinapur.json').success(function(data){
@@ -50841,6 +51877,7 @@ function PeopleCtrl($scope, $http) {
     // console.table($scope.grideCrime);
     });
 })
+
 // End of Hastinapur Controllers 
 
 .controller('jnCtrl', function($scope, $http){
@@ -81216,6 +82253,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81268,6 +82314,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81320,6 +82375,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81372,6 +82436,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81424,6 +82497,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81476,6 +82558,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81529,6 +82620,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81582,6 +82682,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81635,6 +82744,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81688,6 +82806,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81741,6 +82868,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81794,6 +82930,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81847,6 +82992,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81900,6 +83054,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -81953,6 +83116,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82006,6 +83178,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82059,6 +83240,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82112,7 +83302,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82166,7 +83364,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82220,7 +83426,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82274,7 +83488,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82328,7 +83550,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82382,7 +83612,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82436,7 +83674,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82490,7 +83736,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82544,7 +83798,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82598,7 +83860,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82652,7 +83922,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82706,7 +83984,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82760,7 +84046,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82814,7 +84108,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82868,7 +84170,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82922,6 +84232,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -82974,6 +84293,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83026,6 +84354,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83078,6 +84415,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83130,6 +84476,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83183,6 +84538,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83236,6 +84600,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83289,6 +84662,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83342,6 +84724,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83395,6 +84786,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83448,6 +84848,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83501,6 +84910,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83554,6 +84972,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83607,6 +85034,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83660,6 +85096,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83713,6 +85158,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/parikshitgarh48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83766,7 +85220,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83820,7 +85282,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83874,7 +85344,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83928,7 +85406,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -83982,7 +85468,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -84036,7 +85530,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh54_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh54_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh54_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -84090,7 +85592,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh55_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh55_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh55_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -84144,7 +85654,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh56_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh56_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh56_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -84198,7 +85716,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh57_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh57_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh57_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
@@ -84252,7 +85778,15 @@ function PeopleCtrl($scope, $http) {
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/parikshitgarh58_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/parikshitgarh58_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/parikshitgarh58_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/parikshitgarh.json').success(function(data){
     $scope.masterData = data;
