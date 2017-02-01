@@ -69,14 +69,6 @@ dsm.run(function($ionicPlatform, $rootScope) {
    //        }
    //      }
    //    })
-   //  .state('menu.tabs.wip', {
-   //      url: "/wip",
-   //      views: {
-   //        'slide-tab': {
-   //          templateUrl: "templates/wip.html"
-   //        }
-   //      }
-   //    })
 
 //<<-- Railway Road Routes Start -->
       
