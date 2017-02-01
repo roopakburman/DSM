@@ -11265,105 +11265,105 @@ $urlRouterProvider.otherwise("/menu/login");
   //
 })
 // .controller('userProfileCtrl', function($scope, $http){
-// 	// $scope.nameFilter = currentUser;
-// 	// $http.get('json/userData.json')
-// 	// .then(function(res){
-// 	// 	$scope.userData = res.data;
-// 	// });
+  // 	// $scope.nameFilter = currentUser;
+  // 	// $http.get('json/userData.json')
+  // 	// .then(function(res){
+  // 	// 	$scope.userData = res.data;
+  // 	// });
 
-// 	// if(currentUser == 'simplelogin:14'){
-// 	// 		$scope.userName = "Price Jett";
-// 	// 		$scope.userEmail = "jettp@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4772";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:15'){
-// 	// 		$scope.userName = "Tom Monahan";
-// 	// 		$scope.userEmail = "monahant@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4013";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:16'){
-// 	// 		$scope.userName = "Melody Jones";
-// 	// 		$scope.userEmail = "melodyjones@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4003";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:17'){
-// 	// 		$scope.userName = "Warren Thune";
-// 	// 		$scope.userEmail = "thunew@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4613";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:18'){
-// 	// 		$scope.userName = "Haniel Lynn";
-// 	// 		$scope.userEmail = "lynnh@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4015";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:19'){
-// 	// 		$scope.userName = "The Asgardians";
-// 	// 		$scope.userEmail = "garage@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-6666";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:22'){
-// 	// 		$scope.userName = "Rob Chen";
-// 	// 		$scope.userEmail = "robchen@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-6666";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:23'){
-// 	// 		$scope.userName = "Andrea Birdsong";
-// 	// 		$scope.userEmail = "abirdsong@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-6666";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:24'){
-// 	// 		$scope.userName = "Aaron Myers";
-// 	// 		$scope.userEmail = "amyers@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-6666";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:25'){
-// 	// 		$scope.userName = "Eve Koopmann";
-// 	// 		$scope.userEmail = "ekoopmann@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-6666";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:26'){
-// 	// 		$scope.userName = "Julie Donahue";
-// 	// 		$scope.userEmail = "jdonahue@cebglobal.com";
-// 	// 		$scope.userPhone = "571-303-4756";
-// 	// 	}
-// 	// 	else if(currentUser == 'simplelogin:27'){
-// 	// 		$scope.userName = "Matthew King";
-// 	// 		$scope.userEmail = "matt@king.com";
-// 	// 		$scope.userPhone = "571-303-4756";
-// 	// 	}
+  // 	// if(currentUser == 'simplelogin:14'){
+  // 	// 		$scope.userName = "Price Jett";
+  // 	// 		$scope.userEmail = "jettp@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4772";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:15'){
+  // 	// 		$scope.userName = "Tom Monahan";
+  // 	// 		$scope.userEmail = "monahant@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4013";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:16'){
+  // 	// 		$scope.userName = "Melody Jones";
+  // 	// 		$scope.userEmail = "melodyjones@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4003";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:17'){
+  // 	// 		$scope.userName = "Warren Thune";
+  // 	// 		$scope.userEmail = "thunew@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4613";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:18'){
+  // 	// 		$scope.userName = "Haniel Lynn";
+  // 	// 		$scope.userEmail = "lynnh@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4015";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:19'){
+  // 	// 		$scope.userName = "The Asgardians";
+  // 	// 		$scope.userEmail = "garage@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-6666";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:22'){
+  // 	// 		$scope.userName = "Rob Chen";
+  // 	// 		$scope.userEmail = "robchen@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-6666";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:23'){
+  // 	// 		$scope.userName = "Andrea Birdsong";
+  // 	// 		$scope.userEmail = "abirdsong@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-6666";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:24'){
+  // 	// 		$scope.userName = "Aaron Myers";
+  // 	// 		$scope.userEmail = "amyers@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-6666";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:25'){
+  // 	// 		$scope.userName = "Eve Koopmann";
+  // 	// 		$scope.userEmail = "ekoopmann@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-6666";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:26'){
+  // 	// 		$scope.userName = "Julie Donahue";
+  // 	// 		$scope.userEmail = "jdonahue@cebglobal.com";
+  // 	// 		$scope.userPhone = "571-303-4756";
+  // 	// 	}
+  // 	// 	else if(currentUser == 'simplelogin:27'){
+  // 	// 		$scope.userName = "Matthew King";
+  // 	// 		$scope.userEmail = "matt@king.com";
+  // 	// 		$scope.userPhone = "571-303-4756";
+  // 	// 	}
 
-// 	// $scope.contactJames = function(){
-// 	// 	alert('Thanks for your message. James would reach out to you shortly.');
+  // 	// $scope.contactJames = function(){
+  // 	// 	alert('Thanks for your message. James would reach out to you shortly.');
 
-// 	// 	window.location.href = '#menu/tab/userProfile';
-// 	// }
-// })
-// .controller('tickerCtrl',function($scope, $http){
-// 	$http.get('json/iTicker.json').then(function(res){
-// 		$scope.iTicker = res.data;
-// 	});
-// })
-// .controller('dataCtrl', function($scope, $http){
-// 	$scope.nameFilter = '';
-// 	$http.get('json/data.json').then(function(res){
-// 		$scope.data = res.data;
-// 	});
-// function PeopleCtrl($scope, $http) {
+  // 	// 	window.location.href = '#menu/tab/userProfile';
+  // 	// }
+  // })
+  // .controller('tickerCtrl',function($scope, $http){
+  // 	$http.get('json/iTicker.json').then(function(res){
+  // 		$scope.iTicker = res.data;
+  // 	});
+  // })
+  // .controller('dataCtrl', function($scope, $http){
+  // 	$scope.nameFilter = '';
+  // 	$http.get('json/data.json').then(function(res){
+  // 		$scope.data = res.data;
+  // 	});
+  // function PeopleCtrl($scope, $http) {
 
-//     $scope.people = [];
+  //     $scope.people = [];
 
-//     $scope.loadPeople = function() {
-//         var httpRequest = $http({
-//             method: 'POST',
-//             url: '/echo/json/',
-//             data: mockDataForThisTest
+  //     $scope.loadPeople = function() {
+  //         var httpRequest = $http({
+  //             method: 'POST',
+  //             url: '/echo/json/',
+  //             data: mockDataForThisTest
 
-//         }).success(function(data, status) {
-//             $scope.people = data;
-//         });
+  //         }).success(function(data, status) {
+  //             $scope.people = data;
+  //         });
 
-//       };
-//     }
+  //       };
+  //     }
 // })
 // .controller('ListCtrl', function ($scope) {
 
@@ -25709,7 +25709,6 @@ $urlRouterProvider.otherwise("/menu/login");
 })
 
 //End of Mundali Controllers
-
 .controller('prCtrl', function($scope, $http){
   $scope.items = [
       {
@@ -25945,6 +25944,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -25997,6 +26005,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26049,6 +26066,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26101,6 +26127,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26153,6 +26188,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26205,6 +26249,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26258,6 +26311,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26311,6 +26373,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26364,6 +26435,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26417,6 +26497,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26470,6 +26559,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26523,6 +26621,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26576,6 +26683,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26629,6 +26745,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26682,6 +26807,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26735,6 +26869,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26788,6 +26931,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26841,7 +26993,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26895,7 +27055,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -26949,7 +27117,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27003,7 +27179,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27057,7 +27241,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27111,7 +27303,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27165,7 +27365,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27219,7 +27427,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27273,7 +27489,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27327,7 +27551,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27381,7 +27613,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27435,7 +27675,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27489,7 +27737,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27543,7 +27799,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27597,7 +27861,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27651,6 +27923,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27703,6 +27984,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27755,6 +28045,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27807,6 +28106,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27859,6 +28167,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27912,6 +28229,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur38_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur38_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur38_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -27965,6 +28291,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur39_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur39_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur39_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28018,6 +28353,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur40_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur40_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur40_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28071,6 +28415,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur41_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur41_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur41_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28124,6 +28477,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur42_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur42_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur42_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28177,6 +28539,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur43_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur43_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur43_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28230,6 +28601,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur44_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur44_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur44_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28283,6 +28663,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur45_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur45_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur45_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28336,6 +28725,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur46_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur46_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur46_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28389,6 +28787,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur47_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur47_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28442,6 +28849,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/partapur48_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur48_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur48_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28495,7 +28911,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur49_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur49_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur47_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28549,7 +28973,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur50_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur50_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur50_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28603,7 +29035,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur51_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur51_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur51_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28657,7 +29097,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur52_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur52_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur52_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -28711,7 +29159,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/partapur53_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/partapur53_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/partapur53_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/partapur.json').success(function(data){
     $scope.masterData = data;
@@ -37120,6 +37576,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar1_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar1_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar1_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });    
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37172,6 +37637,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar2_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar2_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar2_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37224,6 +37698,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar3_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar3_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar3_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37276,6 +37759,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar4_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar4_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar4_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37328,6 +37820,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar5_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar5_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar5_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37380,6 +37881,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar6_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar6_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar6_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37433,6 +37943,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar7_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar7_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar7_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37486,6 +38005,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar8_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar8_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar8_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37539,6 +38067,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar9_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar9_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar9_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37592,6 +38129,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar10_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar10_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar10_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37645,6 +38191,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar11_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar11_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar11_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37698,6 +38253,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar12_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar12_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar12_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37751,6 +38315,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar13_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar13_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar13_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37804,6 +38377,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar14_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar14_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar14_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37857,6 +38439,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar15_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar15_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar15_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37910,6 +38501,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar16_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar16_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar16_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -37963,6 +38563,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar17_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar17_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar17_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38016,7 +38625,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar18_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar18_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar18_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38070,7 +38687,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar19_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar19_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar19_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38124,7 +38749,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar20_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar20_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar20_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38178,7 +38811,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar21_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar21_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar21_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38232,7 +38873,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar22_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar22_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar22_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38286,7 +38935,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar23_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar23_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar23_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38340,7 +38997,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar24_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar24_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar24_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38394,7 +39059,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar25_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar25_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar25_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38448,7 +39121,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar26_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar26_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar26_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38502,7 +39183,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar27_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar27_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar27_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38556,7 +39245,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar28_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar28_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar28_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38610,7 +39307,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar29_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar29_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar29_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38664,7 +39369,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar30_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar30_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar30_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38718,7 +39431,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar31_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar31_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar31_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38772,7 +39493,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
-
+    $http.get('json/tpNagar32_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar32_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar32_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38826,6 +39555,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar33_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar33_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar33_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38878,6 +39616,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar34_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar34_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar34_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38930,6 +39677,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar35_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar35_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar35_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -38982,6 +39738,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar36_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar36_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar36_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
@@ -39034,6 +39799,15 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.iroutePic = {};
     $scope.icollPtPic = {};
 
+    $http.get('json/tpNagar37_1.txt').success(function(data){
+      $scope.iPolPic = data;
+    });
+    $http.get('json/tpNagar37_2.txt').success(function(data){
+      $scope.iroutePic = data;
+    });
+    $http.get('json/tpNagar37_3.txt').success(function(data){
+      $scope.icollPtPic = data;
+    });
 
     $http.get('json/tpNagar.json').success(function(data){
     $scope.masterData = data;
