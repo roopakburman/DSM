@@ -1,32 +1,54 @@
 <ion-view view-title="DSM Meerut">
-      <ion-content ng-controller="ButtonsTabCtrl">
-<!-- <div class="Card" ng-controller="feedCtrl"> -->
-<div class="card">
-      <div class="row item item-divider card-bk2">
-        Welcome
-      </div>
-                <!-- <img class="img1" src="img/wip.gif"></img> -->
-		<!-- <ion-item ng-repeat="item in feed" class="item item-icon-right" href={{item.path}}>
-
-			<strong>{{item.title}}</strong> - {{ item.synopsis}}
-		</ion-item> -->
-
-		<ion-item class="item">We are working on it!</ion-item>
+	<ion-content>
+<!-- 		<div class="card">
+			<div class="row item item-divider card-bk2">
+				Welcome
+			</div>
         </div>
+-->       
+		<div class="row">
+			<div class="col col-50 customDiv" ui-sref="menu.tabs.buttonsDiv1" ng-click="div1()">
+				<img src="img/meerutAtaGlance.png">
+			</div>
+			<div class="col col-50 customDiv" ui-sref="menu.tabs.buttonsDiv9">
+		  		<img src="img/dutiesNinstructions.png">
+			</div>
+		</div>
 
-        <!-- <div id="divWheelnav" data-wheelnav data-wheelnav-slicepath="WheelSlice" data-wheelnav-colors="#D80351,#F5D908,#00A3EE,#929292">
-		    <div data-wheelnav-navitemicon="smile">smile</div>
-		    <div data-wheelnav-navitemicon="star">star</div>
-		    <div data-wheelnav-navitemicon="fork">fork</div>
-		    <div data-wheelnav-navitemicon="$">donate</div>
-		</div> -->
+        <div class="row">
+		  	<div class="col col-50 customDiv" ui-sref="menu.tabs.buttonsDiv3">
+		  		<img src="img/zonalSector.png">
+			</div>
+		  	<div class="col customDiv" ui-sref="menu.tabs.buttonsDiv4">
+		  		<img src="img/borderSealingPlan.png">
+			</div>
+		</div>
 
-		<!-- <div class="card" ng-controller="tickerCtrl">
-		<marquee>
-			<span ng-repeat="item in iTicker">
-				<i class="icon ion-ios-pulse-strong"></i> <strong>{{item.prog}}</strong>{{item.newsFeed}}
-			</span>
-		</marquee>
-		</div> -->
-	  </ion-content>
-    </ion-view>
+        <div class="row">
+		  	<div class="col col-50 customDiv" ui-sref="menu.tabs.buttonsDiv5">
+		  		<img src="img/routeFlagMarch.png">
+			</div>
+		  	<div class="col customDiv" ui-sref="menu.tabs.buttonsDiv10">
+		  		<img src="img/cugList.png">
+			</div>
+		</div>
+
+        <div class="row">
+		  	<div class="col col-50 customDiv" ui-sref="menu.tabs.buttonsDiv7">
+		  		<img src="img/flyingSquads.png">
+			</div>
+		  	<div class="col customDiv" ui-sref="menu.tabs.buttonsDiv8">
+		  		<img src="img/staticSurvillanceTeam.png">
+			</div>
+		</div>
+
+        <div class="row">
+		  	<div class="col customDiv" ui-sref="menu.tabs.buttonsDiv2" ng-click="div2()">
+				<img src="img/vulnerabilityMapping.png">
+			</div>
+		  	<div class="col customDiv" ui-sref="menu.tabs.buttonsDiv6">
+		  		<img src="img/districtDeploymentPlan.png">
+			</div>
+		</div>
+  	</ion-content>
+</ion-view>

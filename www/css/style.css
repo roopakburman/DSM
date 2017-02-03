@@ -333,7 +333,7 @@ input.fElements{
 
 }
 
-#overlay {
+/*#overlay {
      visibility: hidden;
      position: absolute;
      left: 0px;
@@ -350,4 +350,22 @@ input.fElements{
      border:1px solid #000;
      padding:15px;
      text-align:center;
+}*/
+
+.customDiv {
+  width: auto;
+  height: auto;
+  text-align: center;
+  background: black;
+  border: 1px solid;
+  border-color: #c78124;
 }
+.customDiv:active {
+  background: #ccc;
+}
+/*div.iBtnsYellow {
+  width: auto;
+  height: 150px;
+  text-align: center;
+  background: yellow;
+}*/
