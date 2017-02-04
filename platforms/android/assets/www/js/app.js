@@ -11876,34 +11876,42 @@ $urlRouterProvider.otherwise("/menu/login");
 .controller('rrCtrl', function($scope, $http){
   $scope.items = [
     {
+    "id" : 0,
   	"title" : "Kariyaliy Prathmik Shiksha Sadan",
   	"path" : "#/menu/tab/rrDetail"
   	},
       {
+  	 "id" : 1,
   	"title" : "Ucch Prathmik Vidyalaya Kasergunj",
   	"path" : "#/menu/tab/rrDetail2"
   	},
       {
+  	"id" : 2,
   	"title" : "Praimary Kaniya Vidhyaliya Purva Maheveer",
   	"path" : "#/menu/tab/rrDetail3"
   	},
       {
+  	"id" : 3,
   	"title" : "Kanoherlal Krishan Sahia Inter College",
   	"path" : "#/menu/tab/rrDetail4"
   	},
       {
-    "title" : "Bhai Joga Singh Public Shool Davepuri",
+    "id" : 4,
+  	"title" : "Bhai Joga Singh Public Shool Davepuri",
     "path" : "#/menu/tab/rrDetail5"
     },
       {
-    "title" : "Bhai Joga Singh Public Shool Davepuri",
+    "id" : 5,
+  	"title" : "Bhai Joga Singh Public Shool Davepuri",
     "path" : "#/menu/tab/rrDetail6"
     },
       {
+  	"id" : 6,
   	"title" : "Vardhaman Acadmey",
   	"path" : "#/menu/tab/rrDetail7"
   	},
       {
+  	"id" : 7,
   	"title" : "Barat ghar city railway station",
   	"path" : "#/menu/tab/rrDetail8"
   	}
@@ -11961,11 +11969,8 @@ $urlRouterProvider.otherwise("/menu/login");
     $scope.gridWar = $scope.masterData[0].warrantedCriminals;
     $scope.cond = $scope.masterData[0].condition;
     
-
-      // $scope.stName.data = angular.fromJson($scope.masterData[0].stationName);
-
-
     // console.table($scope.grideCrime);
+    console.log(angular.toJson($scope.masterData));
     });
 })
 .controller('rrCtrl2', function($scope, $http){
